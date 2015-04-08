@@ -1,8 +1,8 @@
 /*! taxCalculator.c
  *
- *
- *
- *
+ * The tax calculator takes in user input of salary and specific state
+ * income tax to calculate the amount of salary that goes to social security,
+ * federal income tax, state tax, and net income.
  *
  * Raymond W. Mui , AJ Townsend, Beck Pang
  */
