@@ -1,5 +1,5 @@
 $date
-	Wed Apr 08 16:40:50 2015
+	Wed Apr 08 16:47:06 2015
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1s
 $end
-$scope module testBench $end
+$scope module rippleDown_testBench $end
 $scope module myCounter $end
 $var wire 1 ! clk $end
 $var wire 4 " out [3:0] $end

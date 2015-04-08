@@ -4,6 +4,7 @@
 // EE 471, Lab 1
 
 `include "DFlipFlop.v"
+`include "rippleDown.v"
 module rippleDown_testBench ();
 
 	// connext the two modules
@@ -20,7 +21,7 @@ module rippleDown_testBench ();
 
 	initial
 	begin
-		$dumpfile("JohnsonCounter.vcd");
+		$dumpfile("rippleDown.vcd");
 		$dumpvars(1, myCounter);
 	end
 

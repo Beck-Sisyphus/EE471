@@ -4,6 +4,7 @@
 // EE 471, Lab 1
 
 `include "DFlipFlop.v"
+`include "upCounter4Bit.v"
 module upCounter4Bit_testBench ();
 
 	// connext the two modules
@@ -20,7 +21,7 @@ module upCounter4Bit_testBench ();
 
 	initial
 	begin
-		$dumpfile("JohnsonCounter.vcd");
+		$dumpfile("upCounter.vcd");
 		$dumpvars(1, myCounter);
 	end
 

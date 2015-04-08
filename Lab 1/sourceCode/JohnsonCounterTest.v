@@ -4,6 +4,7 @@
 // EE 471, Lab 1
 
 `include "DFlipFlop.v"
+`include "JohnsonCounter.v"
 module JohnsonCounter_testBench ();
 
 	// connext the two modules
