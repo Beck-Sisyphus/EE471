@@ -10,10 +10,10 @@ module DE1_SoC (CLOCK_50, LEDR, SW);
 		tBase <= tBase + 1'b1;
 	
 	// 
-//	upCounter4Bit dut ( .clk(tBase[speed]), .rst_n(SW[0]), .out(LEDR[3:0]));
+	upCounter4Bit dut ( .clk(tBase[speed]), .rst_n(SW[0]), .out(LEDR[3:0]));
 
 //	rippleDown dut ( .clk(tBase[speed]), .rst_n(SW[0]), .out(LEDR[3:0]));
 
-	JohnsonCounter dut ( .clk(tBase[speed]), .rst_n(SW[0]), .out(LEDR[3:0]));
+//	JohnsonCounter dut ( .clk(tBase[speed]), .rst_n(SW[0]), .out(LEDR[3:0]));
 	
 endmodule

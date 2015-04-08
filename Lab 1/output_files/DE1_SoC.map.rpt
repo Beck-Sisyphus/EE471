@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Mon Apr 06 15:46:20 2015
+Tue Apr 07 18:26:30 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -11,15 +11,20 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
+  6. Partition Status Summary
+  7. Partition for Top-Level Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |DE1_SoC
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |DE1_SoC
+ 10. Partition Dependent Files
  11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
- 14. Analysis & Synthesis Suppressed Messages
+ 12. Source assignments for sld_signaltap:auto_signaltap_0
+ 13. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 14. Port Connectivity Checks: "upCounter4Bit:dut|DFlipFlop:d3"
+ 15. Port Connectivity Checks: "upCounter4Bit:dut|DFlipFlop:d2"
+ 16. Port Connectivity Checks: "upCounter4Bit:dut|DFlipFlop:d1"
+ 17. SignalTap II Logic Analyzer Settings
+ 18. Analysis & Synthesis Messages
+ 19. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,27 +48,22 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 06 15:46:19 2015       ;
-; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Full Version ;
-; Revision Name                   ; DE1_SoC                                     ;
-; Top-level Entity Name           ; DE1_SoC                                     ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 29                                          ;
-; Total pins                      ; 21                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Apr 07 18:26:30 2015       ;
+; Quartus II 64-Bit Version   ; 14.0.0 Build 200 06/17/2014 SJ Full Version ;
+; Revision Name               ; DE1_SoC                                     ;
+; Top-level Entity Name       ; DE1_SoC                                     ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -171,75 +171,98 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------+---------+
-; sourceCode/JohnsonCounter.v      ; yes             ; User Verilog HDL File        ; U:/EE 471/Lab 1/sourceCode/JohnsonCounter.v ;         ;
-; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; U:/EE 471/Lab 1/DE1_SoC.sv                  ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
+; sourceCode/upCounter4Bit.v       ; yes             ; User Verilog HDL File        ; U:/EE471/Lab 1/sourceCode/upCounter4Bit.v                                   ;         ;
+; sourceCode/DFlipFlop.v           ; yes             ; User Verilog HDL File        ; U:/EE471/Lab 1/sourceCode/DFlipFlop.v                                       ;         ;
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; U:/EE471/Lab 1/DE1_SoC.sv                                                   ;         ;
+; sld_signaltap.vhd                ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/sld_signaltap.vhd            ;         ;
+; sld_signaltap_impl.vhd           ; yes             ; Encrypted Megafunction       ; c:/altera/14.0/quartus/libraries/megafunctions/sld_signaltap_impl.vhd       ;         ;
+; sld_ela_control.vhd              ; yes             ; Encrypted Megafunction       ; c:/altera/14.0/quartus/libraries/megafunctions/sld_ela_control.vhd          ;         ;
+; lpm_shiftreg.tdf                 ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_shiftreg.tdf             ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_constant.inc             ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/dffeea.inc                   ;         ;
+; aglobal140.inc                   ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/aglobal140.inc               ;         ;
+; sld_mbpmg.vhd                    ; yes             ; Encrypted Megafunction       ; c:/altera/14.0/quartus/libraries/megafunctions/sld_mbpmg.vhd                ;         ;
+; sld_ela_trigger_flow_mgr.vhd     ; yes             ; Encrypted Megafunction       ; c:/altera/14.0/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd ;         ;
+; sld_buffer_manager.vhd           ; yes             ; Encrypted Megafunction       ; c:/altera/14.0/quartus/libraries/megafunctions/sld_buffer_manager.vhd       ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/altrom.inc                   ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/altram.inc                   ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
+; db/altsyncram_o184.tdf           ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/altsyncram_o184.tdf                                       ;         ;
+; altdpram.tdf                     ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/altdpram.tdf                 ;         ;
+; memmodes.inc                     ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/others/maxplus2/memmodes.inc               ;         ;
+; a_hdffe.inc                      ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/a_hdffe.inc                  ;         ;
+; alt_le_rden_reg.inc              ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/alt_le_rden_reg.inc          ;         ;
+; altsyncram.inc                   ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/altsyncram.inc               ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_mux.tdf                  ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/muxlut.inc                   ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/bypassff.inc                 ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/altshift.inc                 ;         ;
+; db/mux_elc.tdf                   ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/mux_elc.tdf                                               ;         ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_decode.tdf               ;         ;
+; declut.inc                       ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/declut.inc                   ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_compare.inc              ;         ;
+; db/decode_vnf.tdf                ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/decode_vnf.tdf                                            ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_counter.tdf              ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_add_sub.inc              ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/cmpconst.inc                 ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_counter.inc              ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                 ; c:/altera/14.0/quartus/libraries/megafunctions/alt_counter_stratix.inc      ;         ;
+; db/cntr_c7i.tdf                  ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/cntr_c7i.tdf                                              ;         ;
+; db/cntr_4vi.tdf                  ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/cntr_4vi.tdf                                              ;         ;
+; db/cntr_09i.tdf                  ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/cntr_09i.tdf                                              ;         ;
+; db/cmpr_c9c.tdf                  ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/cmpr_c9c.tdf                                              ;         ;
+; db/cntr_kri.tdf                  ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/cntr_kri.tdf                                              ;         ;
+; db/cmpr_99c.tdf                  ; yes             ; Auto-Generated Megafunction  ; U:/EE471/Lab 1/db/cmpr_99c.tdf                                              ;         ;
+; sld_rom_sr.vhd                   ; yes             ; Encrypted Megafunction       ; c:/altera/14.0/quartus/libraries/megafunctions/sld_rom_sr.vhd               ;         ;
+; sld_hub.vhd                      ; yes             ; Encrypted Megafunction       ; c:/altera/14.0/quartus/libraries/megafunctions/sld_hub.vhd                  ;         ;
+; sld_jtag_hub.vhd                 ; yes             ; Encrypted Megafunction       ; c:/altera/14.0/quartus/libraries/megafunctions/sld_jtag_hub.vhd             ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 15             ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 26             ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 0              ;
-;     -- 5 input functions                    ; 0              ;
-;     -- 4 input functions                    ; 0              ;
-;     -- <=3 input functions                  ; 26             ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 29             ;
-;                                             ;                ;
-; I/O pins                                    ; 21             ;
-; Total DSP Blocks                            ; 0              ;
-; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 25             ;
-; Total fan-out                               ; 137            ;
-; Average fan-out                             ; 1.41           ;
-+---------------------------------------------+----------------+
++--------------------------------------------------------------------+
+; Partition Status Summary                                           ;
++--------------------------------+-------------+---------------------+
+; Partition Name                 ; Synthesized ; Reason              ;
++--------------------------------+-------------+---------------------+
+; Top                            ; no          ; No relevant changes ;
+; sld_signaltap:auto_signaltap_0 ; no          ; No relevant changes ;
+; sld_hub:auto_hub               ; no          ; No relevant changes ;
++--------------------------------+-------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                               ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
-; |DE1_SoC                   ; 26 (25)           ; 29 (25)      ; 0                 ; 0          ; 21   ; 0            ; |DE1_SoC                    ; work         ;
-;    |JohnsonCounter:dut|    ; 1 (1)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|JohnsonCounter:dut ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition for Top-Level Resource Utilization by Entity                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------+--------------+
+; |DE1_SoC                   ; 6 (2)             ; 5 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC                                ; work         ;
+;    |upCounter4Bit:dut|     ; 4 (0)             ; 4 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|upCounter4Bit:dut              ; work         ;
+;       |DFlipFlop:d0|       ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|upCounter4Bit:dut|DFlipFlop:d0 ; work         ;
+;       |DFlipFlop:d1|       ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|upCounter4Bit:dut|DFlipFlop:d1 ; work         ;
+;       |DFlipFlop:d2|       ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|upCounter4Bit:dut|DFlipFlop:d2 ; work         ;
+;       |DFlipFlop:d3|       ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|upCounter4Bit:dut|DFlipFlop:d3 ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; tBase[25..31]                         ; Lost fanout        ;
-; Total Number of Removed Registers = 7 ;                    ;
-+---------------------------------------+--------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 29    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
++-------------------------------------------------------------+
+; Registers Removed During Synthesis                          ;
++----------------------------------------+--------------------+
+; Register name                          ; Reason for Removal ;
++----------------------------------------+--------------------+
+; tBase[1..31]                           ; Lost fanout        ;
+; Total Number of Removed Registers = 31 ;                    ;
++----------------------------------------+--------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -247,9 +270,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+------------------------------------------------+
 ; Parameter Name ; Value ; Type                                           ;
 +----------------+-------+------------------------------------------------+
-; speed          ; 24    ; Signed Integer                                 ;
+; speed          ; 0     ; Signed Integer                                 ;
 +----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Partition Dependent Files                                                                   ;
++----------------------------+-------------------+---------+----------------------------------+
+; File                       ; Location          ; Library ; Checksum                         ;
++----------------------------+-------------------+---------+----------------------------------+
+; DE1_SoC.sv                 ; Project Directory ; work    ; 07221c0509fce2f7c55f60df9597d2e4 ;
+; sourceCode/DFlipFlop.v     ; Project Directory ; work    ; 8b7ec74218289c750d11ac9c0c77043f ;
+; sourceCode/upCounter4Bit.v ; Project Directory ; work    ; fbd3e1d288d311f443a96c7b3d955a6e ;
++----------------------------+-------------------+---------+----------------------------------+
 
 
 +-----------------------------------------------------+
@@ -257,30 +291,126 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 29                          ;
+; arriav_ff             ; 5                           ;
 ;     CLR               ; 4                           ;
-;     plain             ; 25                          ;
-; arriav_lcell_comb     ; 27                          ;
-;     arith             ; 24                          ;
-;         1 data inputs ; 23                          ;
-;         2 data inputs ; 1                           ;
-;     normal            ; 3                           ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 6                           ;
+;     normal            ; 6                           ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 1                           ;
 ; boundary_port         ; 21                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.30                        ;
-; Average LUT depth     ; 2.29                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.77                        ;
 +-----------------------+-----------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:04     ;
-+----------------+--------------+
++-------------------------------------------------------+
+; Source assignments for sld_signaltap:auto_signaltap_0 ;
++-----------------+-------+------+----------------------+
+; Assignment      ; Value ; From ; To                   ;
++-----------------+-------+------+----------------------+
+; MESSAGE_DISABLE ; 13410 ; -    ; -                    ;
++-----------------+-------+------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0                      ;
++-------------------------------------------------+-----------------------------------+----------------+
+; Parameter Name                                  ; Value                             ; Type           ;
++-------------------------------------------------+-----------------------------------+----------------+
+; lpm_type                                        ; sld_signaltap                     ; String         ;
+; sld_node_info                                   ; 805334528                         ; Untyped        ;
+; SLD_IP_VERSION                                  ; 6                                 ; Signed Integer ;
+; SLD_IP_MINOR_VERSION                            ; 0                                 ; Signed Integer ;
+; SLD_COMMON_IP_VERSION                           ; 0                                 ; Signed Integer ;
+; sld_data_bits                                   ; 4                                 ; Untyped        ;
+; sld_trigger_bits                                ; 4                                 ; Untyped        ;
+; SLD_NODE_CRC_BITS                               ; 32                                ; Signed Integer ;
+; SLD_NODE_CRC_HIWORD                             ; 41394                             ; Signed Integer ;
+; SLD_NODE_CRC_LOWORD                             ; 50132                             ; Signed Integer ;
+; sld_incremental_routing                         ; 1                                 ; Untyped        ;
+; sld_sample_depth                                ; 128                               ; Untyped        ;
+; sld_segment_size                                ; 128                               ; Untyped        ;
+; sld_ram_block_type                              ; AUTO                              ; Untyped        ;
+; sld_state_bits                                  ; 11                                ; Untyped        ;
+; sld_buffer_full_stop                            ; 1                                 ; Untyped        ;
+; SLD_MEM_ADDRESS_BITS                            ; 7                                 ; Signed Integer ;
+; SLD_DATA_BIT_CNTR_BITS                          ; 4                                 ; Signed Integer ;
+; sld_trigger_level                               ; 1                                 ; Untyped        ;
+; sld_trigger_in_enabled                          ; 1                                 ; Untyped        ;
+; SLD_HPS_TRIGGER_IN_ENABLED                      ; 0                                 ; Signed Integer ;
+; SLD_HPS_TRIGGER_OUT_ENABLED                     ; 0                                 ; Signed Integer ;
+; SLD_HPS_EVENT_ENABLED                           ; 0                                 ; Signed Integer ;
+; SLD_HPS_EVENT_ID                                ; 0                                 ; Signed Integer ;
+; sld_advanced_trigger_entity                     ; basic,1,                          ; Untyped        ;
+; sld_trigger_level_pipeline                      ; 1                                 ; Untyped        ;
+; sld_enable_advanced_trigger                     ; 0                                 ; Untyped        ;
+; SLD_ADVANCED_TRIGGER_1                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_2                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_3                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_4                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_5                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_6                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_7                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_8                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_9                          ; NONE                              ; String         ;
+; SLD_ADVANCED_TRIGGER_10                         ; NONE                              ; String         ;
+; sld_inversion_mask_length                       ; 33                                ; Untyped        ;
+; sld_inversion_mask                              ; 000000000000000000000000000000000 ; Untyped        ;
+; sld_power_up_trigger                            ; 0                                 ; Untyped        ;
+; SLD_STATE_FLOW_MGR_ENTITY                       ; state_flow_mgr_entity.vhd         ; String         ;
+; sld_state_flow_use_generated                    ; 0                                 ; Untyped        ;
+; sld_current_resource_width                      ; 1                                 ; Untyped        ;
+; sld_attribute_mem_mode                          ; OFF                               ; Untyped        ;
+; sld_storage_qualifier_bits                      ; 4                                 ; Untyped        ;
+; SLD_STORAGE_QUALIFIER_GAP_RECORD                ; 0                                 ; Signed Integer ;
+; SLD_STORAGE_QUALIFIER_MODE                      ; OFF                               ; String         ;
+; SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION ; 0                                 ; Signed Integer ;
+; sld_storage_qualifier_inversion_mask_length     ; 0                                 ; Untyped        ;
+; SLD_STORAGE_QUALIFIER_ADVANCED_CONDITION_ENTITY ; basic                             ; String         ;
+; SLD_STORAGE_QUALIFIER_PIPELINE                  ; 0                                 ; Signed Integer ;
++-------------------------------------------------+-----------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "upCounter4Bit:dut|DFlipFlop:d3"                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qBar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "upCounter4Bit:dut|DFlipFlop:d2"                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qBar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "upCounter4Bit:dut|DFlipFlop:d1"                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qBar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; SignalTap II Logic Analyzer Settings                                                                                                                                                                                                                                    ;
++----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
+; Instance Index ; Instance Name    ; Trigger Input Width ; Data Input Width ; Sample Depth ; Segments ; Storage Qualifier Type ; Trigger Flow Control ; Trigger Conditions ; Advanced Trigger Conditions ; Trigger In Used ; Trigger Out Used ; Power-Up Trigger Enabled ;
++----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
+; 0              ; auto_signaltap_0 ; 4                   ; 4                ; 128          ; 1        ; continuous             ; sequential           ; 1                  ; 0                           ; no              ; no               ; no                       ;
++----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
 +-------------------------------+
@@ -289,8 +419,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Full Version
-    Info: Processing started: Mon Apr 06 15:46:04 2015
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+    Info: Processing started: Tue Apr 07 18:25:39 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC --recompile=on
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file sourcecode/johnsoncounter.v
     Info (12023): Found entity 1: JohnsonCounter
@@ -303,26 +433,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file sourcec
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
     Info (12023): Found entity 1: DE1_SoC
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
-Info (12128): Elaborating entity "JohnsonCounter" for hierarchy "JohnsonCounter:dut"
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 7 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 29 logic cells
-Info (144001): Generated suppressed messages file U:/EE 471/Lab 1/output_files/DE1_SoC.map.smsg
+Info (12128): Elaborating entity "upCounter4Bit" for hierarchy "upCounter4Bit:dut"
+Info (12128): Elaborating entity "DFlipFlop" for hierarchy "upCounter4Bit:dut|DFlipFlop:d0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_o184.tdf
+    Info (12023): Found entity 1: altsyncram_o184
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_elc.tdf
+    Info (12023): Found entity 1: mux_elc
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_vnf.tdf
+    Info (12023): Found entity 1: decode_vnf
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_c7i.tdf
+    Info (12023): Found entity 1: cntr_c7i
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_4vi.tdf
+    Info (12023): Found entity 1: cntr_4vi
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_09i.tdf
+    Info (12023): Found entity 1: cntr_09i
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_c9c.tdf
+    Info (12023): Found entity 1: cmpr_c9c
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_kri.tdf
+    Info (12023): Found entity 1: cntr_kri
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_99c.tdf
+    Info (12023): Found entity 1: cmpr_99c
+Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
+Info (12206): 0 design partitions require synthesis
+Info (12208): 3 design partitions do not require synthesis
+    Info (12229): Partition "Top" does not require synthesis because there were no relevant design changes
+    Info (12229): Partition "sld_signaltap:auto_signaltap_0" does not require synthesis because there were no relevant design changes
+    Info (12229): Partition "sld_hub:auto_hub" does not require synthesis because there were no relevant design changes
+Info (144001): Generated suppressed messages file U:/EE471/Lab 1/output_files/DE1_SoC.map.smsg
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 627 megabytes
-    Info: Processing ended: Mon Apr 06 15:46:20 2015
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 692 megabytes
+    Info: Processing ended: Tue Apr 07 18:26:31 2015
+    Info: Elapsed time: 00:00:52
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in U:/EE 471/Lab 1/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in U:/EE471/Lab 1/output_files/DE1_SoC.map.smsg.
 
 
