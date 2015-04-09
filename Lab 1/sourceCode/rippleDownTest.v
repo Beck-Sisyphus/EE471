@@ -5,6 +5,7 @@
 
 `include "DFlipFlop.v"
 `include "rippleDown.v"
+// test bench running on gtkwave
 module rippleDown_testBench ();
 
 	// connext the two modules

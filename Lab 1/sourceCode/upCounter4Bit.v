@@ -1,8 +1,11 @@
-// Beck Pang
+// Beck Pang, Raymond Mui, Andrew Jordan Townsend
 // University of Washington, Seattle
 // Apr. 6th, 2015
 // EE 471, Lab 1
 
+// @requires: a clock, an active low reset
+// @returns: a patent 0000, 0001, 0010, 0011, 0100, 0101, 
+//  0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111.
 module upCounter4Bit (
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low

@@ -5,6 +5,8 @@
 
 `include "DFlipFlop.v"
 `include "JohnsonCounter.v"
+
+// test bench running on gtkwave
 module JohnsonCounter_testBench ();
 
 	// connext the two modules
