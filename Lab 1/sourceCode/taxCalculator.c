@@ -24,8 +24,8 @@ void newline();
  	double fedTaxRate = .28;
  	double fedTaxMin = 3500;
  	double fedTax = 0;
- 	double incomeAfterTax = 0;
- 	double netIncome =0;
+	double totalTax = 0;
+ 	double netIncome = 0;
 
  	//intro
  	printf("Welcome to the Tax Calculator !\n"); 
@@ -37,7 +37,8 @@ void newline();
  	printf("Please enter your salary offer (enter numerical value): \n");
  	scanf("%lf",&incomeB4Tax);
  	getchar(); //clear buffer
-
+	
+	 
  	//prompt to see if state has income tax or not
 	printf("Does your state you plan to work in have federal state income tax (Y or N)? \n");
 	scanf("%c", &ansStateTax);
@@ -48,7 +49,7 @@ void newline();
  		printf("Please enter your state tax rate (decimal value): \n");
  		scanf("%lf", &stateTaxRate);
  		getchar();
- 		if (stateTaxRate >1 && stateTaxRate <100) {
+ 		while (stateTaxRate >= 1 && stateTaxRate <= 100) {
  			printf("Please enter state tax rate as a decimal value:");
  			scanf("%lf", &stateTaxRate);
  			getchar();
@@ -58,13 +59,11 @@ void newline();
  	// checks social security requirements
  	if (incomeB4Tax < socialSecurityReq) {
  		cost2SS = incomeB4Tax * socialSecurityRate;
- 	} else{
+	} else{
  		cost2SS = (socialSecurityReq * socialSecurityRate);
- 		incomeB4Tax = incomeB4Tax -cost2SS;
  	}
-
+	newline();
  	printf("$%.2f of your salary goes to Social Security.\n",cost2SS);
- 	printf("Your taxable income after social security costs: $%.2f \n",incomeB4Tax);
 
  	// federal tax calculation
  	if (incomeB4Tax < TaxBrackReq) {
@@ -72,17 +71,20 @@ void newline();
  	}else {
  		fedTax = fedTaxMin + ((incomeB4Tax - TaxBrackReq) * fedTaxRate);
  	}
- 	newline();
- 	
- 	incomeAfterTax = incomeB4Tax -fedTax;
  	printf("You will need to pay $%.2f towards federal income tax.\n",fedTax);
  	
- 	stateTax = incomeAfterTax * stateTaxRate;
+ 	stateTax = incomeB4Tax * stateTaxRate;
  	printf("You will need to pay $%.2f towards state income tax.\n", stateTax);
 
- 	netIncome = incomeAfterTax -fedTax -stateTax;
- 	printf("Your net income after tax is : $%.2f. \n",netIncome);
- 	return 0;
+	totalTax = stateTax + fedTax;
+	printf("Total payment towards tax:$%.2f\n",totalTax);
+ 	netIncome = incomeB4Tax -fedTax - stateTax - cost2SS;
+	if(netIncome <= 0 ) {
+		printf("You have lost $%.2f this year.\n",netIncome);
+	}else {
+ 		printf("Your net income after tax is : $%.2f. \n",netIncome);
+ 	}
+	return 0;
  }
 
  void newline() {
