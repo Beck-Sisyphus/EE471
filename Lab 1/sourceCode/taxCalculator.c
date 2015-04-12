@@ -8,7 +8,12 @@
  */
 #include <stdio.h>
 #include <stdint.h>
+#include <ctype.h>
 
+int toupper(int c);
+int isalpha(int c);
+int isdigit(int c);
+int ispunct(int c);
 void newline();
 
  int main(void){
@@ -38,19 +43,27 @@ void newline();
  	scanf("%lf",&incomeB4Tax);
  	getchar(); //clear buffer
 	
-	 
+ 
  	//prompt to see if state has income tax or not
-	printf("Does your state you plan to work in have federal state income tax (Y or N)? \n");
+	printf("Does your state you plan to work in have state income tax (Y or N)? \n");
 	scanf("%c", &ansStateTax);
 	getchar();
+	
  
 	// if yes , ask for state tax rate
- 	if(ansStateTax == 'Y' || ansStateTax == 'y') {
- 		printf("Please enter your state tax rate (decimal value): \n");
+	while((toupper(ansStateTax) == 'Y' || toupper(ansStateTax)!= 'N')&&(toupper(ansStateTax) != 'Y' || toupper(ansStateTax) == 'N')) {
+		printf("Input value invalid, please input a Y or N. \n");
+		scanf("%c",&ansStateTax);
+		getchar();
+	}
+
+	// if yes, ask for state tax rate
+ 	if(toupper(ansStateTax) == 'Y') {
+		printf("Please enter your state tax rate (decimal value): \n");
  		scanf("%lf", &stateTaxRate);
- 		getchar();
- 		while (stateTaxRate >= 1 && stateTaxRate <= 100) {
- 			printf("Please enter state tax rate as a decimal value:");
+		getchar();
+ 		while ((stateTaxRate >= 1) | (isalpha(stateTaxRate) | ispunct(stateTaxRate))) {
+ 			printf("Please enter state tax rate as a decimal value:\n");
  			scanf("%lf", &stateTaxRate);
  			getchar();
  		}	
