@@ -1,0 +1,32 @@
+module registerFile32x32 (
+	input clk, 
+	input [4:0] regReadSel0, regReadSel1, regWriteSel,
+	input writeEnable, // Write Enable
+	input [31:0] writeData, 
+	output [31:0] regReadData0, regReadData1
+);
+	reg rst = 1'b0;
+
+		genvar j;
+
+		
+	generate
+		for (j = 0; j < 32; j++) begin: registerLoopj
+			DFlipFlop registerj (readData[j], qBar[j], readData[j], clk, rst);
+		end
+	endgenerate
+
+register (clk, rst, writeEnable, writeData, readData);
+
+mux32_1 (
+	output out,
+	input [31:0] in,
+	input [4:0] sel
+);
+
+decoder5_32 (
+	input [4:0] in,  
+	output [31:0] out
+);
+
+endmodule

@@ -1,0 +1,27 @@
+module register (
+	input clk,    // Clock
+	input rst,    // reset
+	input writeEnable, // Write Enable
+	input [31:0] writeData,  // Asynchronous reset active low
+	output [31:0] readData
+);
+	wire [31:0] qBar;
+	genvar i, j;
+
+	// always @(*) begin
+		if (writeEnable) begin
+			generate
+				for (i = 0; i < 32; i++) begin: registerLoopi
+					DFlipFlop registeri (readData[i], qBar[i], writeData[i], clk, rst);
+				end
+			endgenerate
+		end
+		else begin
+			generate
+				for (j = 0; j < 32; j++) begin: registerLoopj
+					DFlipFlop registerj (readData[j], qBar[j], readData[j], clk, rst);
+				end
+			endgenerate		
+		end
+	// end
+endmodule
