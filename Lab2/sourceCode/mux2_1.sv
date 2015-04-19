@@ -2,7 +2,12 @@ module mux2_1(out, i0, i1, sel);
 		output out;
 		input i0, i1, sel;
 		
-		assign out = (i1 & sel) | (i0 * ~sel);
+		wire out1, out2, NOTsel;
+		not n(NOTsel, sel);
+		
+		and a1(out1, i1, sel);
+		and a2(out2, i0, NOTsel);
+		or o(out, out1, out2);
 endmodule
 
 module mux2_1_testbench();

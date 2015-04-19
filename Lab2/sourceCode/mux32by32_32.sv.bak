@@ -1,0 +1,12 @@
+module mux32by32_32 (
+	output [31:0] out,
+	input [31:0][31:0] in,
+	input [4:0] sel
+);
+	genvar j;
+
+	generate
+		for (j = 0; j < 32; j++) begin: muxLoop
+			mux32_1 mux (out[j], in[j], sel);
+		end
+	endgenerate
