@@ -3,8 +3,8 @@
 module IOModule(dataBus, in, sel, reset, clock);
 
   inout [1:0]   dataBus;
-  input         in;
-  input 		sel;
+  input         in; // Read or not write
+  input 		sel; // Chip select
   input         reset;
   input         clock;
 

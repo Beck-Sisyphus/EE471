@@ -1,5 +1,5 @@
 Flow report for DE1_SoC
-Sat Apr 18 23:37:18 2015
+Sun Apr 19 12:46:52 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sat Apr 18 23:37:18 2015       ;
+; Flow Status                 ; Successful - Sun Apr 19 12:46:52 2015       ;
 ; Quartus II 64-Bit Version   ; 14.0.0 Build 200 06/17/2014 SJ Full Version ;
 ; Revision Name               ; DE1_SoC                                     ;
 ; Top-level Entity Name       ; DE1_SoC                                     ;
@@ -252,7 +252,8 @@ agreement for further details.
 ; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 576 MB              ; 00:00:02                           ;
 ; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 576 MB              ; 00:00:03                           ;
 ; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 576 MB              ; 00:00:02                           ;
-; Total                     ; 00:54:21     ; --                      ; --                  ; 00:32:09                           ;
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 576 MB              ; 00:00:02                           ;
+; Total                     ; 00:54:30     ; --                      ; --                  ; 00:32:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -416,6 +417,7 @@ agreement for further details.
 ; Analysis & Synthesis      ; EE-365PC08       ; Windows 7 ; 6.2        ; x86_64         ;
 ; Analysis & Synthesis      ; EE-365PC08       ; Windows 7 ; 6.2        ; x86_64         ;
 ; Analysis & Synthesis      ; EE-365PC08       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-365PC08       ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -551,6 +553,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_
 quartus_asm --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_SoC
 quartus_sta DE1_SoC -c DE1_SoC
 quartus_eda --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_SoC
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC

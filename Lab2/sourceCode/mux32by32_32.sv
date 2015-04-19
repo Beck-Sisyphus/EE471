@@ -3,7 +3,7 @@
 //            and form a 32 bit output
 module mux32by32_32 (
 	output [31:0] out,
-	input [31:0][31:0] in,
+	input [31:0] in [31:0],
 	input [4:0] sel
 );
 	genvar i, j;
