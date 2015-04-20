@@ -1,4 +1,4 @@
-module 2Kx16_SRAM_Beck_Version(clk,adx,chpSel,OutEn,WrEn,data);
+module SRAM2Kby16Beck(clk,adx,chpSel,OutEn,WrEn,data);
 	input clk;
 	input [10:0] adx;
 	input chpSel;
