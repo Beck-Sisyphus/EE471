@@ -1,11 +1,9 @@
-module 2Kx16_SRAM(clk,adx,chpSel,OutEn,WrEn,data);
+module 2Kx16_SRAM(clk,adx,chpSel,ReWr,enable,data);
 	input clk;
-	input [11:0] adx;
-	input chpSel;
-	input OutEn;
-	input WrEn;
-	inout [15:0] data;
-	wire [255:0] indices;
+	input [10:0] adx; // 11 bit address bus
+	input chpSel, ReWr, enable;
+	inout [15:0] data; //16 bit data bus
+	//wire [255:0] indices;
 	// A 2K x 16 architecture
 	// Word addressable
 	// A bidirectional 16 bit Data Bus
@@ -14,21 +12,21 @@ module 2Kx16_SRAM(clk,adx,chpSel,OutEn,WrEn,data);
 	// Read/Write control. Low true write Enable(~WE) ; High true Read(WE)
 	// clock
 
-	reg [2047:0][15:0] SRAM;
-	wire [2047:0] readBit;
-	decoder11_2048 readOne(adx, readBit);
-
-	genvar i, j;
+	reg [2047:0][15:0] sram;
+	wire [2047:0] index;
+	decoder11_2048 readOne(adx, index);
+	
+	wire [2047:0] stack;
+	wire [2047:0] stackWithMask;
 	generate
+		genvar i, j;
 		for (i = 0; i < 16; i++) begin: Loop
-			wire [2047:0] stack;
-			wire [2047:0] stackWithMask;
 			for (j = 0; j < 16; j++) begin: Loop
-				assign stack[j] = SRAM[j][i];
+				assign stack[j] = sram[j][i];
 				// Now we have a stack of 2048 bits in a row
 			end
-			and mask(stackWithMask, stack, readBit);
-			assign data[i] = &stackWithMask;
+			and mask(stackWithMask, stack, index);
+			assign data[i] &= stackWithMask;
 		end
 	endgenerate
 
