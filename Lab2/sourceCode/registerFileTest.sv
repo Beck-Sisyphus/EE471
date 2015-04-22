@@ -4,6 +4,14 @@
 // EE 471, Lab 1
 
 `include "registerFile.sv"
+`include "decoder5_32.sv"
+`include "register.sv"
+`include "registerSingle.sv"
+`include "mux32_1.sv"
+`include "mux8_1.sv"
+`include "mux4_1.sv"
+`include "mux2_1.sv"
+`include "DFlipFlop.sv"
 // test bench running on gtkwave
 module registerFile_testBench();
 
@@ -57,28 +65,30 @@ module registerFile_Tester (
 		clk = 'b0;
 	end
 
-	reg [31:0] i, j;
+	reg [4:0] i, j;
 	always @(posedge clk) // Stimulus
 	begin
 					writeEnable = 1'b1;
 		// A full cycle to write
-		#stimDelay	writeEnable = 1'b1; 
+		writeEnable = #stimDelay 1'b1; 
+		writeEnable = #stimDelay 1'b0;
+		regReadSel0 = 5'b00000;
+		regReadSel1 = 5'b00011; 
 		for (i = 0; i < 16; i = i + 1) begin
-			regWriteSe0 = 5'b00000 + i; 
+			regWriteSel = 5'b00000 + i; 
 			newWriteData  = 32'hFFFF000F - i;
 			#stimDelay;
 		end
-		// Writing period
-		#(20*stimDelay)	writeEnable = 5'b0; 
-		#stimDelay	writeEnable = 5'b1;
+		writeEnable = 5'b1; #(20*stimDelay); 
+		writeEnable = 5'b0; #stimDelay;
 
 		for (j = 0; j < 16; j = j + 1) begin
-			regWriteSel = 5'b10000 + i; 
+			regWriteSel = 5'b10000 + j; 
 			newWriteData   = 32'h0000FFF0 + j; 
 			#stimDelay;
 		end
-		// Writing period
-		#stimDelay	writeEnable = 5'b0; 
+		writeEnable = 5'b1; #stimDelay; 
+		writeEnable = 5'b1; #(20*stimDelay); 
 
 		$stop;
 		$finish;

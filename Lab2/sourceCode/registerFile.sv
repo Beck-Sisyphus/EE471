@@ -8,20 +8,14 @@
 // Read Operation:
 //	@requires:  a clock signal, a low signal for write enable,
 // 			two read address width of 5 bits;
-//	@returns:	a data of 32 bits specified by the address;
+//	@returns:	a data of 32 bits specified by the address; 
+//              the first address is set as the ground reference.
 // Write Operation:
 //  @requires:	a clock signal, a high signal for write enable,
 // 			a write address with width of 5 bits, and an data with width of 32 bits;
 // 	@modifies:	the data of the address passed in
 
-`include "decoder5_32.sv"
-`include "register.sv"
-`include "registerSingle.sv"
-`include "mux32_1.sv"
-`include "mux8_1.sv"
-`include "mux4_1.sv"
-`include "mux2_1.sv"
-`include "DFlipFlop.sv"
+
 module registerFile (
 	input clk, 
 	input [4:0] regReadSel0, regReadSel1, regWriteSel,
@@ -43,7 +37,7 @@ module registerFile (
 	genvar i;
 	generate
 		for (i = 0; i < 32; i = i + 1) begin: wroteEnableLoop
-			and wroteEnableAnd(wrote[i], writeEnable, writeEnableDecoded[i]);
+			or wroteEnableAnd(wrote[i], writeEnable, writeEnableDecoded[i]);
 		end
 	endgenerate
 
