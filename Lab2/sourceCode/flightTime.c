@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdint.h>
 
-float wind = 89.6;
-int dist = 4791;
+float headWind = 89.6;
+int distance = 4791;
 
-float getDuration();
-float printVelocity(float hours, int dist);
-float getEstimatedDuration(int dist, float velocity, float wind);
-void printEstimatedDuration(float estimatedDuration);
+float getDuration(void);
+float computeVelocity(float hours, int dist);
+float duration(int distance, float velocity, float headWind);
+void displayResults(float duration);
 
-int main() {
-	float duration = getDuration();
-	float velocity = printVelocity(duration, dist);
-	float estimatedDuration = getEstimatedDuration(dist, velocity, wind);
-	printEstimatedDuration(estimatedDuration);
+int main(void) {
+	float retrDuration = getDuration();
+	float velocity = computeVelocity(retrDuration, distance);
+	float estimatedDuration = duration(distance, velocity, headWind);
+	displayResults(estimatedDuration);
 	return 0;
 }
 
-float getDuration() {
+float getDuration(void) {
 	printf("Enter duration of flight to London from Seattle in hours: \n");
 	float duration = 0.0;
 	scanf("%f", &duration);
@@ -29,24 +29,24 @@ float getDuration() {
 	return duration;
 }
 
-float printVelocity(float hours, int dist) {
-	float velocity  = dist / hours;
+float computeVelocity(float hours, int distance) {
+	float velocity  = distance / hours;
 	printf("Estimated Velocity: %f \n", velocity);
 	return velocity;
 }
 
-float getEstimatedDuration(int dist, float velocity, float wind) {
-	if(velocity < wind) {
+float duration(int distance, float velocity, float headWind) {
+	if(velocity < headWind) {
 		printf("You will not reach the destination.\n");
 		return 0.0;
 	}
-	float totalVelocity = velocity - wind;
-	float estimatedDuration = dist / totalVelocity;
+	float totalVelocity = velocity - headWind;
+	float estimatedDuration = distance / totalVelocity;
 	return estimatedDuration;
 }
 
-void printEstimatedDuration(float estimatedDuration) {
-	printf("Estimated flight duration hours:  %f \n", estimatedDuration);
+void displayResults(float duration) {
+	printf("Estimated flight duration hours:  %f \n", duration);
 }
 
 
