@@ -11,17 +11,3 @@ module mux32_1 (
 	mux8_1 m3(v3, in[24], in[25], in[26], in[27], in[28], in[29], in[30], in[31], sel[2], sel[1], sel[0]);
 	mux4_1 m(.out(out), .i00(v0), .i01(v1), .i10(v2), .i11(v3), .sel0(sel[4]), .sel1(sel[3]));
 endmodule
-
-module mux8_1_testbench();
-		reg [31:0] in, [4:0] sel;
-		wire out;
-		
-		mux8_1 dut (out, in, sel);
-		
-		integer counter;
-		initial begin
-				for (counter = 0; counter < 2048; counter++) begin
-						{sel2, sel1, sel0, i000, i001, i010, i011, i100, i101, i110, i111} = counter; #10;
-				end
-		end
-endmodule	

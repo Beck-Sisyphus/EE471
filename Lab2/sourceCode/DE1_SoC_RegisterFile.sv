@@ -24,8 +24,7 @@ module DE1_SoC_RegisterFile (CLOCK_50, LEDR, SW, KEY, count, read0, read1, write
 		slowClock <= slowClock + 1'b1;
 
 	assign clkControl = SW[0];
-	// assign clk = clkControl ? slowClock[speed] : CLOCK_50;
-	assign clk = CLOCK_50;
+	assign clk = clkControl ? slowClock[speed] : CLOCK_50;
 
 	assign rst = KEY[2];
 	assign buttonSec = KEY[1];
@@ -79,8 +78,8 @@ module DE1_SoC_RegisterFile (CLOCK_50, LEDR, SW, KEY, count, read0, read1, write
 				writeInput = 32'hZ;
 				read0 = count - 'd32;
 				read1 = (count - 'd16) & (5'b01111);
-				// LEDR[7:0]  = readOutput0[7:0];
-				LEDR[7:0] = 8'b00100100;
+				LEDR[7:0]  = readOutput0[7:0];
+				// LEDR[7:0] = 8'b00100100;
 			if (button == 1'b1)	ns = C;
 				else		ns = D;
 			end
@@ -90,8 +89,8 @@ module DE1_SoC_RegisterFile (CLOCK_50, LEDR, SW, KEY, count, read0, read1, write
 				writeInput = 32'hZ;
 				read0 = count - 'd32;
 				read1 = (count - 'd16) & (5'b01111);
-				// LEDR[7:0]  = readOutput1[7:0];
-				LEDR[7:0] = 8'b10000001;
+				LEDR[7:0]  = readOutput1[7:0];
+				// LEDR[7:0] = 8'b10000001;
 			if (button == 1'b0)	ns = D;
 				else 		ns = C;
 			end
@@ -194,6 +193,35 @@ module DE1_SoC_RegisterFile_testbench();
 											@(posedge CLOCK_50);
 											@(posedge CLOCK_50);
 											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+											@(posedge CLOCK_50);
+			KEY[0] <= 1'b0; 				@(posedge CLOCK_50);
+			KEY[0] <= 1'b0; 				@(posedge CLOCK_50);
 											@(posedge CLOCK_50);
 											@(posedge CLOCK_50);
 											@(posedge CLOCK_50);
