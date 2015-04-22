@@ -21,6 +21,11 @@ float getDuration() {
 	printf("Enter duration of flight to London from Seattle in hours: \n");
 	float duration = 0.0;
 	scanf("%f", &duration);
+	while(duration <= 0) {
+		printf("The duration that you entered is invalid. Please enter a value greater than 0.\n");
+		printf("Enter duration of flight to London from Seattle in hours:\n");
+		scanf("%f",&duration);
+	}
 	return duration;
 }
 
@@ -32,7 +37,7 @@ float printVelocity(float hours, int dist) {
 
 float getEstimatedDuration(int dist, float velocity, float wind) {
 	if(velocity < wind) {
-		printf("will not reach destination\n");
+		printf("You will not reach the destination.\n");
 		return 0.0;
 	}
 	float totalVelocity = velocity - wind;
@@ -41,7 +46,7 @@ float getEstimatedDuration(int dist, float velocity, float wind) {
 }
 
 void printEstimatedDuration(float estimatedDuration) {
-	printf("Estimated flight duration is %f hours: \n", estimatedDuration);
+	printf("Estimated flight duration hours:  %f \n", estimatedDuration);
 }
 
 
