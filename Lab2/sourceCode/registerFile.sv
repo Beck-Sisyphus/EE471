@@ -11,7 +11,7 @@
 //	@returns:	a data of 32 bits specified by the address; 
 //              the first address is set as the ground reference.
 // Write Operation:
-//  @requires:	a clock signal, a low signal for write enable,
+//  @requires:	a clock signal, a high signal for write enable,
 // 			a write address with width of 5 bits, and an data with width of 32 bits;
 // 	@modifies:	the data of the address passed in
 module registerFile (

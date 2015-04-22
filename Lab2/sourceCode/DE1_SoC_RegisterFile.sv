@@ -40,8 +40,6 @@ module DE1_SoC_RegisterFile (CLOCK_50, LEDR, SW, KEY, count, read0, read1, write
 	// // if button is a logical 1, wire LEDR with readOutput1
 	// // else, wire LEDR with readOutput2
 	// // The bottom released is true
-	// assign LEDR[7:0] = button ? readOutput1[7:0] : readOutput0[7:0];
-	// assign writeInput = wrEn ? 16'bZ : newWrite;
 
 	reg [1:0] ps, ns;
 	
