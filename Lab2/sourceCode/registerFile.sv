@@ -14,30 +14,28 @@
 //  @requires:	a clock signal, a high signal for write enable,
 // 			a write address with width of 5 bits, and an data with width of 32 bits;
 // 	@modifies:	the data of the address passed in
-
-
 module registerFile (
 	input clk, 
-	input [4:0] regReadSel0, regReadSel1, regWriteSel,
-	input writeEnable, // Write Enable
+	input [4:0] read0, read1, write,
+	input wrEn, // Write Enable
 	input [31:0] writeData, 
-	output [31:0] regReadData0, regReadData1
+	output [31:0] readOutput0, readOutput1
 );
 	wire regReadIndex;
 
 	// The address to write
-	wire [31:0] writeEnableDecoded;
+	wire [31:0] wrEnDecoded;
 	wire  [31:0] wrote;
 	wire [31:0] RF [31:0];
 	reg rst = 1'b0;
 
-	// Step1: Decode the write address with writeEnable
-	decoder5_32 writeDecode(regWriteSel, writeEnableDecoded);
+	// Step1: Decode the write address with wrEn
+	decoder5_32 writeDecode(write, wrEnDecoded);
 
 	genvar i;
 	generate
 		for (i = 0; i < 32; i = i + 1) begin: wroteEnableLoop
-			or wroteEnableAnd(wrote[i], writeEnable, writeEnableDecoded[i]);
+			or wroteEnableAnd(wrote[i], wrEn, wrEnDecoded[i]);
 		end
 	endgenerate
 
@@ -54,8 +52,8 @@ module registerFile (
 	endgenerate
 
 	// Step3: using a mux to extrace a 32 bit word from the read address
-	// mux32by32_32 regMux0(regReadData0, RF, regReadSel0);
-	// mux32by32_32 regMux1(regReadData1, RF, regReadSel1);
+	// mux32by32_32 regMux0(readOutput0, RF, read0);
+	// mux32by32_32 regMux1(readOutput1, RF, read1);
 
 	// It is a two dimensional multiplexer designed for multi words register file.
 	// @requires: a 32 by 32 stack input with each row storing one word;
@@ -67,7 +65,7 @@ module registerFile (
 			for (k = 0; k < 32; k = k + 1) begin: formARow
 				buf e1(bitCompare[k], RF[k][l]);
 			end
-			mux32_1 mux (regReadData0[l], bitCompare, regReadSel0);
+			mux32_1 mux (readOutput0[l], bitCompare, read0);
 		end
 	endgenerate
 
@@ -77,7 +75,7 @@ module registerFile (
 			for (k = 0; k < 32; k = k + 1) begin: formARow
 				buf e1(bitCompare[k], RF[k][l]);
 			end
-			mux32_1 mux (regReadData1[l], bitCompare, regReadSel1);
+			mux32_1 mux (readOutput1[l], bitCompare, read1);
 		end
 	endgenerate
 
