@@ -1,3 +1,4 @@
+
 module mux4_1(out, i00, i01, i10, i11, sel0, sel1);
 		output out;
 		input i00, i01, i10, i11, sel0, sel1;
@@ -9,16 +10,16 @@ module mux4_1(out, i00, i01, i10, i11, sel0, sel1);
 		mux2_1 m(.out(out), .i0(v0) , .i1(v1) , .sel(sel1));
 endmodule 
 
-module mux4_1_testbench();
-		reg i00, i01, i10, i11, sel0, sel1;
-		wire out;
+// module mux4_1_testbench();
+// 		reg i00, i01, i10, i11, sel0, sel1;
+// 		wire out;
 		
-		mux4_1 dut (.out, .i00, .i01, .i10, .i11, .sel0, .sel1);
+// 		mux4_1 dut (.out, .i00, .i01, .i10, .i11, .sel0, .sel1);
 		
-		integer counter;
-		initial begin
-				for (counter = 0; counter < 64; counter++) begin
-						{sel1, sel0, i00, i01, i10, i11} = counter; #10;
-				end
-		end
-endmodule	
+// 		integer counter;
+// 		initial begin
+// 				for (counter = 0; counter < 64; counter++) begin
+// 						{sel1, sel0, i00, i01, i10, i11} = counter; #10;
+// 				end
+// 		end
+// endmodule	

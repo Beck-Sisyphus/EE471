@@ -7,10 +7,12 @@ module DE1_SoC (CLOCK_50, LEDR, SW);
 	input  [9:0] SW;
 
 	// clock divider
-	reg [31:0] tBase;		// system time base
+	reg [31:0] slowClock;		// system time base
 	parameter speed = 24;
 	always @(posedge CLOCK_50) 
-		tBase <= tBase + 1'b1;
+		slowClock <=	slowClock + 1'b1;
+	
+	assign LEDR = 10'h0F0;
 
 	
 endmodule

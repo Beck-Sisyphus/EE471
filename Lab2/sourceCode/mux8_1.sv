@@ -1,3 +1,4 @@
+
 module mux8_1(out, i000, i001, i010, i011, i100, i101, i110, i111, sel0, sel1, sel2);
 		output out;
 		input i000, i001, i010, i011, i100, i101, i110, i111;

@@ -3,18 +3,18 @@
 // @returns:  find bits from each column using a 32 to 1 mux, and form a 32 bit output.
 module mux32by32_32 (
 	output [31:0] out,
-	input [31:0] in [31:0],
+	input [31:0] RF [31:0],
 	input [4:0] sel
 );
-	genvar i, j;
+	genvar k, l;
 
 	generate
-		for (j = 0; j < 32; j = j + 1) begin: muxLoop
+		for (l = 0; l < 32; l = l + 1) begin: muxLoop
 			reg [31:0] bitCompare;
-			for (i = 0; i < 32; i = i + 1) begin: formARow
-				buf e1(bitCompare[i], in[i][j]);
+			for (k = 0; k < 32; k = k + 1) begin: formARow
+				buf e1(bitCompare[k], RF[k][l]);
 			end
-			mux32_1 mux (out[j], bitCompare, sel);
+			mux32_1 mux (out[l], bitCompare, sel);
 		end
 	endgenerate
 	

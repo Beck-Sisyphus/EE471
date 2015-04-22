@@ -14,9 +14,14 @@
 // 			a write address with width of 5 bits, and an data with width of 32 bits;
 // 	@modifies:	the data of the address passed in
 
-// `include "decoder5_32.sv"
-// `include "register.sv"
-// `include "mux32by32_32.sv"
+`include "decoder5_32.sv"
+`include "register.sv"
+`include "registerSingle.sv"
+`include "mux32_1.sv"
+`include "mux8_1.sv"
+`include "mux4_1.sv"
+`include "mux2_1.sv"
+`include "DFlipFlop.sv"
 module registerFile (
 	input clk, 
 	input [4:0] regReadSel0, regReadSel1, regWriteSel,
@@ -28,8 +33,8 @@ module registerFile (
 
 	// The address to write
 	wire [31:0] writeEnableDecoded;
-	reg  [31:0] wrote;
-	reg [31:0] RF [31:0];
+	wire  [31:0] wrote;
+	wire [31:0] RF [31:0];
 	reg rst = 1'b0;
 
 	// Step1: Decode the write address with writeEnable
@@ -55,7 +60,31 @@ module registerFile (
 	endgenerate
 
 	// Step3: using a mux to extrace a 32 bit word from the read address
-	mux32by32_32 regMux0(regReadData0, RF, regReadSel0);
-	mux32by32_32 regMux1(regReadData1, RF, regReadSel1);
+	// mux32by32_32 regMux0(regReadData0, RF, regReadSel0);
+	// mux32by32_32 regMux1(regReadData1, RF, regReadSel1);
+
+	// It is a two dimensional multiplexer designed for multi words register file.
+	// @requires: a 32 by 32 stack input with each row storing one word;
+	// @returns:  find bits from each column using a 32 to 1 mux, and form a 32 bit output.
+	genvar k, l;
+	generate
+		for (l = 0; l < 32; l = l + 1) begin: muxLoop
+			wire [31:0] bitCompare;
+			for (k = 0; k < 32; k = k + 1) begin: formARow
+				buf e1(bitCompare[k], RF[k][l]);
+			end
+			mux32_1 mux (regReadData0[l], bitCompare, regReadSel0);
+		end
+	endgenerate
+
+	generate
+		for (l = 0; l < 32; l = l + 1) begin: muxLoop2
+			wire [31:0] bitCompare;
+			for (k = 0; k < 32; k = k + 1) begin: formARow
+				buf e1(bitCompare[k], RF[k][l]);
+			end
+			mux32_1 mux (regReadData1[l], bitCompare, regReadSel1);
+		end
+	endgenerate
 
 endmodule
