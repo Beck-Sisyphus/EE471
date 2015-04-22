@@ -1,5 +1,5 @@
 Flow report for DE1_SoC
-Tue Apr 21 16:19:45 2015
+Tue Apr 21 18:03:47 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -41,25 +41,25 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Apr 21 16:19:45 2015       ;
+; Flow Status                     ; Successful - Tue Apr 21 18:03:46 2015       ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Full Version ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; SRAM2Kby16                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 15,621 / 32,070 ( 49 % )                    ;
-; Total registers                 ; 32768                                       ;
-; Total pins                      ; 32 / 457 ( 7 % )                            ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Logic utilization (in ALMs)     ; N/A until Partition Merge                   ;
+; Total registers                 ; N/A until Partition Merge                   ;
+; Total pins                      ; N/A until Partition Merge                   ;
+; Total virtual pins              ; N/A until Partition Merge                   ;
+; Total block memory bits         ; N/A until Partition Merge                   ;
+; Total DSP Blocks                ; N/A until Partition Merge                   ;
+; Total HSSI RX PCSs              ; N/A until Partition Merge                   ;
+; Total HSSI PMA RX Deserializers ; N/A until Partition Merge                   ;
+; Total HSSI TX PCSs              ; N/A until Partition Merge                   ;
+; Total HSSI PMA TX Serializers   ; N/A until Partition Merge                   ;
+; Total PLLs                      ; N/A until Partition Merge                   ;
+; Total DLLs                      ; N/A until Partition Merge                   ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -272,7 +272,14 @@ agreement for further details.
 ; Assembler                 ; 00:00:25     ; 1.0                     ; 934 MB              ; 00:00:21                           ;
 ; TimeQuest Timing Analyzer ; 00:01:12     ; 2.0                     ; 1518 MB             ; 00:02:06                           ;
 ; EDA Netlist Writer        ; 00:00:22     ; 1.0                     ; 999 MB              ; 00:00:11                           ;
-; Total                     ; 01:03:13     ; --                      ; --                  ; 00:43:27                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 604 MB              ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:01:04     ; 2.0                     ; 929 MB              ; 00:01:03                           ;
+; Analysis & Synthesis      ; 00:01:04     ; 2.0                     ; 915 MB              ; 00:01:04                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 588 MB              ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 578 MB              ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:38     ; 1.0                     ; 844 MB              ; 00:00:27                           ;
+; Analysis & Synthesis      ; 00:00:37     ; 1.0                     ; 838 MB              ; 00:00:26                           ;
+; Total                     ; 01:06:48     ; --                      ; --                  ; 00:46:30                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -451,6 +458,13 @@ agreement for further details.
 ; Assembler                 ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-365PC11       ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -627,6 +641,13 @@ quartus_fit --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_
 quartus_asm --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_SoC
 quartus_sta DE1_SoC -c DE1_SoC
 quartus_eda --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_SoC
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 
 
 

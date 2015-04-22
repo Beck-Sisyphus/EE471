@@ -1,17 +1,18 @@
 // AJ, Beck, and Ray
-// SRAM module and testbench
+// SRAM module
+// 4/21/15
 
-module SRAM2Kby16(clk, adx, chpSel, OutEn, WrEn, data);
-	input clk, chpSel, OutEn, WrEn;
+module SRAM2Kby16(clk, adx, WrEn, data);
+	input clk, WrEn;
 	input [11:0] adx;
 	inout [15:0] data;
 
 	reg [2047:0][15:0] SRAM; // memory regs
 	
-	assign data = (OutEn) ? 16'bZ : SRAM[adx]; // control the tri-state
+	assign data = (WrEn) ? SRAM[adx] : 16'bZ; // control the tri-state 
 	
 	always @(posedge clk) begin
-		if(~(chpSel | WrEn)) // chip selected
+		if(WrEn) 
 				SRAM[adx] = data; // assign the SRAM index to data
 	end
 endmodule 
