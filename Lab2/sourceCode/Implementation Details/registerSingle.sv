@@ -8,6 +8,6 @@ module registerSingle (
 );
 	wire qBar;
 	wire ns;
-	mux2_1 mux(ns, writeData, readData, writeEnable);
+	mux2_1 2to1 (ns, writeData, readData, writeEnable);
 	DFlipFlop register (readData, qBar, ns, clk, rst);
 endmodule

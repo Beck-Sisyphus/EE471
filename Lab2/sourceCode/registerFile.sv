@@ -41,7 +41,7 @@ module registerFile (
 
 	// Step2: form the RF with each row storing one word of 32 bit
 	// Register 0 always output 0
-	register reg0(clk, rst, wrote[0], 32'bx, RF[0]);
+	register reg0(clk, rst, wrote[0], 32'b0, RF[0]);
 	
 	genvar j;
 
