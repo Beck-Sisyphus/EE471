@@ -8,13 +8,13 @@ module adder4b(carryIn,X,Y,S,G,P,carryOut);
 	output G;
 	output P;
 	output [4:0] carryOut;
-
-	fullAdder1b a0(X[0],Y[0],carryOut,g[0],p[0]);
-	fullAdder1b a1(X[1],Y[1],carryOut,g[1],p[1]);
-	fullAdder1b a2(X[2],Y[2],carryOut,g[2],p[2]);
-	fullAdder1b a3(X[3],Y[3],carryOut,g[3],p[3]);
+	wire genCarry
+	fullAdder1b a0(X[0],Y[0],carryIn,g[0],p[0]);
+	fullAdder1b a1(X[1],Y[1],genCarry,g[1],p[1]);
+	fullAdder1b a2(X[2],Y[2],genCarry,g[2],p[2]);
+	fullAdder1b a3(X[3],Y[3],genCarry,g[3],p[3]);
 	
-	lookAhead4b(carryIn, g,p,G,P,carryOut);
+	lookAhead4b gen1(carryIn, g,p,G,P,genCarry);
 
 
 
