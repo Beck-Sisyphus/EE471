@@ -7,7 +7,7 @@ module ALUnit (
 	output [31:0] busOut,
 	output zero, overflow, carryout, negative
 );
-	parameter [31:0] nul = 32'b0;
+	parameter [31:0] nul = 32'b0; // null
 	parameter [2:0] NOP = 3'b000, ADD = 3'b001, SUB = 3'b010, AND = 3'b011, OR = 3'b100, XOR = 3'b101, SLT = 3'b110, SLL = 3'b111;
 	wire [31:0] busADD, busSUB, busAND, busOR, busXOR, busSLT, busSLL;
 	wire zADD, oADD, cADD, nADD, zSUB, oSUB, cSUB, nSUB;
