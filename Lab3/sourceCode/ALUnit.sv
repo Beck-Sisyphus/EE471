@@ -24,8 +24,8 @@ module ALUnit (
 	andGate  and1  (busAND, busA, busB);
 	orGate   or1   (busOR,  busA, busB);
 	xorGate  xor1  (busXOR, busA, busB);
-	setLT    slt1  (busSLT, busA, busB); // (R[rt] = (R[rs] < R[rt])? 1:0), set less than
-	shiftll  sll1  (busSLL, busA, busB); // shift left logical
+	setLT    slt1  (busSLT, busA, busB); // (R[rt] = (R[rs] < R[rt])? 32'b1:32'b0), set less than
+	shiftll  sll1  (busSLL, busA, busB); // shift left logical, assuming busB input a 3 bit control signal
 
 	always @(*) begin
 		if (control == ADD) begin
