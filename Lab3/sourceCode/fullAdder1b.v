@@ -1,4 +1,4 @@
-module fullAdder1b(x,y,carryIn,G,P, S);
+module fullAdder1b(x,y,carryIn,G,P,S);
 	input x,y,carryIn;
 	output P, G, S;
 	

@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Tue Apr 21 18:03:46 2015
+Analysis & Synthesis Status : Successful - Mon May 04 19:33:15 2015
 Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Full Version
 Revision Name : DE1_SoC
-Top-level Entity Name : SRAM2Kby16
+Top-level Entity Name : ALUnit
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
