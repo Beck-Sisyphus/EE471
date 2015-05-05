@@ -4,7 +4,7 @@ module andGate (busAND, busA, busB);
 	genvar i;
 	generate
 		for (i = 0; i < 32; i = i + 1) begin: andLoop
-			and gateA(busAND[i], busA[i], busB[i]);
+			and gateA(busXOR[i], busA[i], busB[i]);
 		end
 	endgenerate
 endmodule

@@ -1,0 +1,64 @@
+$date
+	Tue May 05 00:38:51 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module flagTest $end
+$scope module flag $end
+$var wire 32 ! busA [31:0] $end
+$var wire 32 " busB [31:0] $end
+$var wire 32 # busOut [31:0] $end
+$var wire 1 $ c $end
+$var wire 1 % carryOut $end
+$var wire 1 & n $end
+$var wire 1 ' o $end
+$var wire 1 ( s1 $end
+$var wire 1 ) s2 $end
+$var wire 1 * z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0*
+0)
+1(
+0'
+0&
+0%
+0$
+b10000000100000001000000010 #
+b1000000010000000100000001 "
+b1000000010000000100000001 !
+$end
+#60
+0(
+1$
+1%
+b11111111111111111111111111111101 "
+b1000000010000000011111110 #
+#120
+1)
+b1000000011111111111111111 "
+b11111111111111110000000100000001 !
+b1000000010000000100000000 #
+#180
+1(
+1&
+0)
+b11111111111111111011101110111011 "
+b11111111111111111111111111111111 !
+b11111111111111111011101110111010 #
+#240
+1'
+1)
+0$
+0%
+b1111111111111111011101110111011 "
+b1111111111111111111111111111111 !
+b11101111111111111011101110111010 #
+#300

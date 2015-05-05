@@ -1,22 +1,55 @@
-module flagTest (
-	input [31:0] busOut, busA, busB, 
-	input carryOut, 
-	output z, o, c, n
-);
-	genvar i;
-	reg tempZ;
-	generate
-		for (i = 0; i < 32; i = i+1) begin: zeroLoop
-			or z(tempZ, busOut[i]);
-		end
-	endgenerate
-	buf e0(z, tempZ);
+`include "flag.v"
+module flagTest ();
+	// localize variables
+	wire [31:0] busADD;
+	wire  [31:0] busA, busB;
+	wire carryOut;
+	wire zADD, oADD, cADD, nADD;
 
-	wire s1, s2;
-	xnor part1(s1, busA[31], busB[31]);
-	xor  part2(s2, busA[31], busOut[31]);
-	and overflow(o, s1, s2);
-	buf e1(c, carryOut);
-	buf e2(n, busOut[31]);
+	// declare an instance of the module
+	flag flag (busADD, busA, busB, carryOut, zADD, oADD, cADD, nADD);
+	// Running the GUI part of simulation
+	flagtester tester (busADD, busA, busB, carryOut, zADD, oADD, cADD, nADD);
+
+	// file for gtkwave
+
+	initial
+	begin
+		$dumpfile("flagtest.vcd");
+		$dumpvars(1, flag);
+	end
+
+endmodule
+
+module flagtester (busADD, busA, busB, carryOut, zADD, oADD, cADD, nADD);
+	output reg [31:0] busADD;
+	output reg [31:0] busA, busB;
+	output reg carryOut;
+	input zADD, oADD, cADD, nADD;
+
+	parameter d = 20;
+	initial // Response
+	begin
+		$display("busADD \t busA \t busB \t carryOut \t zADD \t oADD \t cADD \t nADD \t ");
+		#d;
+	end
+
+	reg [31:0] i;
+	initial // Stimulus
+	begin
+		$monitor("%b \t %b \t %b \t %b \t %b \t %b \t %b", busADD, busA, busB, zADD, oADD, cADD, nADD, $time);
+		busADD = 32'h02020202; busA = 32'h01010101; busB = 32'h01010101; carryOut = 1'b0;
+		#(3*d);
+		busADD = 32'h010100FE; busA = 32'h01010101; busB = 32'hFFFFFFFD; carryOut = 1'b1;
+		#(3*d);
+		busADD = 32'h01010100; busA = 32'hFFFF0101; busB = 32'h0101FFFF; carryOut = 1'b1;
+		#(3*d);
+		busADD = 32'hFFFFBBBA; busA = 32'hFFFFFFFF; busB = 32'hFFFFBBBB; carryOut = 1'b1;
+		#(3*d);
+		busADD = 32'hEFFFBBBA; busA = 32'h7FFFFFFF; busB = 32'h7FFFBBBB; carryOut = 1'b0;
+		#(3*d);
+		$stop; 
+		$finish;
+	end
 
 endmodule
