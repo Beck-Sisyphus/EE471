@@ -16,7 +16,7 @@ module DE1_SoCPhaseII (CLOCK_50, LEDR, SW, KEY);
 	reg  WrEn, regWR;
 	reg  [10:0] adx;
 	reg  [15:0] store;
-	reg  control;
+	reg  [2:0] control;
 	wire rst, fetchStart;
 	reg  [4:0] readAdx0, readAdx1, writeAdx;
 	reg  [31:0] writeData;
@@ -130,37 +130,70 @@ module DE1_SoCPhaseII (CLOCK_50, LEDR, SW, KEY);
 
 endmodule 
 
-// module DE1_SoCPhaseII_Testbench();
-// 	reg CLOCK_50;  // connect to system 50 MHz clock
-// 	wire [9:0] LEDR;
-// 	reg [9:0] SW;
-// 	reg [3:0] KEY;
+// vlog "./sourceCode/DE1_SoCPhaseII.v"
 
-// 	DE1_SoCPhaseII dut (CLOCK_50, LEDR, SW, KEY);
-// 	// Set up the clocking
+// vlog "./sourceCode/Implementation/mux2_1.sv"
+// vlog "./sourceCode/Implementation/mux4_1.sv"
+// vlog "./sourceCode/Implementation/mux8_1.sv"
+// vlog "./sourceCode/Implementation/mux32_1.sv"
+// vlog "./sourceCode/Implementation/register.sv"
+// vlog "./sourceCode/Implementation/registerSingle.sv"
+// vlog "./sourceCode/Implementation/DFlipFlop.sv"
+// vlog "./sourceCode/Implementation/counter.v"
+// vlog "./sourceCode/Implementation/decoder5_32.sv"
+// vlog "./sourceCode/Implementation/decoder8_256.sv"
+// vlog "./sourceCode/Implementation/decoder11_2048.sv"
+
+// vlog "./sourceCode/InstrucDecoder.v"
+// vlog "./sourceCode/SRAM2Kby16.v"
+// vlog "./sourceCode/registerFile.sv"
+// vlog "./sourceCode/ALUnit.sv"
+// vlog "./sourceCode/addition.v"
+// vlog "./sourceCode/subtract.v"
+// vlog "./sourceCode/andGate.v"
+// vlog "./sourceCode/orGate.v"
+// vlog "./sourceCode/xorGate.v"
+// vlog "./sourceCode/setLT.v"
+// vlog "./sourceCode/shiftll.v"
+// vlog "./sourceCode/adder_subtractor.v"
+// vlog "./sourceCode/flag.v"
+// vlog "./sourceCode/adder16b.v"
+// vlog "./sourceCode/adder4b.v"
+// vlog "./sourceCode/fullAdder1b.v"
+// vlog "./sourceCode/lookAhead4b.v"
+
+module DE1_SoCPhaseII_Testbench();
+	reg CLOCK_50;  // connect to system 50 MHz clock
+	wire [9:0] LEDR;
+	reg [9:0] SW;
+	reg [3:0] KEY;
+
+	DE1_SoCPhaseII dut (CLOCK_50, LEDR, SW, KEY);
+	// Set up the clocking
 	
-// 	parameter CLOCK_PERIOD = 100;
-// 	initial CLOCK_50 = 1;
-// 	always begin
-// 		#(CLOCK_PERIOD / 2);
-// 		CLOCK_50 = ~CLOCK_50;
-// 	end 
+	parameter CLOCK_PERIOD = 100;
+	initial CLOCK_50 = 1;
+	always begin
+		#(CLOCK_PERIOD / 2);
+		CLOCK_50 = ~CLOCK_50;
+	end 
 	
 
-// 	// Set up the inputs to the design
-// 	integer i;
-// 	initial begin
-// 						      	@(posedge CLOCK_50);
-// 		SW[9] <= 1;		      	@(posedge CLOCK_50);
-// 		SW[9] <= 0;		      	@(posedge CLOCK_50);
-// 						      	@(posedge CLOCK_50);
-// 		for (i = 0; i < 300; i = i + 1) begin
-// 								@(posedge CLOCK_50);
-// 		end
-// 		SW[6] <= 1;				@(posedge CLOCK_50);
-// 		for (i = 0; i < 300; i = i + 1) begin
-// 								@(posedge CLOCK_50);
-// 		end
-// 		$stop;
-// 	end
-// endmodule 
+	// Set up the inputs to the design
+	integer i;
+	initial begin
+						      	@(posedge CLOCK_50);
+		SW[9] <= 1;		      	@(posedge CLOCK_50);
+		SW[8:0]	<= 9'b0;		@(posedge CLOCK_50);
+		SW[9] <= 0;		      	@(posedge CLOCK_50);
+						      	@(posedge CLOCK_50);
+		for (i = 0; i < 300; i = i + 1) begin
+								@(posedge CLOCK_50);
+		end
+		SW[6] <= 1;				@(posedge CLOCK_50);
+		for (i = 0; i < 300; i = i + 1) begin
+								@(posedge CLOCK_50);
+		end
+		$stop;
+	end
+endmodule 

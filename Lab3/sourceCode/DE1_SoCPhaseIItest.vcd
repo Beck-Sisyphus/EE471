@@ -1,0 +1,83 @@
+$date
+	Wed May 06 02:21:25 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module DE1_SoCPhaseIItest $end
+$scope module DE1_SoCPhaseII $end
+$var wire 1 ! CLOCK_50 $end
+$var wire 4 " KEY [3:0] $end
+$var wire 10 # LEDR [9:0] $end
+$var wire 10 $ SW [9:0] $end
+$var wire 32 % busOut [31:0] $end
+$var wire 1 & carryout $end
+$var wire 16 ' data [15:0] $end
+$var wire 1 ( fetchStart $end
+$var wire 1 ) negative $end
+$var wire 3 * opcode [2:0] $end
+$var wire 1 + overflow $end
+$var wire 32 , readOutput0 [31:0] $end
+$var wire 32 - readOutput1 [31:0] $end
+$var wire 5 . regAdx0 [4:0] $end
+$var wire 5 / regAdx1 [4:0] $end
+$var wire 1 0 rst $end
+$var wire 1 1 zero $end
+$var reg 1 2 WrEn $end
+$var reg 11 3 adx [10:0] $end
+$var reg 32 4 busA [31:0] $end
+$var reg 32 5 busB [31:0] $end
+$var reg 3 6 control [2:0] $end
+$var reg 7 7 count [6:0] $end
+$var reg 3 8 ns [2:0] $end
+$var reg 3 9 ps [2:0] $end
+$var reg 5 : readAdx0 [4:0] $end
+$var reg 5 ; readAdx1 [4:0] $end
+$var reg 1 < regWR $end
+$var reg 16 = store [15:0] $end
+$var reg 5 > writeAdx [4:0] $end
+$var reg 32 ? writeData [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ?
+bx >
+bx =
+x<
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+x2
+x1
+10
+bx /
+bx .
+bx -
+bx ,
+x+
+bx *
+x)
+x(
+bx '
+x&
+bx %
+b1xxxxxxxxx $
+bz #
+bz "
+x!
+$end
+#20
+00
+b0xxxxxxxxx $
+#4300
