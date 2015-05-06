@@ -47,7 +47,9 @@ module DE1_SoCPhaseII (CLOCK_50, LEDR, SW, KEY);
 				regWR = 1;
 				adx   = count + 8'h80;
 				store = 7'b1111111 - count;
-				if (count == 7'b1111111) 
+				if (fetchStart)
+					ns = fetch;
+				else if (count == 7'b1111111) 
 					ns = loadInstr;
 				else
 					ns = loadData;
@@ -58,7 +60,9 @@ module DE1_SoCPhaseII (CLOCK_50, LEDR, SW, KEY);
 				adx   = count;
 				// count[2:0] is opcode, {1'b0, count[3:0]} the address of A, {1'b1, count[3:0]} the address of B
 				store = {count[2:0], {1'b0, count[3:0]}, {1'b1, count[3:0]}, 3'b0}; 
-				if (count[4:0] == 5'b11111) 
+				if (fetchStart)
+					ns = fetch;
+				else if (count[4:0] == 5'b11111) 
 					ns = transfer;
 				else 
 					ns = loadInstr;
@@ -66,7 +70,7 @@ module DE1_SoCPhaseII (CLOCK_50, LEDR, SW, KEY);
 			transfer : begin // write data into register file
 				WrEn  = 1;
 				regWR = 0;
-				adx   = count + 8'h80;
+				adx   = count[4:0] + 8'h80;
 				writeAdx = count[4:0];
 				writeData= data;
 				if (fetchStart) 
@@ -77,7 +81,7 @@ module DE1_SoCPhaseII (CLOCK_50, LEDR, SW, KEY);
 			fetch    : begin // read from register file to ALU
 				WrEn  = 1;
 				regWR = 1;
-				adx   = count;
+				adx   = count[4:0]; // get instruction from SRAM
 				ns    = decode;
 			end
 			decode   : begin
@@ -191,7 +195,22 @@ module DE1_SoCPhaseII_Testbench();
 								@(posedge CLOCK_50);
 		end
 		SW[6] <= 1;				@(posedge CLOCK_50);
-		for (i = 0; i < 300; i = i + 1) begin
+		for (i = 0; i < 19; i = i + 1) begin
+								@(posedge CLOCK_50);
+		end
+		SW[6] <= 0;				@(posedge CLOCK_50);
+		SW[6] <= 1;				@(posedge CLOCK_50);
+		for (i = 0; i < 18; i = i + 1) begin
+								@(posedge CLOCK_50);
+		end
+		SW[6] <= 0;				@(posedge CLOCK_50);
+		SW[6] <= 1;				@(posedge CLOCK_50);
+		for (i = 0; i < 17; i = i + 1) begin
+								@(posedge CLOCK_50);
+		end
+		SW[6] <= 0;				@(posedge CLOCK_50);
+		SW[6] <= 1;				@(posedge CLOCK_50);
+		for (i = 0; i < 16; i = i + 1) begin
 								@(posedge CLOCK_50);
 		end
 		$stop;
