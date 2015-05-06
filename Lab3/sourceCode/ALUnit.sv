@@ -64,3 +64,38 @@ module ALUnit (
 	end
 
 endmodule
+
+module ALUnit_Testbench();
+	reg CLOCK_50;  // connect to system 50 MHz clock
+	wire [9:0] LEDR;
+	reg [9:0] SW;
+	reg [3:0] KEY;
+
+	DE1_SoCPhaseII dut (CLOCK_50, LEDR, SW, KEY);
+	// Set up the clocking
+	
+	parameter CLOCK_PERIOD = 100;
+	initial CLOCK_50 = 1;
+	always begin
+		#(CLOCK_PERIOD / 2);
+		CLOCK_50 = ~CLOCK_50;
+	end 
+	
+
+	// Set up the inputs to the design
+	integer i;
+	initial begin
+						      	@(posedge CLOCK_50);
+		SW[9] <= 1;		      	@(posedge CLOCK_50);
+		SW[9] <= 0;		      	@(posedge CLOCK_50);
+						      	@(posedge CLOCK_50);
+		for (i = 0; i < 300; i = i + 1) begin
+								@(posedge CLOCK_50);
+		end
+		SW[6] <= 1;				@(posedge CLOCK_50);
+		for (i = 0; i < 300; i = i + 1) begin
+								@(posedge CLOCK_50);
+		end
+		$stop;
+	end
+endmodule 

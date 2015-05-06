@@ -1,0 +1,131 @@
+$date
+	Wed May 06 01:29:36 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ALUnittest $end
+$scope module ALUnit $end
+$var wire 32 ! busA [31:0] $end
+$var wire 32 " busADD [31:0] $end
+$var wire 32 # busAND [31:0] $end
+$var wire 32 $ busB [31:0] $end
+$var wire 32 % busOR [31:0] $end
+$var wire 32 & busSLL [31:0] $end
+$var wire 32 ' busSLT [31:0] $end
+$var wire 32 ( busSUB [31:0] $end
+$var wire 32 ) busXOR [31:0] $end
+$var wire 1 * cADD $end
+$var wire 1 + cSUB $end
+$var wire 1 , carryout $end
+$var wire 1 - clk $end
+$var wire 3 . control [2:0] $end
+$var wire 1 / nADD $end
+$var wire 1 0 nSUB $end
+$var wire 1 1 negative $end
+$var wire 1 2 oADD $end
+$var wire 1 3 oSUB $end
+$var wire 1 4 overflow $end
+$var wire 1 5 zADD $end
+$var wire 1 6 zSUB $end
+$var wire 1 7 zero $end
+$var reg 32 8 busOut [31:0] $end
+$var reg 1 9 cns $end
+$var reg 1 : cps $end
+$var reg 1 ; nns $end
+$var reg 1 < nps $end
+$var reg 1 = ons $end
+$var reg 1 > ops $end
+$var reg 1 ? zns $end
+$var reg 1 @ zps $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x@
+z?
+x>
+z=
+x<
+z;
+x:
+z9
+bx 8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+b0 .
+x-
+x,
+x+
+x*
+bx )
+bx (
+b0x '
+bx0 &
+bx1xxxxxxx1xxxxxxx1xxxxxxx1 %
+b1000000010000000100000001 $
+b0x0000000x0000000x0000000x #
+bx "
+bz !
+$end
+#200
+bx0000000 &
+bx1111111111111111111111111111111 %
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx #
+x;
+x9
+x=
+x?
+b1 .
+b1111111111111111111111111111111 $
+#400
+bx0 &
+bx1xxxxxxx1xxxxxxx1xxxxxxx1 %
+b0x0000000x0000000x0000000x #
+b10 .
+b1000000010000000100000001 $
+#600
+bx1 %
+b0x #
+z;
+z9
+z=
+z?
+b11 .
+b1 $
+#800
+bx0000000 &
+b11111111111111111111111111111111 %
+bx #
+b100 .
+b11111111111111111111111111111111 $
+#1000
+bx &
+b1111xxxxxxxxxxxxxxxxxxxxxxxxxxxx %
+bx0000000000000000000000000000 #
+b101 .
+b11110000000000000000000000000000 $
+#1200
+bx0000000 &
+b11111111111111111111111111111111 %
+bx #
+b110 .
+b11111111111111111111111111111111 $
+#1400
+bx &
+b1xx1xxxxxxxxxxxxxxxxxxxxxxxxxxxx %
+bx00x0000000000000000000000000000 #
+b111 .
+b10010000000000000000000000000000 $
+#1660

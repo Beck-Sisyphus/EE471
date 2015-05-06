@@ -84,6 +84,7 @@ module DE1_SoC (CLOCK_50, LEDR, SW, KEY);
 	
 endmodule 
 
+module SendP2SBufferTestbench();
 	reg CLOCK_50;  // connect to system 50 MHz clock
 	wire [9:0] LEDR;
 	reg [9:0] SW;

@@ -4,7 +4,7 @@
 module setLT (busSLT, busA, busB);
 	output [31:0] busSLT;
 	input  [31:0] busA, busB;
-	wire zADD, oADD, cADD, nADD;
+	wire zSUB, oSUB, cSUB, nSUB;
 
 	wire [31:0] busSUB;
 
