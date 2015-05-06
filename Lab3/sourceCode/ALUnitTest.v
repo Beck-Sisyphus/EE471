@@ -8,18 +8,27 @@
 `include "adder4b.v"
 `include "fullAdder1b.v"
 `include "lookAhead4b.v"
-`include "ALUnit.v"
+`include "ALUnit.sv"
+`include "addition.v"
+`include "subtract.v"
+`include "andGate.v"
+`include "orGate.v"
+`include "xorGate.v"
+`include "setLT.v"
+`include "shiftll.v"
 module ALUnittest();
 
 	// localize variables
+	wire clk;    // Clock
+	wire [2:0]  control;
 	wire [31:0] busADD;
 	wire  [31:0] busA, busB;
-	wire zADD, oADD, cADD, nADD;
+	wire zero, overflow, carryout, negative;
 
 	// declare an instance of the module
-	ALUnit ALUnit (busADD, busA, busB, zADD, oADD, cADD, nADD);
+	ALUnit ALUnit (clk, control, busADD, busA, busB, zero, overflow, carryout, negative);
 	// Running the GUI part of simulation
-	ALUnittester tester (busADD, busA, busB, zADD, oADD, cADD, nADD);
+	ALUnittester tester (clk, control, busADD, busA, busB, zero, overflow, carryout, negative);
 
 	// file for gtkwave
 
@@ -31,22 +40,26 @@ module ALUnittest();
 
 endmodule
 
-module ALUnittester (busADD, busA, busB, zADD, oADD, cADD, nADD);
+module ALUnittester (clk, control, busADD, busA, busB, zero, overflow, carryout, negative);
+	output clk;    // Clock
+	output [2:0]  control;
 	input [31:0] busADD;
 	output reg  [31:0] busA, busB;
-	input zADD, oADD, cADD, nADD;
+	input zero, overflow, carryout, negative;
 
 	parameter d = 20;
+	// generate a clock
+	always #(d/2) clk = ~clk;
 	initial // Response
 	begin
-		$display("busADD \t busA \t busB \t\t zADD \t oADD \t cADD \t nADD \t ");
+		$display("busADD \t busA \t busB \t\t zero \t overflow \t carryout \t negative \t ");
 		#d;
 	end
 
 	reg [31:0] i;
-	initial // Stimulus
+	always @(posedge clk)  // Stimulus
 	begin
-		$monitor("%b \t %b \t %b \t %b \t %b \t %b \t %b", busADD, busA, busB, zADD, oADD, cADD, nADD, $time);
+		$monitor("%b \t %b \t %b \t %b \t %b \t %b \t %b", busADD, busA, busB, zero, overflow, carryout, negative, $time);
 		// positive + positive
 		busA = 32'h01010101; busB = 32'h01010101;
 		#d;

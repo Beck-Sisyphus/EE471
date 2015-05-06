@@ -4,10 +4,12 @@ module flag (
 	output z, o, c, n
 );
 	wire tempZ[7:0];
+	// NOR gate will act 1 when all inputs are 0
+	// assign z = ~|busOut[31:0];
 	genvar i;
 	generate
 		for (i = 0; i < 8; i = i+1) begin: zeroLoop
-			and zero0(tempZ[i], busOut[0 + i], busOut[1 + i],busOut[2 + i],busOut[3 + i]);
+			nor zero0(tempZ[i], busOut[0 + 4 * i], busOut[1 + 4 * i],busOut[2 + 4 * i],busOut[3 + 4 * i]);
 		end
 	endgenerate
 

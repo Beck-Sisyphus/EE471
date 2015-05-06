@@ -1,7 +1,6 @@
 // module itself module in dataflow level, submodule will module in behavioural level
 module ALUnit (
 	input clk,    // Clock
-	//input rst_n,  // Asynchronous reset active low
 	input [2:0]  control,
 	input [31:0] busA, busB,
 	output [31:0] busOut,

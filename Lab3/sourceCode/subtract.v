@@ -1,12 +1,6 @@
 // active high flags
 
-`include "adder_subtractor.v"
-`include "flag.v"
-`include "mux2_1.sv"
-`include "adder16b.v"
-`include "adder4b.v"
-`include "fullAdder1b.v"
-`include "lookAhead4b.v"
+
 module subtract (busSUB, busA, busB, zSUB, oSUB, cSUB, nSUB);
 	output [31:0] busSUB;
 	input  [31:0] busA, busB;

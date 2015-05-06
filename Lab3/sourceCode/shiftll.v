@@ -5,6 +5,7 @@
 module shiftll (busSLL, busA, sel);
 	output [31:0] busSLL;
 	input  [31:0] busA, sel;
+
 	wire [31:0] Level1, Level2;
 
 	genvar i, j, k;
@@ -39,4 +40,5 @@ module shiftll (busSLL, busA, sel);
 			mux2_1 m2x(Level2[k], busA[k], busA[k-4], sel[2]);
 		end
 	endgenerate	
+
 endmodule

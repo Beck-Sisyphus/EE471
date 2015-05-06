@@ -1,7 +1,13 @@
 // AJ, Beck, and Ray
 // subtract testbench
 // 5/4/15
-
+`include "adder_subtractor.v"
+`include "flag.v"
+`include "mux2_1.sv"
+`include "adder16b.v"
+`include "adder4b.v"
+`include "fullAdder1b.v"
+`include "lookAhead4b.v"
 `include "subtract.v"
 module subtracttest();
 
@@ -41,15 +47,26 @@ module subtracttester (busADD, busA, busB, zADD, oADD, cADD, nADD);
 	initial // Stimulus
 	begin
 		$monitor("%b \t %b \t %b \t %b \t %b \t %b \t %b", busADD, busA, busB, zADD, oADD, cADD, nADD, $time);
-		busA = 32'h01010101; busB = 32'h01010101; // two positive numbers, do have carryOut
-		#(3*d);
-		busA = 32'h01010101; busB = 32'hFFFFFFFD; // -3 - 01010101
- 		#(3*d);
-		busA = 32'hFFFF0101; busB = 32'h0101FFFF;
-		#(3*d);
-		busA = 32'hFFFFFFFF; busB = 32'hFFFFFFFD;
-		#(3*d);
-		busA = 32'h7FFFFFFF; busB = 32'h7FFFBBBB; 
+		// positive - positive
+		busA = 32'h01010101; busB = 32'h01010101; // should have carryOut
+		#d;
+		busA = 32'h7FFFFFF0; busB = 32'h7FFFFFFF;
+		#d;
+		// positive - negative
+		busA = 32'h00000001; busB = 32'hFFFFFFFF; // 1 - -1
+		#d;
+		busA = 32'h70000000; busB = 32'hF0000000; // should overflow
+		#d;
+		// negative - positive
+		busA = 32'hFFFFFFFF; busB = 32'h00000001;
+		#d;
+		busA = 32'h90000000; busB = 32'h70000000; // should overflow
+		#d;
+		// negative - negative 
+		busA = 32'hFFFFFFFF; busB = 32'hFFFFFFFF;
+		#d;
+		busA = 32'hF0000000; busB = 32'hF0000000;
+		#d;
 		#(3*d);
 		$stop; 
 		$finish;
