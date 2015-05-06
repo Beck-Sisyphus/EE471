@@ -3,7 +3,7 @@ module ALUnit (
 	input clk,    // Clock
 	input [2:0]  control,
 	input [31:0] busA, busB,
-	output [31:0] busOut,
+	output reg [31:0] busOut,
 	output zero, overflow, carryout, negative
 );
 	parameter [31:0] nul = 32'b0; // null
@@ -66,12 +66,13 @@ module ALUnit (
 endmodule
 
 module ALUnit_Testbench();
-	reg CLOCK_50;  // connect to system 50 MHz clock
-	wire [9:0] LEDR;
-	reg [9:0] SW;
-	reg [3:0] KEY;
+	reg CLOCK_50;    // Clock
+	reg [2:0]  control;
+	reg [31:0] busA, busB;
+	wire [31:0] busOut;
+	wire zero, overflow, carryout, negative;
 
-	DE1_SoCPhaseII dut (CLOCK_50, LEDR, SW, KEY);
+	ALUnit dut (CLOCK_50, control, busA, busB, busOut, zero, overflow, carryout, negative);
 	// Set up the clocking
 	
 	parameter CLOCK_PERIOD = 100;
@@ -86,16 +87,56 @@ module ALUnit_Testbench();
 	integer i;
 	initial begin
 						      	@(posedge CLOCK_50);
-		SW[9] <= 1;		      	@(posedge CLOCK_50);
-		SW[9] <= 0;		      	@(posedge CLOCK_50);
+		busA = 32'h01010101; busB = 32'h01010101; control = 3'b000;	
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		busA = 32'h7FFFFFFF; busB = 32'h7FFFFFFF; control = 3'b001;	
 						      	@(posedge CLOCK_50);
-		for (i = 0; i < 300; i = i + 1) begin
-								@(posedge CLOCK_50);
-		end
-		SW[6] <= 1;				@(posedge CLOCK_50);
-		for (i = 0; i < 300; i = i + 1) begin
-								@(posedge CLOCK_50);
-		end
+						      	@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		busA = 32'h01010101; busB = 32'hFFFFFFFF; control = 3'b010;
+			@(posedge CLOCK_50);
+						      	@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		busA = 32'h00000001; busB = 32'hF0000000; control = 3'b011;
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		busA = 32'hFFFFFFFF; busB = 32'h01010101; control = 3'b100;
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		busA = 32'hF0000000; busB = 32'h00000001; control = 3'b101;
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		busA = 32'h00000000; busB = 32'h00000002; control = 3'b110;
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		busA = 32'h00000010; busB = 32'h00000034; control = 3'b111;
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
+		@(posedge CLOCK_50);
 		$stop;
 	end
 endmodule 
