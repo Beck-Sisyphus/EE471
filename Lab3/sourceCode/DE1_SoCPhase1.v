@@ -1,20 +1,71 @@
-// EE 471 Lab 1,  Beck Pang, Spring 2015
+// EE 471 Lab 1,  AJ Townsent, Raymond Mui, Beck Pang, Spring 2015
 // Main function for calling different counter onto the board
 // @require: only call one counter a time
-module DE1_SoC (CLOCK_50, LEDR, HEX0, HEX1, HEX2, HEX3, SW, KEY);
+
+/*
+`include "hexOnHex.v"
+
+`include "Implementation/mux2_1.sv"
+`include "Implementation/mux4_1.sv"
+`include "Implementation/mux8_1.sv"
+`include "Implementation/mux32_1.sv"
+`include "Implementation/DFlipFlop.sv"
+`include "Implementation/registerSingle.sv"
+`include "Implementation/register.sv"
+`include "Implementation/decoder5_32.sv"
+//`include "DE1_SoCPhase1.v"
+
+`include "adder_subtractor.v"
+`include "flag.v"
+`include "adder16b.v"
+`include "adder4b.v"
+`include "fullAdder1b.v"
+`include "lookAhead4b.v"
+`include "addition.v"
+`include "subtract.v"
+`include "andGate.v"
+`include "orGate.v"
+`include "xorGate.v"
+`include "setLT.v"
+`include "shiftll.v"
+`include "ALUnit.sv"
+`include "SRAM2Kby16.v"
+`include "registerFile.sv"*/
+module DE1_SoCPhase1 (CLOCK_50, LEDR, HEX0, HEX1, HEX2, HEX3, SW, KEY);
 	input CLOCK_50;  // connect to system 50 MHz clock
-	output reg [9:0] LEDR;
+	output [9:0] LEDR;
 	output [6:0] HEX0, HEX1, HEX2, HEX3;
 	input [9:0] SW;
 	input [3:0] KEY;
 	
 	reg [31:0] AL, BL, A, B, data;
-	reg [1:0] modCount;
+	reg [1:0] count;
 	reg enter, eHold;
 
-	wire clk, , run, res, Z, V, C, N, dataOut;
+	wire clk, run, res, Z, V, C, N;
+	wire [31:0]	dataOut;
+	wire [3:0]digits;
 	reg [2:0] oper;
 	reg [1:0] sel;
+
+	initial begin 
+	oper = 0;
+	sel = 0;
+	enter = 0;
+	eHold = 0;
+	count = 0;
+	AL = 0;
+	BL = 0;
+	A = 0;
+	B = 0;
+	data = 0;
+	end
+
+	
+	assign LEDR[3] = Z;
+	assign LEDR[2] = V;
+	assign LEDR[1] = C;
+	assign LEDR[0] = N;
 	
 	assign clk = CLOCK_50;
 	//Interpreted by the system as an Enter. When Enter is pressed
@@ -24,19 +75,19 @@ module DE1_SoC (CLOCK_50, LEDR, HEX0, HEX1, HEX2, HEX3, SW, KEY);
 	assign run = ~KEY[1];
 	// sets the hex digits 
 	assign digits = SW[3:0];
-	// Operation code 
-	//assign oper = SW[6:4];
+
+
 	// Specify whether operand A or B is to be entered or the result is to be displayed
-	//assign sel = SW[9:8];
-	parameter[2:0] NOP = 3'b000, ADD= 3'b001, SUB = 3'b010, AND = 3'b011, OR = 3'b100, XOR = 3'b101, SLT = 3'b110, SLL = 3'b111;
+
+
 	// controls the hex
 	hexOnHex hex0(data[3:0], HEX0);
 	hexOnHex hex1(data[7:4], HEX1);
 	hexOnHex hex2(data[11:8], HEX2);
 	hexOnHex hex3(data[15:12], HEX3);
 	
-	ALUnit alzheimers (oper, A, B, dataOut,Z,V,C,N); //NOP
-
+	ALUnit alzheimers (clk,oper, A, B, dataOut,Z,V,C,N); 
+	//ALuBe alzheimers (clk,oper, A, B, dataOut,Z,V,C,N); 
 	
 	always @(posedge clk) begin
 		// hex display done
@@ -47,25 +98,40 @@ module DE1_SoC (CLOCK_50, LEDR, HEX0, HEX1, HEX2, HEX3, SW, KEY);
 		endcase
 		
 		if(~KEY[0]) begin
-			if(eHold)
+			if(eHold) begin 
 				enter <= 0;
-			else
+				//eHold <=0;
+			end else  begin 
 				enter <= 1;
+				//eHold <= 1;
+			end
 			eHold <= 1;
-		end else
+		end	
+		else begin 
 			eHold <= 0;
+			enter <= 0;
+		end 
 		
-		if(enter)
+
+		if(enter) begin
 			if(sel != SW[9:8]) begin 
 				sel <= SW[9:8];
 				count <= 0;
 			end else begin
-				case(count)
-					0: data[0:3] = digits;
-					1: data[4:7] = digits;
-					2: data[8:11] = digits;
-					3: data[12:15] = digits; 
-				endcase
+				if(sel == 0)	
+					case(count)
+						0: AL[3:0] = digits;
+						1: AL[7:4] = digits;
+						2: AL[11:8] = digits;
+						3: AL[15:12] = digits; 
+					endcase
+				else if(sel == 1)	
+					case(count)
+						0: BL[3:0] = digits;
+						1: BL[7:4] = digits;
+						2: BL[11:8] = digits;
+						3: BL[15:12] = digits; 
+					endcase
 				count = count + 1;
 			end
 		end
@@ -74,116 +140,98 @@ module DE1_SoC (CLOCK_50, LEDR, HEX0, HEX1, HEX2, HEX3, SW, KEY);
 			oper <= SW[6:4];
 			A <= AL;
 			B <= BL;
-		end			
+		end	
+	end
 
 endmodule 		
-			/*
-	wire clk;
-	wire [15:0] data;
-	reg [6:0] hold;
-	reg WrEn, regWR;
-	reg [10:0] adx;
-	reg [15:0] store;
-	wire [1:0] state, blockSel;
-	wire clkControl, rst, slowClk, outSel;
-	reg [4:0] readAdd0, readAdd1, writeAdd;
-	reg [31:0] writeData;
-	wire [31:0] readOutput0, readOutput1;
-	//reg [15:0] data;
-	//assign data[6:0] = SW[6:0]
-	assign clkControl = SW[8];
-	assign state = SW[7:6];
-	assign blockSel = SW[5:4];
-	assign outSel = SW[3];
-	assign rst = SW[9];
-	assign data = WrEn ? 16'bZ : store;
-	SRAM2Kby16 memory(clk, adx,  WrEn, data);
-	clkSlower counter(slowClk, CLOCK_50, rst);
-	registerFile regs(clk, readAdd0, readAdd1, writeAdd, regWR, writeData, readOutput0, readOutput1);
-	
-	always @(posedge clk) begin
-		if(rst) begin
-			hold = 0;
-			adx = 0;
-			WrEn = 1;
-			LEDR = 0;
-		end else if(state == 0) begin
-			WrEn = 0;
-			adx = hold;
-			store = 7'b1111111 - hold;
-			LEDR[6:0] = hold;
-		end else if(state == 1) begin
-			WrEn = 1;
-			regWR = 1;
-			writeAdd = hold[4:0];
-			adx = blockSel * 32 + hold[4:0]; 
-			writeData[15:0] = data;
-		end else if(state == 2) begin
-			WrEn = 1;
-			regWR = 0;
-			readAdd0 = hold[3:0];
-			readAdd1 = 16 + hold[3:0];
-			LEDR = outSel ? readOutput0[9:0] : readOutput1[9:0];
-		end else if(state == 3) begin
-			WrEn = 0;
-			regWR = 0;
-			if(blockSel[0]) begin
-				readAdd1 = hold[5:2] + 16;
-				if(hold[0]) begin 
-					store = readOutput1[15:0];
-					adx = 179 + hold[5:2];
-				end else begin 
-					store = readOutput1[15:0];
-					adx = 145 + hold[5:2];
-				end
-			end else begin
-				readAdd0 = hold[5:2];
-				if(hold[0]) begin 
-					store = readOutput0[15:0];
-					adx = 162 + hold[5:2];
-				end else begin 
-					store = readOutput0[15:0];
-					adx = 128 + hold[5:2];
-				end
-			end
-		end
-		hold = hold + 1'b1;
-	end
-	
 
-	assign clk = clkControl ? slowClk : CLOCK_50;
-	
-endmodule 
-
-module SendP2SBufferTestbench();
-	reg CLOCK_50;  // connect to system 50 MHz clock
-	wire [9:0] LEDR;
-	reg [9:0] SW;
-	reg [3:0] KEY;
-	DE1_SoC dut (CLOCK_50, LEDR, SW, KEY);
-	// Set up the clocking
-	
-	parameter d = 20;
-	initial begin
-		CLOCK_50 = 1;
-		SW = 12;
-		KEY = 0;
-	end
-	
-	always #(d/2) CLOCK_50 = ~CLOCK_50;
-	
-
-	// Set up the inputs to the design
-	initial begin
-		#(d*10); SW[9] = 1;
-		#d; SW[9] = 0; SW[8] = 1;
-		#(d*500); SW[8] = 0;
-		#d SW[5:0] = 64;
-		#d SW[5:0] = 32;
-		#d SW[5:0] = 16;
-		#d SW[5:0] = 8;
-		#d SW[5:0] = 120;
-		$stop;
-	end
-endmodule 
-*/
+//module interfaceTest();
+//	wire clk;  // connect to system 50 MHz clock
+//	wire [9:0] LEDR;
+//	wire [9:0] SW;
+//	wire [3:0] KEY;
+//	wire [6:0] HEX0;
+//	wire [6:0] HEX1;
+//	wire [6:0] HEX2;
+//	wire [6:0] HEX3;	
+//	
+//	DE1_SoCPhase1 dut (clk, LEDR, HEX0, HEX1, HEX2, HEX3, SW, KEY);
+//	phase1Tester test (clk, SW, KEY);
+//	
+//	initial begin
+//		$dumpfile("Phase1Test.vcd");
+//		$dumpvars(1, dut);
+//	end 
+//endmodule 
+//
+//
+//module phase1Tester(clk,  SW, KEY);
+//	output reg clk;
+//	output reg [9:0] SW;
+//	output reg [3:0] KEY;
+//	
+//	reg [2:0] control;
+//	initial begin 
+//	control = 0;
+//	SW = 0;
+//	KEY =0;
+//	end
+//
+//	//controls = SW[6:4];
+//	//inVal = SW[3:0];
+//	//sel = SW[9:8];
+//	//enter = ~KEY[0];
+//	//run = ~KEY[1];
+//	
+//	parameter [2:0] NOP = 3'b000, ADD= 3'b001, SUB = 3'b010, AND = 3'b011, OR = 3'b100, XOR = 3'b101, SLT = 3'b110, SLL = 3'b111;
+//	parameter d = 20;
+// 
+//	// Set up the clocking
+//	always #(d/2) clk= ~clk;
+//	
+//	initial begin
+//		$display("clk \t SW \t KEY ");
+//		#d
+//		clk =0;
+//	end
+//	
+//	// Set up the inputs to the design
+//	initial begin
+//		$monitor("%b \t %b \t %b \t %b", clk,SW, KEY, $time);
+//		/*//#(d*3); //SW[9:8] = 0; //KEY[0] =0;
+//		//#d; //KEY[0]= 1;
+//		//#d;
+//
+//		#d; SW[9:8] = 1; SW[3:0] =2;#d; #d; #d; KEY[0] = 0;//set value of B
+//		#d;#d; KEY[0] = 1;
+//		#d;
+//		
+//		#d; SW[9:8] = 0; SW[3:0] = 1;#d;#d; KEY[0]= 0; //set value of A
+//		#d#d; KEY[0] = 1;
+//		#d;
+//		
+////		#d; SW[3:0] = 2; KEY[0] = 0;
+////		#d; KEY[0] = 1;
+////		#d;
+//		#d; SW[9:8] = 3; KEY[0] = 0;
+//		#d#d; KEY[0] = 1; // display result
+//		#d;*/
+//		SW[3:0] =1; #d; #d;
+//		KEY[0] = 1;
+//		// operation tests
+//		#d; SW[6:4] = NOP; KEY[1] = 0;
+//		#d; SW[6:4] = ADD;
+//		#d; SW[6:4] = SUB; 
+//		#d; SW[6:4] = AND;
+//		#d; SW[6:4] = OR;
+//		#d; SW[6:4] = XOR;
+//		#d; SW[6:4] = SLT;
+//		#d; SW[6:4] = SLL;
+//	
+//		
+//		#(d*3);
+//		
+//		$stop;
+//		$finish;
+//	end
+//endmodule 
