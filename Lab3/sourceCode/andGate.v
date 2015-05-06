@@ -9,4 +9,5 @@ module andGate (busAND, busA, busB);
 		end
 	endgenerate
 
+	// flag test(busAND, busA, busB, 1'b0, zAND, oAND, cAND, nAND);
 endmodule
