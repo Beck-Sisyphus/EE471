@@ -3,7 +3,7 @@
 // This module is a piece of a synchronous memory system that store the most accessed data
 // called register file, with 32 registers of 32 bit wide.
 // The first register is set as ground reference and always output
-// It takes clock, address and signals from the system bus, 
+// It takes clock, address and signals from the system bus, active low writeEnable,
 // have both read or write function, read data from or write data to registers.
 // Read Operation:
 //	@requires:  a clock signal, a low signal for write enable,
@@ -25,7 +25,7 @@ module registerFile (
 
 	// The address to write
 	wire [31:0] wrEnDecoded;
-	wire  [31:0] wrote;
+	wire  [31:0] written;
 	wire [31:0] RF [31:0];
 	reg rst = 1'b0;
 
@@ -34,20 +34,20 @@ module registerFile (
 
 	genvar i;
 	generate
-		for (i = 0; i < 32; i = i + 1) begin: wroteEnableLoop
-			or wroteEnableAnd(wrote[i], wrEn, wrEnDecoded[i]);
+		for (i = 0; i < 32; i = i + 1) begin: writtenEnableLoop
+			or writtenEnableAnd(written[i], wrEn, wrEnDecoded[i]);
 		end
 	endgenerate
 
 	// Step2: form the RF with each row storing one word of 32 bit
-	// Register 0 always output 0
-	register reg0(clk, rst, wrote[0], 32'bx, RF[0]);
+	// Register 0 always output 0, active low writeEnable
+	register reg0(clk, rst, written[0], 32'bx, RF[0]);
 	
 	genvar j;
 
 	generate
 		for (j = 1; j < 32; j = j + 1) begin: registerLoopj
-			register regj (clk, ~rst, wrote[j], writeData, RF[j]);
+			register regj (clk, ~rst, written[j], writeData, RF[j]);
 		end
 	endgenerate
 

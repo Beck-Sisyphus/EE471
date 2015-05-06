@@ -3,7 +3,7 @@ module registerSingle (
 	input clk,
 	input rst,    // active low reset
 	input writeEnable, // Read is high, write is low; Active low write enable
-	input writeData,  // Asynchronous reset active low
+	input writeData,  
 	output readData
 );
 	wire qBar;
