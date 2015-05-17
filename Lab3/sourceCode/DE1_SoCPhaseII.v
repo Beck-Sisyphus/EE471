@@ -54,11 +54,11 @@ module DE1_SoCPhaseII (CLOCK_50, LEDR, SW, KEY);
 				adx   = count[6:0] + 8'h80;
 				store  = 7'b1111111 - count[6:0];
 //				if (fetchStart)
-//					ps = fetch;
+//					ns = fetch;
 //				else if (count[6:0] == 7'b1111111) 
-//					ps = loadInstr;
+//					ns = loadInstr;
 //				else
-//					ps = loadData;
+//					ns = loadData;
 			end
 			loadInstr: begin // create instruction and data address using counter
 				WrEn  = 0;
