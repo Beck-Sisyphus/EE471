@@ -4,9 +4,7 @@
 module setLT (busSLT, busA, busB, zSLT, oSLT, cSLT, nSLT);
 	output [31:0] busSLT;
 	input  [31:0] busA, busB;
-	wire zSUB, oSUB, cSUB, nSUB;
-
-	wire [31:0] busSUB;
+	output zSLT, oSLT, cSLT, nSLT;
 
 	assign busSLT = (busA < busB) ? 32'b1:32'b0;
 	assign zSLT = ~busSLT[0];

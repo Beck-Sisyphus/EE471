@@ -1,6 +1,7 @@
 module andGate (busAND, busA, busB, zAND, oAND, cAND, nAND);
 	output [31:0] busAND;
 	input  [31:0] busA, busB;
+	output zAND, oAND, cAND, nAND;
 
 	assign busAND = busA & busB;
 

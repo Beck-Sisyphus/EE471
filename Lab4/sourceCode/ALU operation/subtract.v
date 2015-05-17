@@ -6,7 +6,7 @@ module subtract (busSUB, busA, busB, zSUB, oSUB, cSUB, nSUB);
 	input  [31:0] busA, busB;
 	output zSUB, oSUB, cSUB, nSUB;
 
-	reg carryOut;
+	wire carryOut;
 	
 	assign {carryOut, busSUB} = busA - busB;
 
