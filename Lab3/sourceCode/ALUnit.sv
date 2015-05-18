@@ -38,10 +38,10 @@ module ALUnit (
 			cns = cSUB;
 			nns = nSUB;
 		end else begin
-			zns = 1'bZ;
-			ons = 1'bZ;
-			cns = 1'bZ;
-			nns = 1'bZ;
+			zns = 1'b0;
+			ons = 1'b0;
+			cns = 1'b0;
+			nns = 1'b0;
 		end
 	end
 

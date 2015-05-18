@@ -1,16 +1,16 @@
-Fitter Status : Successful - Tue Apr 21 16:16:17 2015
+Fitter Status : Successful - Wed May 06 10:25:10 2015
 Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Full Version
 Revision Name : DE1_SoC
-Top-level Entity Name : SRAM2Kby16
+Top-level Entity Name : DE1_SoCPhase1
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 15,621 / 32,070 ( 49 % )
-Total registers : 32768
-Total pins : 32 / 457 ( 7 % )
+Logic utilization (in ALMs) : 170 / 32,070 ( < 1 % )
+Total registers : 112
+Total pins : 53 / 457 ( 12 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
-Total DSP Blocks : 0 / 87 ( 0 % )
+Total DSP Blocks : 5 / 87 ( 6 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0

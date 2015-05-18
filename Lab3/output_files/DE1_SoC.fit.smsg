@@ -4,8 +4,6 @@ Extra Info (176237): Finished Fast Input/Output/OE register processing
 Extra Info (176238): Start inferring scan chains for DSP blocks
 Extra Info (176239): Inferring scan chains for DSP blocks is complete
 Extra Info (176246): Moving registers into I/O cells, DSP blocks, and RAM blocks to improve timing and density
-Warning (332174): Ignored filter at DE1_SoC.sdc(9): CLOCK_50 could not be matched with a port
-Warning (332049): Ignored create_clock at DE1_SoC.sdc(9): Argument <targets> is an empty collection
 Warning (332174): Ignored filter at DE1_SoC.sdc(10): CLOCK2_50 could not be matched with a port
 Warning (332049): Ignored create_clock at DE1_SoC.sdc(10): Argument <targets> is an empty collection
 Warning (332174): Ignored filter at DE1_SoC.sdc(11): CLOCK3_50 could not be matched with a port

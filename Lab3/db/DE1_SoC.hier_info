@@ -1,4 +1,213 @@
-|ALUnit
+|DE1_SoCPhase1
+CLOCK_50 => clk.IN1
+LEDR[0] <= ALUnit:alzheimers.port8
+LEDR[1] <= ALUnit:alzheimers.port7
+LEDR[2] <= ALUnit:alzheimers.port6
+LEDR[3] <= ALUnit:alzheimers.port5
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+HEX0[0] <= hexOnHex:hex0.port1
+HEX0[1] <= hexOnHex:hex0.port1
+HEX0[2] <= hexOnHex:hex0.port1
+HEX0[3] <= hexOnHex:hex0.port1
+HEX0[4] <= hexOnHex:hex0.port1
+HEX0[5] <= hexOnHex:hex0.port1
+HEX0[6] <= hexOnHex:hex0.port1
+HEX1[0] <= hexOnHex:hex1.port1
+HEX1[1] <= hexOnHex:hex1.port1
+HEX1[2] <= hexOnHex:hex1.port1
+HEX1[3] <= hexOnHex:hex1.port1
+HEX1[4] <= hexOnHex:hex1.port1
+HEX1[5] <= hexOnHex:hex1.port1
+HEX1[6] <= hexOnHex:hex1.port1
+HEX2[0] <= hexOnHex:hex2.port1
+HEX2[1] <= hexOnHex:hex2.port1
+HEX2[2] <= hexOnHex:hex2.port1
+HEX2[3] <= hexOnHex:hex2.port1
+HEX2[4] <= hexOnHex:hex2.port1
+HEX2[5] <= hexOnHex:hex2.port1
+HEX2[6] <= hexOnHex:hex2.port1
+HEX3[0] <= hexOnHex:hex3.port1
+HEX3[1] <= hexOnHex:hex3.port1
+HEX3[2] <= hexOnHex:hex3.port1
+HEX3[3] <= hexOnHex:hex3.port1
+HEX3[4] <= hexOnHex:hex3.port1
+HEX3[5] <= hexOnHex:hex3.port1
+HEX3[6] <= hexOnHex:hex3.port1
+SW[0] => AL.DATAB
+SW[0] => AL.DATAB
+SW[0] => AL.DATAB
+SW[0] => AL.DATAB
+SW[0] => BL.DATAB
+SW[0] => BL.DATAB
+SW[0] => BL.DATAB
+SW[0] => BL.DATAB
+SW[1] => AL.DATAB
+SW[1] => AL.DATAB
+SW[1] => AL.DATAB
+SW[1] => AL.DATAB
+SW[1] => BL.DATAB
+SW[1] => BL.DATAB
+SW[1] => BL.DATAB
+SW[1] => BL.DATAB
+SW[2] => AL.DATAB
+SW[2] => AL.DATAB
+SW[2] => AL.DATAB
+SW[2] => AL.DATAB
+SW[2] => BL.DATAB
+SW[2] => BL.DATAB
+SW[2] => BL.DATAB
+SW[2] => BL.DATAB
+SW[3] => AL.DATAB
+SW[3] => AL.DATAB
+SW[3] => AL.DATAB
+SW[3] => AL.DATAB
+SW[3] => BL.DATAB
+SW[3] => BL.DATAB
+SW[3] => BL.DATAB
+SW[3] => BL.DATAB
+SW[4] => oper.DATAB
+SW[5] => oper.DATAB
+SW[6] => oper.DATAB
+SW[7] => ~NO_FANOUT~
+SW[8] => Equal0.IN1
+SW[8] => sel.DATAB
+SW[9] => Equal0.IN0
+SW[9] => sel.DATAB
+KEY[0] => enter.OUTPUTSELECT
+KEY[0] => eHold.DATAIN
+KEY[1] => oper.OUTPUTSELECT
+KEY[1] => oper.OUTPUTSELECT
+KEY[1] => oper.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => A.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[1] => B.OUTPUTSELECT
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+
+
+|DE1_SoCPhase1|hexOnHex:hex0
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+conv[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+conv[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+conv[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+conv[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+conv[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+conv[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+conv[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|hexOnHex:hex1
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+conv[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+conv[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+conv[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+conv[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+conv[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+conv[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+conv[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|hexOnHex:hex2
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+conv[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+conv[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+conv[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+conv[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+conv[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+conv[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+conv[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|hexOnHex:hex3
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+conv[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+conv[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+conv[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+conv[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+conv[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+conv[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+conv[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers
 clk => busOut[0]~reg0.CLK
 clk => busOut[1]~reg0.CLK
 clk => busOut[2]~reg0.CLK
@@ -201,148 +410,148 @@ busB[28] => busB[28].IN7
 busB[29] => busB[29].IN7
 busB[30] => busB[30].IN7
 busB[31] => busB[31].IN7
-busOut[0] << busOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[1] << busOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[2] << busOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[3] << busOut[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[4] << busOut[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[5] << busOut[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[6] << busOut[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[7] << busOut[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[8] << busOut[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[9] << busOut[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[10] << busOut[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[11] << busOut[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[12] << busOut[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[13] << busOut[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[14] << busOut[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[15] << busOut[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[16] << busOut[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[17] << busOut[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[18] << busOut[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[19] << busOut[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[20] << busOut[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[21] << busOut[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[22] << busOut[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[23] << busOut[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[24] << busOut[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[25] << busOut[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[26] << busOut[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[27] << busOut[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[28] << busOut[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[29] << busOut[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[30] << busOut[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-busOut[31] << busOut[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-zero << zps.DB_MAX_OUTPUT_PORT_TYPE
-overflow << ops.DB_MAX_OUTPUT_PORT_TYPE
-carryout << cps.DB_MAX_OUTPUT_PORT_TYPE
-negative << nps.DB_MAX_OUTPUT_PORT_TYPE
+busOut[0] <= busOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[1] <= busOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[2] <= busOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[3] <= busOut[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[4] <= busOut[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[5] <= busOut[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[6] <= busOut[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[7] <= busOut[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[8] <= busOut[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[9] <= busOut[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[10] <= busOut[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[11] <= busOut[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[12] <= busOut[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[13] <= busOut[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[14] <= busOut[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[15] <= busOut[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[16] <= busOut[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[17] <= busOut[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[18] <= busOut[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[19] <= busOut[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[20] <= busOut[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[21] <= busOut[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[22] <= busOut[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[23] <= busOut[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[24] <= busOut[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[25] <= busOut[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[26] <= busOut[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[27] <= busOut[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[28] <= busOut[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[29] <= busOut[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[30] <= busOut[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busOut[31] <= busOut[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+zero <= zps.DB_MAX_OUTPUT_PORT_TYPE
+overflow <= ops.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= cps.DB_MAX_OUTPUT_PORT_TYPE
+negative <= nps.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1
-busADD[0] <= adder_subtractor:a1.port0
-busADD[1] <= adder_subtractor:a1.port0
-busADD[2] <= adder_subtractor:a1.port0
-busADD[3] <= adder_subtractor:a1.port0
-busADD[4] <= adder_subtractor:a1.port0
-busADD[5] <= adder_subtractor:a1.port0
-busADD[6] <= adder_subtractor:a1.port0
-busADD[7] <= adder_subtractor:a1.port0
-busADD[8] <= adder_subtractor:a1.port0
-busADD[9] <= adder_subtractor:a1.port0
-busADD[10] <= adder_subtractor:a1.port0
-busADD[11] <= adder_subtractor:a1.port0
-busADD[12] <= adder_subtractor:a1.port0
-busADD[13] <= adder_subtractor:a1.port0
-busADD[14] <= adder_subtractor:a1.port0
-busADD[15] <= adder_subtractor:a1.port0
-busADD[16] <= adder_subtractor:a1.port0
-busADD[17] <= adder_subtractor:a1.port0
-busADD[18] <= adder_subtractor:a1.port0
-busADD[19] <= adder_subtractor:a1.port0
-busADD[20] <= adder_subtractor:a1.port0
-busADD[21] <= adder_subtractor:a1.port0
-busADD[22] <= adder_subtractor:a1.port0
-busADD[23] <= adder_subtractor:a1.port0
-busADD[24] <= adder_subtractor:a1.port0
-busADD[25] <= adder_subtractor:a1.port0
-busADD[26] <= adder_subtractor:a1.port0
-busADD[27] <= adder_subtractor:a1.port0
-busADD[28] <= adder_subtractor:a1.port0
-busADD[29] <= adder_subtractor:a1.port0
-busADD[30] <= adder_subtractor:a1.port0
-busADD[31] <= adder_subtractor:a1.port0
-busA[0] => busA[0].IN1
-busA[1] => busA[1].IN1
-busA[2] => busA[2].IN1
-busA[3] => busA[3].IN1
-busA[4] => busA[4].IN1
-busA[5] => busA[5].IN1
-busA[6] => busA[6].IN1
-busA[7] => busA[7].IN1
-busA[8] => busA[8].IN1
-busA[9] => busA[9].IN1
-busA[10] => busA[10].IN1
-busA[11] => busA[11].IN1
-busA[12] => busA[12].IN1
-busA[13] => busA[13].IN1
-busA[14] => busA[14].IN1
-busA[15] => busA[15].IN1
-busA[16] => busA[16].IN1
-busA[17] => busA[17].IN1
-busA[18] => busA[18].IN1
-busA[19] => busA[19].IN1
-busA[20] => busA[20].IN1
-busA[21] => busA[21].IN1
-busA[22] => busA[22].IN1
-busA[23] => busA[23].IN1
-busA[24] => busA[24].IN1
-busA[25] => busA[25].IN1
-busA[26] => busA[26].IN1
-busA[27] => busA[27].IN1
-busA[28] => busA[28].IN1
-busA[29] => busA[29].IN1
-busA[30] => busA[30].IN1
-busA[31] => busA[31].IN1
-busB[0] => busB[0].IN1
-busB[1] => busB[1].IN1
-busB[2] => busB[2].IN1
-busB[3] => busB[3].IN1
-busB[4] => busB[4].IN1
-busB[5] => busB[5].IN1
-busB[6] => busB[6].IN1
-busB[7] => busB[7].IN1
-busB[8] => busB[8].IN1
-busB[9] => busB[9].IN1
-busB[10] => busB[10].IN1
-busB[11] => busB[11].IN1
-busB[12] => busB[12].IN1
-busB[13] => busB[13].IN1
-busB[14] => busB[14].IN1
-busB[15] => busB[15].IN1
-busB[16] => busB[16].IN1
-busB[17] => busB[17].IN1
-busB[18] => busB[18].IN1
-busB[19] => busB[19].IN1
-busB[20] => busB[20].IN1
-busB[21] => busB[21].IN1
-busB[22] => busB[22].IN1
-busB[23] => busB[23].IN1
-busB[24] => busB[24].IN1
-busB[25] => busB[25].IN1
-busB[26] => busB[26].IN1
-busB[27] => busB[27].IN1
-busB[28] => busB[28].IN1
-busB[29] => busB[29].IN1
-busB[30] => busB[30].IN1
-busB[31] => busB[31].IN1
-zADD <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-oADD <= overflow.DB_MAX_OUTPUT_PORT_TYPE
-cADD <= e1.DB_MAX_OUTPUT_PORT_TYPE
-nADD <= e2.DB_MAX_OUTPUT_PORT_TYPE
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1
+busADD[0] <= busADD[0].DB_MAX_OUTPUT_PORT_TYPE
+busADD[1] <= busADD[1].DB_MAX_OUTPUT_PORT_TYPE
+busADD[2] <= busADD[2].DB_MAX_OUTPUT_PORT_TYPE
+busADD[3] <= busADD[3].DB_MAX_OUTPUT_PORT_TYPE
+busADD[4] <= busADD[4].DB_MAX_OUTPUT_PORT_TYPE
+busADD[5] <= busADD[5].DB_MAX_OUTPUT_PORT_TYPE
+busADD[6] <= busADD[6].DB_MAX_OUTPUT_PORT_TYPE
+busADD[7] <= busADD[7].DB_MAX_OUTPUT_PORT_TYPE
+busADD[8] <= busADD[8].DB_MAX_OUTPUT_PORT_TYPE
+busADD[9] <= busADD[9].DB_MAX_OUTPUT_PORT_TYPE
+busADD[10] <= busADD[10].DB_MAX_OUTPUT_PORT_TYPE
+busADD[11] <= busADD[11].DB_MAX_OUTPUT_PORT_TYPE
+busADD[12] <= busADD[12].DB_MAX_OUTPUT_PORT_TYPE
+busADD[13] <= busADD[13].DB_MAX_OUTPUT_PORT_TYPE
+busADD[14] <= busADD[14].DB_MAX_OUTPUT_PORT_TYPE
+busADD[15] <= busADD[15].DB_MAX_OUTPUT_PORT_TYPE
+busADD[16] <= busADD[16].DB_MAX_OUTPUT_PORT_TYPE
+busADD[17] <= busADD[17].DB_MAX_OUTPUT_PORT_TYPE
+busADD[18] <= busADD[18].DB_MAX_OUTPUT_PORT_TYPE
+busADD[19] <= busADD[19].DB_MAX_OUTPUT_PORT_TYPE
+busADD[20] <= busADD[20].DB_MAX_OUTPUT_PORT_TYPE
+busADD[21] <= busADD[21].DB_MAX_OUTPUT_PORT_TYPE
+busADD[22] <= busADD[22].DB_MAX_OUTPUT_PORT_TYPE
+busADD[23] <= busADD[23].DB_MAX_OUTPUT_PORT_TYPE
+busADD[24] <= busADD[24].DB_MAX_OUTPUT_PORT_TYPE
+busADD[25] <= busADD[25].DB_MAX_OUTPUT_PORT_TYPE
+busADD[26] <= busADD[26].DB_MAX_OUTPUT_PORT_TYPE
+busADD[27] <= busADD[27].DB_MAX_OUTPUT_PORT_TYPE
+busADD[28] <= busADD[28].DB_MAX_OUTPUT_PORT_TYPE
+busADD[29] <= busADD[29].DB_MAX_OUTPUT_PORT_TYPE
+busADD[30] <= busADD[30].DB_MAX_OUTPUT_PORT_TYPE
+busADD[31] <= busADD[31].DB_MAX_OUTPUT_PORT_TYPE
+busA[0] => busA[0].IN2
+busA[1] => busA[1].IN2
+busA[2] => busA[2].IN2
+busA[3] => busA[3].IN2
+busA[4] => busA[4].IN2
+busA[5] => busA[5].IN2
+busA[6] => busA[6].IN2
+busA[7] => busA[7].IN2
+busA[8] => busA[8].IN2
+busA[9] => busA[9].IN2
+busA[10] => busA[10].IN2
+busA[11] => busA[11].IN2
+busA[12] => busA[12].IN2
+busA[13] => busA[13].IN2
+busA[14] => busA[14].IN2
+busA[15] => busA[15].IN2
+busA[16] => busA[16].IN2
+busA[17] => busA[17].IN2
+busA[18] => busA[18].IN2
+busA[19] => busA[19].IN2
+busA[20] => busA[20].IN2
+busA[21] => busA[21].IN2
+busA[22] => busA[22].IN2
+busA[23] => busA[23].IN2
+busA[24] => busA[24].IN2
+busA[25] => busA[25].IN2
+busA[26] => busA[26].IN2
+busA[27] => busA[27].IN2
+busA[28] => busA[28].IN2
+busA[29] => busA[29].IN2
+busA[30] => busA[30].IN2
+busA[31] => busA[31].IN2
+busB[0] => busB[0].IN2
+busB[1] => busB[1].IN2
+busB[2] => busB[2].IN2
+busB[3] => busB[3].IN2
+busB[4] => busB[4].IN2
+busB[5] => busB[5].IN2
+busB[6] => busB[6].IN2
+busB[7] => busB[7].IN2
+busB[8] => busB[8].IN2
+busB[9] => busB[9].IN2
+busB[10] => busB[10].IN2
+busB[11] => busB[11].IN2
+busB[12] => busB[12].IN2
+busB[13] => busB[13].IN2
+busB[14] => busB[14].IN2
+busB[15] => busB[15].IN2
+busB[16] => busB[16].IN2
+busB[17] => busB[17].IN2
+busB[18] => busB[18].IN2
+busB[19] => busB[19].IN2
+busB[20] => busB[20].IN2
+busB[21] => busB[21].IN2
+busB[22] => busB[22].IN2
+busB[23] => busB[23].IN2
+busB[24] => busB[24].IN2
+busB[25] => busB[25].IN2
+busB[26] => busB[26].IN2
+busB[27] => busB[27].IN2
+busB[28] => busB[28].IN2
+busB[29] => busB[29].IN2
+busB[30] => busB[30].IN2
+busB[31] => busB[31].IN2
+zADD <= flag:test.port4
+oADD <= flag:test.port5
+cADD <= flag:test.port6
+nADD <= flag:test.port7
 
 
-|ALUnit|addition:add1|adder_subtractor:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1
 S[0] <= adder16b:a0.port5
 S[1] <= adder16b:a0.port5
 S[2] <= adder16b:a0.port5
@@ -443,7 +652,7 @@ sel => sel.IN33
 carryOut <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[0].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[0].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -451,7 +660,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[1].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[1].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -459,7 +668,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[2].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[2].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -467,7 +676,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[3].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[3].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -475,7 +684,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[4].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[4].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -483,7 +692,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[5].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[5].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -491,7 +700,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[6].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[6].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -499,7 +708,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[7].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[7].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -507,7 +716,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[8].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[8].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -515,7 +724,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[9].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[9].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -523,7 +732,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[10].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[10].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -531,7 +740,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[11].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[11].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -539,7 +748,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[12].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[12].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -547,7 +756,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[13].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[13].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -555,7 +764,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[14].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[14].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -563,7 +772,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[15].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[15].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -571,7 +780,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[16].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[16].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -579,7 +788,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[17].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[17].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -587,7 +796,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[18].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[18].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -595,7 +804,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[19].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[19].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -603,7 +812,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[20].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[20].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -611,7 +820,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[21].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[21].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -619,7 +828,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[22].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[22].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -627,7 +836,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[23].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[23].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -635,7 +844,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[24].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[24].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -643,7 +852,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[25].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[25].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -651,7 +860,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[26].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[26].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -659,7 +868,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[27].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[27].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -667,7 +876,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[28].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[28].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -675,7 +884,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[29].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[29].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -683,7 +892,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[30].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[30].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -691,7 +900,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[31].choose1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|mux2_1:AddorSubtract[31].choose1
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -699,7 +908,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -753,7 +962,7 @@ S[14] <= adder4b:a12.port5
 S[15] <= adder4b:a12.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -771,7 +980,7 @@ S[2] <= fullAdder1b:a2.port5
 S[3] <= fullAdder1b:a3.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a0
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -784,7 +993,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a1
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -797,7 +1006,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a2
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a2
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -810,7 +1019,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a3
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a3
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -823,7 +1032,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|lookAhead4b:LCU4bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a0|lookAhead4b:LCU4bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -855,7 +1064,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -873,7 +1082,7 @@ S[2] <= fullAdder1b:a2.port5
 S[3] <= fullAdder1b:a3.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a0
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -886,7 +1095,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a1
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -899,7 +1108,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a2
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a2
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -912,7 +1121,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a3
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a3
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -925,7 +1134,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|lookAhead4b:LCU4bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a4|lookAhead4b:LCU4bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -957,7 +1166,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -975,7 +1184,7 @@ S[2] <= fullAdder1b:a2.port5
 S[3] <= fullAdder1b:a3.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a0
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -988,7 +1197,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a1
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1001,7 +1210,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a2
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a2
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1014,7 +1223,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a3
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a3
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1027,7 +1236,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|lookAhead4b:LCU4bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a8|lookAhead4b:LCU4bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -1059,7 +1268,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -1077,7 +1286,7 @@ S[2] <= fullAdder1b:a2.port5
 S[3] <= fullAdder1b:a3.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a0
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1090,7 +1299,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a1
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1103,7 +1312,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a2
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a2
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1116,7 +1325,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a3
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a3
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1129,7 +1338,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|lookAhead4b:LCU4bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|adder4b:a12|lookAhead4b:LCU4bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -1161,7 +1370,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a0|lookAhead4b:LCU16bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a0|lookAhead4b:LCU16bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -1193,7 +1402,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -1247,7 +1456,7 @@ S[14] <= adder4b:a12.port5
 S[15] <= adder4b:a12.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -1265,7 +1474,7 @@ S[2] <= fullAdder1b:a2.port5
 S[3] <= fullAdder1b:a3.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a0
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1278,7 +1487,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a1
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1291,7 +1500,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a2
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a2
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1304,7 +1513,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a3
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a3
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1317,7 +1526,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|lookAhead4b:LCU4bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a0|lookAhead4b:LCU4bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -1349,7 +1558,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -1367,7 +1576,7 @@ S[2] <= fullAdder1b:a2.port5
 S[3] <= fullAdder1b:a3.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a0
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1380,7 +1589,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a1
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1393,7 +1602,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a2
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a2
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1406,7 +1615,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a3
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a3
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1419,7 +1628,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|lookAhead4b:LCU4bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a4|lookAhead4b:LCU4bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -1451,7 +1660,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -1469,7 +1678,7 @@ S[2] <= fullAdder1b:a2.port5
 S[3] <= fullAdder1b:a3.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a0
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1482,7 +1691,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a1
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1495,7 +1704,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a2
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a2
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1508,7 +1717,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a3
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a3
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1521,7 +1730,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|lookAhead4b:LCU4bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a8|lookAhead4b:LCU4bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -1553,7 +1762,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12
 X[0] => X[0].IN1
 X[1] => X[1].IN1
 X[2] => X[2].IN1
@@ -1571,7 +1780,7 @@ S[2] <= fullAdder1b:a2.port5
 S[3] <= fullAdder1b:a3.port5
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a0
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a0
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1584,7 +1793,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a1
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a1
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1597,7 +1806,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a2
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a2
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1610,7 +1819,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a3
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a3
 x => p.IN0
 x => g.IN0
 x => s.IN0
@@ -1623,7 +1832,7 @@ P <= p.DB_MAX_OUTPUT_PORT_TYPE
 S <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|lookAhead4b:LCU4bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|adder4b:a12|lookAhead4b:LCU4bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -1655,7 +1864,7 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|addition:add1|adder_subtractor:a1|adder16b:a16|lookAhead4b:LCU16bit
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|adder_subtractor:a1|adder16b:a16|lookAhead4b:LCU16bit
 carryIn => a0.IN0
 g[0] => or0.IN1
 g[0] => a01.IN0
@@ -1687,39 +1896,41 @@ c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
 c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|subtract:sub1
-busSUB[0] <= <GND>
-busSUB[1] <= <GND>
-busSUB[2] <= <GND>
-busSUB[3] <= <GND>
-busSUB[4] <= <GND>
-busSUB[5] <= <GND>
-busSUB[6] <= <GND>
-busSUB[7] <= <GND>
-busSUB[8] <= <GND>
-busSUB[9] <= <GND>
-busSUB[10] <= <GND>
-busSUB[11] <= <GND>
-busSUB[12] <= <GND>
-busSUB[13] <= <GND>
-busSUB[14] <= <GND>
-busSUB[15] <= <GND>
-busSUB[16] <= <GND>
-busSUB[17] <= <GND>
-busSUB[18] <= <GND>
-busSUB[19] <= <GND>
-busSUB[20] <= <GND>
-busSUB[21] <= <GND>
-busSUB[22] <= <GND>
-busSUB[23] <= <GND>
-busSUB[24] <= <GND>
-busSUB[25] <= <GND>
-busSUB[26] <= <GND>
-busSUB[27] <= <GND>
-busSUB[28] <= <GND>
-busSUB[29] <= <GND>
-busSUB[30] <= <GND>
-busSUB[31] <= <GND>
+|DE1_SoCPhase1|ALUnit:alzheimers|addition:add1|flag:test
+busOut[0] => zeroLoop[0].zero0.IN0
+busOut[1] => zeroLoop[0].zero0.IN1
+busOut[2] => zeroLoop[0].zero0.IN2
+busOut[3] => zeroLoop[0].zero0.IN3
+busOut[4] => zeroLoop[1].zero0.IN0
+busOut[5] => zeroLoop[1].zero0.IN1
+busOut[6] => zeroLoop[1].zero0.IN2
+busOut[7] => zeroLoop[1].zero0.IN3
+busOut[8] => zeroLoop[2].zero0.IN0
+busOut[9] => zeroLoop[2].zero0.IN1
+busOut[10] => zeroLoop[2].zero0.IN2
+busOut[11] => zeroLoop[2].zero0.IN3
+busOut[12] => zeroLoop[3].zero0.IN0
+busOut[13] => zeroLoop[3].zero0.IN1
+busOut[14] => zeroLoop[3].zero0.IN2
+busOut[15] => zeroLoop[3].zero0.IN3
+busOut[16] => zeroLoop[4].zero0.IN0
+busOut[17] => zeroLoop[4].zero0.IN1
+busOut[18] => zeroLoop[4].zero0.IN2
+busOut[19] => zeroLoop[4].zero0.IN3
+busOut[20] => zeroLoop[5].zero0.IN0
+busOut[21] => zeroLoop[5].zero0.IN1
+busOut[22] => zeroLoop[5].zero0.IN2
+busOut[23] => zeroLoop[5].zero0.IN3
+busOut[24] => zeroLoop[6].zero0.IN0
+busOut[25] => zeroLoop[6].zero0.IN1
+busOut[26] => zeroLoop[6].zero0.IN2
+busOut[27] => zeroLoop[6].zero0.IN3
+busOut[28] => zeroLoop[7].zero0.IN0
+busOut[29] => zeroLoop[7].zero0.IN1
+busOut[30] => zeroLoop[7].zero0.IN2
+busOut[31] => zeroLoop[7].zero0.IN3
+busOut[31] => part2.IN0
+busOut[31] => e2.DATAIN
 busA[0] => ~NO_FANOUT~
 busA[1] => ~NO_FANOUT~
 busA[2] => ~NO_FANOUT~
@@ -1751,7 +1962,8 @@ busA[27] => ~NO_FANOUT~
 busA[28] => ~NO_FANOUT~
 busA[29] => ~NO_FANOUT~
 busA[30] => ~NO_FANOUT~
-busA[31] => ~NO_FANOUT~
+busA[31] => part1.IN0
+busA[31] => part2.IN1
 busB[0] => ~NO_FANOUT~
 busB[1] => ~NO_FANOUT~
 busB[2] => ~NO_FANOUT~
@@ -1783,46 +1995,1497 @@ busB[27] => ~NO_FANOUT~
 busB[28] => ~NO_FANOUT~
 busB[29] => ~NO_FANOUT~
 busB[30] => ~NO_FANOUT~
-busB[31] => ~NO_FANOUT~
-zSUB <= <GND>
-oSUB <= <GND>
-cSUB <= <GND>
-nSUB <= <GND>
+busB[31] => part1.IN1
+carryOut => e1.DATAIN
+z <= zero8.DB_MAX_OUTPUT_PORT_TYPE
+o <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+c <= e1.DB_MAX_OUTPUT_PORT_TYPE
+n <= e2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|andGate:and1
-busAND[0] <= <GND>
-busAND[1] <= <GND>
-busAND[2] <= <GND>
-busAND[3] <= <GND>
-busAND[4] <= <GND>
-busAND[5] <= <GND>
-busAND[6] <= <GND>
-busAND[7] <= <GND>
-busAND[8] <= <GND>
-busAND[9] <= <GND>
-busAND[10] <= <GND>
-busAND[11] <= <GND>
-busAND[12] <= <GND>
-busAND[13] <= <GND>
-busAND[14] <= <GND>
-busAND[15] <= <GND>
-busAND[16] <= <GND>
-busAND[17] <= <GND>
-busAND[18] <= <GND>
-busAND[19] <= <GND>
-busAND[20] <= <GND>
-busAND[21] <= <GND>
-busAND[22] <= <GND>
-busAND[23] <= <GND>
-busAND[24] <= <GND>
-busAND[25] <= <GND>
-busAND[26] <= <GND>
-busAND[27] <= <GND>
-busAND[28] <= <GND>
-busAND[29] <= <GND>
-busAND[30] <= <GND>
-busAND[31] <= <GND>
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1
+busSUB[0] <= busSUB[0].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[1] <= busSUB[1].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[2] <= busSUB[2].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[3] <= busSUB[3].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[4] <= busSUB[4].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[5] <= busSUB[5].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[6] <= busSUB[6].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[7] <= busSUB[7].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[8] <= busSUB[8].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[9] <= busSUB[9].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[10] <= busSUB[10].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[11] <= busSUB[11].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[12] <= busSUB[12].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[13] <= busSUB[13].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[14] <= busSUB[14].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[15] <= busSUB[15].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[16] <= busSUB[16].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[17] <= busSUB[17].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[18] <= busSUB[18].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[19] <= busSUB[19].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[20] <= busSUB[20].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[21] <= busSUB[21].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[22] <= busSUB[22].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[23] <= busSUB[23].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[24] <= busSUB[24].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[25] <= busSUB[25].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[26] <= busSUB[26].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[27] <= busSUB[27].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[28] <= busSUB[28].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[29] <= busSUB[29].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[30] <= busSUB[30].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[31] <= busSUB[31].DB_MAX_OUTPUT_PORT_TYPE
+busA[0] => busA[0].IN2
+busA[1] => busA[1].IN2
+busA[2] => busA[2].IN2
+busA[3] => busA[3].IN2
+busA[4] => busA[4].IN2
+busA[5] => busA[5].IN2
+busA[6] => busA[6].IN2
+busA[7] => busA[7].IN2
+busA[8] => busA[8].IN2
+busA[9] => busA[9].IN2
+busA[10] => busA[10].IN2
+busA[11] => busA[11].IN2
+busA[12] => busA[12].IN2
+busA[13] => busA[13].IN2
+busA[14] => busA[14].IN2
+busA[15] => busA[15].IN2
+busA[16] => busA[16].IN2
+busA[17] => busA[17].IN2
+busA[18] => busA[18].IN2
+busA[19] => busA[19].IN2
+busA[20] => busA[20].IN2
+busA[21] => busA[21].IN2
+busA[22] => busA[22].IN2
+busA[23] => busA[23].IN2
+busA[24] => busA[24].IN2
+busA[25] => busA[25].IN2
+busA[26] => busA[26].IN2
+busA[27] => busA[27].IN2
+busA[28] => busA[28].IN2
+busA[29] => busA[29].IN2
+busA[30] => busA[30].IN2
+busA[31] => busA[31].IN2
+busB[0] => busB[0].IN2
+busB[1] => busB[1].IN2
+busB[2] => busB[2].IN2
+busB[3] => busB[3].IN2
+busB[4] => busB[4].IN2
+busB[5] => busB[5].IN2
+busB[6] => busB[6].IN2
+busB[7] => busB[7].IN2
+busB[8] => busB[8].IN2
+busB[9] => busB[9].IN2
+busB[10] => busB[10].IN2
+busB[11] => busB[11].IN2
+busB[12] => busB[12].IN2
+busB[13] => busB[13].IN2
+busB[14] => busB[14].IN2
+busB[15] => busB[15].IN2
+busB[16] => busB[16].IN2
+busB[17] => busB[17].IN2
+busB[18] => busB[18].IN2
+busB[19] => busB[19].IN2
+busB[20] => busB[20].IN2
+busB[21] => busB[21].IN2
+busB[22] => busB[22].IN2
+busB[23] => busB[23].IN2
+busB[24] => busB[24].IN2
+busB[25] => busB[25].IN2
+busB[26] => busB[26].IN2
+busB[27] => busB[27].IN2
+busB[28] => busB[28].IN2
+busB[29] => busB[29].IN2
+busB[30] => busB[30].IN2
+busB[31] => busB[31].IN2
+zSUB <= flag:test.port4
+oSUB <= flag:test.port5
+cSUB <= flag:test.port6
+nSUB <= flag:test.port7
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1
+S[0] <= adder16b:a0.port5
+S[1] <= adder16b:a0.port5
+S[2] <= adder16b:a0.port5
+S[3] <= adder16b:a0.port5
+S[4] <= adder16b:a0.port5
+S[5] <= adder16b:a0.port5
+S[6] <= adder16b:a0.port5
+S[7] <= adder16b:a0.port5
+S[8] <= adder16b:a0.port5
+S[9] <= adder16b:a0.port5
+S[10] <= adder16b:a0.port5
+S[11] <= adder16b:a0.port5
+S[12] <= adder16b:a0.port5
+S[13] <= adder16b:a0.port5
+S[14] <= adder16b:a0.port5
+S[15] <= adder16b:a0.port5
+S[16] <= adder16b:a16.port5
+S[17] <= adder16b:a16.port5
+S[18] <= adder16b:a16.port5
+S[19] <= adder16b:a16.port5
+S[20] <= adder16b:a16.port5
+S[21] <= adder16b:a16.port5
+S[22] <= adder16b:a16.port5
+S[23] <= adder16b:a16.port5
+S[24] <= adder16b:a16.port5
+S[25] <= adder16b:a16.port5
+S[26] <= adder16b:a16.port5
+S[27] <= adder16b:a16.port5
+S[28] <= adder16b:a16.port5
+S[29] <= adder16b:a16.port5
+S[30] <= adder16b:a16.port5
+S[31] <= adder16b:a16.port5
+busA[0] => busA[0].IN1
+busA[1] => busA[1].IN1
+busA[2] => busA[2].IN1
+busA[3] => busA[3].IN1
+busA[4] => busA[4].IN1
+busA[5] => busA[5].IN1
+busA[6] => busA[6].IN1
+busA[7] => busA[7].IN1
+busA[8] => busA[8].IN1
+busA[9] => busA[9].IN1
+busA[10] => busA[10].IN1
+busA[11] => busA[11].IN1
+busA[12] => busA[12].IN1
+busA[13] => busA[13].IN1
+busA[14] => busA[14].IN1
+busA[15] => busA[15].IN1
+busA[16] => busA[16].IN1
+busA[17] => busA[17].IN1
+busA[18] => busA[18].IN1
+busA[19] => busA[19].IN1
+busA[20] => busA[20].IN1
+busA[21] => busA[21].IN1
+busA[22] => busA[22].IN1
+busA[23] => busA[23].IN1
+busA[24] => busA[24].IN1
+busA[25] => busA[25].IN1
+busA[26] => busA[26].IN1
+busA[27] => busA[27].IN1
+busA[28] => busA[28].IN1
+busA[29] => busA[29].IN1
+busA[30] => busA[30].IN1
+busA[31] => busA[31].IN1
+busB[0] => busB[0].IN1
+busB[1] => busB[1].IN1
+busB[2] => busB[2].IN1
+busB[3] => busB[3].IN1
+busB[4] => busB[4].IN1
+busB[5] => busB[5].IN1
+busB[6] => busB[6].IN1
+busB[7] => busB[7].IN1
+busB[8] => busB[8].IN1
+busB[9] => busB[9].IN1
+busB[10] => busB[10].IN1
+busB[11] => busB[11].IN1
+busB[12] => busB[12].IN1
+busB[13] => busB[13].IN1
+busB[14] => busB[14].IN1
+busB[15] => busB[15].IN1
+busB[16] => busB[16].IN1
+busB[17] => busB[17].IN1
+busB[18] => busB[18].IN1
+busB[19] => busB[19].IN1
+busB[20] => busB[20].IN1
+busB[21] => busB[21].IN1
+busB[22] => busB[22].IN1
+busB[23] => busB[23].IN1
+busB[24] => busB[24].IN1
+busB[25] => busB[25].IN1
+busB[26] => busB[26].IN1
+busB[27] => busB[27].IN1
+busB[28] => busB[28].IN1
+busB[29] => busB[29].IN1
+busB[30] => busB[30].IN1
+busB[31] => busB[31].IN1
+sel => sel.IN33
+carryOut <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[0].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[1].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[2].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[3].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[4].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[5].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[6].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[7].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[8].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[9].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[10].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[11].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[12].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[13].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[14].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[15].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[16].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[17].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[18].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[19].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[20].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[21].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[22].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[23].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[24].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[25].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[26].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[27].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[28].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[29].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[30].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[31].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU16bit.port3
+P <= lookAhead4b:LCU16bit.port4
+S[0] <= adder4b:a0.port5
+S[1] <= adder4b:a0.port5
+S[2] <= adder4b:a0.port5
+S[3] <= adder4b:a0.port5
+S[4] <= adder4b:a4.port5
+S[5] <= adder4b:a4.port5
+S[6] <= adder4b:a4.port5
+S[7] <= adder4b:a4.port5
+S[8] <= adder4b:a8.port5
+S[9] <= adder4b:a8.port5
+S[10] <= adder4b:a8.port5
+S[11] <= adder4b:a8.port5
+S[12] <= adder4b:a12.port5
+S[13] <= adder4b:a12.port5
+S[14] <= adder4b:a12.port5
+S[15] <= adder4b:a12.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a0|lookAhead4b:LCU16bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU16bit.port3
+P <= lookAhead4b:LCU16bit.port4
+S[0] <= adder4b:a0.port5
+S[1] <= adder4b:a0.port5
+S[2] <= adder4b:a0.port5
+S[3] <= adder4b:a0.port5
+S[4] <= adder4b:a4.port5
+S[5] <= adder4b:a4.port5
+S[6] <= adder4b:a4.port5
+S[7] <= adder4b:a4.port5
+S[8] <= adder4b:a8.port5
+S[9] <= adder4b:a8.port5
+S[10] <= adder4b:a8.port5
+S[11] <= adder4b:a8.port5
+S[12] <= adder4b:a12.port5
+S[13] <= adder4b:a12.port5
+S[14] <= adder4b:a12.port5
+S[15] <= adder4b:a12.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|adder_subtractor:a1|adder16b:a16|lookAhead4b:LCU16bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|subtract:sub1|flag:test
+busOut[0] => zeroLoop[0].zero0.IN0
+busOut[1] => zeroLoop[0].zero0.IN1
+busOut[2] => zeroLoop[0].zero0.IN2
+busOut[3] => zeroLoop[0].zero0.IN3
+busOut[4] => zeroLoop[1].zero0.IN0
+busOut[5] => zeroLoop[1].zero0.IN1
+busOut[6] => zeroLoop[1].zero0.IN2
+busOut[7] => zeroLoop[1].zero0.IN3
+busOut[8] => zeroLoop[2].zero0.IN0
+busOut[9] => zeroLoop[2].zero0.IN1
+busOut[10] => zeroLoop[2].zero0.IN2
+busOut[11] => zeroLoop[2].zero0.IN3
+busOut[12] => zeroLoop[3].zero0.IN0
+busOut[13] => zeroLoop[3].zero0.IN1
+busOut[14] => zeroLoop[3].zero0.IN2
+busOut[15] => zeroLoop[3].zero0.IN3
+busOut[16] => zeroLoop[4].zero0.IN0
+busOut[17] => zeroLoop[4].zero0.IN1
+busOut[18] => zeroLoop[4].zero0.IN2
+busOut[19] => zeroLoop[4].zero0.IN3
+busOut[20] => zeroLoop[5].zero0.IN0
+busOut[21] => zeroLoop[5].zero0.IN1
+busOut[22] => zeroLoop[5].zero0.IN2
+busOut[23] => zeroLoop[5].zero0.IN3
+busOut[24] => zeroLoop[6].zero0.IN0
+busOut[25] => zeroLoop[6].zero0.IN1
+busOut[26] => zeroLoop[6].zero0.IN2
+busOut[27] => zeroLoop[6].zero0.IN3
+busOut[28] => zeroLoop[7].zero0.IN0
+busOut[29] => zeroLoop[7].zero0.IN1
+busOut[30] => zeroLoop[7].zero0.IN2
+busOut[31] => zeroLoop[7].zero0.IN3
+busOut[31] => part2.IN0
+busOut[31] => e2.DATAIN
 busA[0] => ~NO_FANOUT~
 busA[1] => ~NO_FANOUT~
 busA[2] => ~NO_FANOUT~
@@ -1854,7 +3517,8 @@ busA[27] => ~NO_FANOUT~
 busA[28] => ~NO_FANOUT~
 busA[29] => ~NO_FANOUT~
 busA[30] => ~NO_FANOUT~
-busA[31] => ~NO_FANOUT~
+busA[31] => part1.IN0
+busA[31] => part2.IN1
 busB[0] => ~NO_FANOUT~
 busB[1] => ~NO_FANOUT~
 busB[2] => ~NO_FANOUT~
@@ -1886,209 +3550,313 @@ busB[27] => ~NO_FANOUT~
 busB[28] => ~NO_FANOUT~
 busB[29] => ~NO_FANOUT~
 busB[30] => ~NO_FANOUT~
-busB[31] => ~NO_FANOUT~
+busB[31] => part1.IN1
+carryOut => e1.DATAIN
+z <= zero8.DB_MAX_OUTPUT_PORT_TYPE
+o <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+c <= e1.DB_MAX_OUTPUT_PORT_TYPE
+n <= e2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|orGate:or1
-busOR[0] <= <GND>
-busOR[1] <= <GND>
-busOR[2] <= <GND>
-busOR[3] <= <GND>
-busOR[4] <= <GND>
-busOR[5] <= <GND>
-busOR[6] <= <GND>
-busOR[7] <= <GND>
-busOR[8] <= <GND>
-busOR[9] <= <GND>
-busOR[10] <= <GND>
-busOR[11] <= <GND>
-busOR[12] <= <GND>
-busOR[13] <= <GND>
-busOR[14] <= <GND>
-busOR[15] <= <GND>
-busOR[16] <= <GND>
-busOR[17] <= <GND>
-busOR[18] <= <GND>
-busOR[19] <= <GND>
-busOR[20] <= <GND>
-busOR[21] <= <GND>
-busOR[22] <= <GND>
-busOR[23] <= <GND>
-busOR[24] <= <GND>
-busOR[25] <= <GND>
-busOR[26] <= <GND>
-busOR[27] <= <GND>
-busOR[28] <= <GND>
-busOR[29] <= <GND>
-busOR[30] <= <GND>
-busOR[31] <= <GND>
-busA[0] => ~NO_FANOUT~
-busA[1] => ~NO_FANOUT~
-busA[2] => ~NO_FANOUT~
-busA[3] => ~NO_FANOUT~
-busA[4] => ~NO_FANOUT~
-busA[5] => ~NO_FANOUT~
-busA[6] => ~NO_FANOUT~
-busA[7] => ~NO_FANOUT~
-busA[8] => ~NO_FANOUT~
-busA[9] => ~NO_FANOUT~
-busA[10] => ~NO_FANOUT~
-busA[11] => ~NO_FANOUT~
-busA[12] => ~NO_FANOUT~
-busA[13] => ~NO_FANOUT~
-busA[14] => ~NO_FANOUT~
-busA[15] => ~NO_FANOUT~
-busA[16] => ~NO_FANOUT~
-busA[17] => ~NO_FANOUT~
-busA[18] => ~NO_FANOUT~
-busA[19] => ~NO_FANOUT~
-busA[20] => ~NO_FANOUT~
-busA[21] => ~NO_FANOUT~
-busA[22] => ~NO_FANOUT~
-busA[23] => ~NO_FANOUT~
-busA[24] => ~NO_FANOUT~
-busA[25] => ~NO_FANOUT~
-busA[26] => ~NO_FANOUT~
-busA[27] => ~NO_FANOUT~
-busA[28] => ~NO_FANOUT~
-busA[29] => ~NO_FANOUT~
-busA[30] => ~NO_FANOUT~
-busA[31] => ~NO_FANOUT~
-busB[0] => ~NO_FANOUT~
-busB[1] => ~NO_FANOUT~
-busB[2] => ~NO_FANOUT~
-busB[3] => ~NO_FANOUT~
-busB[4] => ~NO_FANOUT~
-busB[5] => ~NO_FANOUT~
-busB[6] => ~NO_FANOUT~
-busB[7] => ~NO_FANOUT~
-busB[8] => ~NO_FANOUT~
-busB[9] => ~NO_FANOUT~
-busB[10] => ~NO_FANOUT~
-busB[11] => ~NO_FANOUT~
-busB[12] => ~NO_FANOUT~
-busB[13] => ~NO_FANOUT~
-busB[14] => ~NO_FANOUT~
-busB[15] => ~NO_FANOUT~
-busB[16] => ~NO_FANOUT~
-busB[17] => ~NO_FANOUT~
-busB[18] => ~NO_FANOUT~
-busB[19] => ~NO_FANOUT~
-busB[20] => ~NO_FANOUT~
-busB[21] => ~NO_FANOUT~
-busB[22] => ~NO_FANOUT~
-busB[23] => ~NO_FANOUT~
-busB[24] => ~NO_FANOUT~
-busB[25] => ~NO_FANOUT~
-busB[26] => ~NO_FANOUT~
-busB[27] => ~NO_FANOUT~
-busB[28] => ~NO_FANOUT~
-busB[29] => ~NO_FANOUT~
-busB[30] => ~NO_FANOUT~
-busB[31] => ~NO_FANOUT~
+|DE1_SoCPhase1|ALUnit:alzheimers|andGate:and1
+busAND[0] <= andLoop[0].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[1] <= andLoop[1].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[2] <= andLoop[2].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[3] <= andLoop[3].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[4] <= andLoop[4].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[5] <= andLoop[5].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[6] <= andLoop[6].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[7] <= andLoop[7].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[8] <= andLoop[8].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[9] <= andLoop[9].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[10] <= andLoop[10].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[11] <= andLoop[11].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[12] <= andLoop[12].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[13] <= andLoop[13].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[14] <= andLoop[14].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[15] <= andLoop[15].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[16] <= andLoop[16].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[17] <= andLoop[17].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[18] <= andLoop[18].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[19] <= andLoop[19].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[20] <= andLoop[20].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[21] <= andLoop[21].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[22] <= andLoop[22].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[23] <= andLoop[23].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[24] <= andLoop[24].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[25] <= andLoop[25].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[26] <= andLoop[26].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[27] <= andLoop[27].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[28] <= andLoop[28].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[29] <= andLoop[29].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[30] <= andLoop[30].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busAND[31] <= andLoop[31].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busA[0] => andLoop[0].gateA.IN0
+busA[1] => andLoop[1].gateA.IN0
+busA[2] => andLoop[2].gateA.IN0
+busA[3] => andLoop[3].gateA.IN0
+busA[4] => andLoop[4].gateA.IN0
+busA[5] => andLoop[5].gateA.IN0
+busA[6] => andLoop[6].gateA.IN0
+busA[7] => andLoop[7].gateA.IN0
+busA[8] => andLoop[8].gateA.IN0
+busA[9] => andLoop[9].gateA.IN0
+busA[10] => andLoop[10].gateA.IN0
+busA[11] => andLoop[11].gateA.IN0
+busA[12] => andLoop[12].gateA.IN0
+busA[13] => andLoop[13].gateA.IN0
+busA[14] => andLoop[14].gateA.IN0
+busA[15] => andLoop[15].gateA.IN0
+busA[16] => andLoop[16].gateA.IN0
+busA[17] => andLoop[17].gateA.IN0
+busA[18] => andLoop[18].gateA.IN0
+busA[19] => andLoop[19].gateA.IN0
+busA[20] => andLoop[20].gateA.IN0
+busA[21] => andLoop[21].gateA.IN0
+busA[22] => andLoop[22].gateA.IN0
+busA[23] => andLoop[23].gateA.IN0
+busA[24] => andLoop[24].gateA.IN0
+busA[25] => andLoop[25].gateA.IN0
+busA[26] => andLoop[26].gateA.IN0
+busA[27] => andLoop[27].gateA.IN0
+busA[28] => andLoop[28].gateA.IN0
+busA[29] => andLoop[29].gateA.IN0
+busA[30] => andLoop[30].gateA.IN0
+busA[31] => andLoop[31].gateA.IN0
+busB[0] => andLoop[0].gateA.IN1
+busB[1] => andLoop[1].gateA.IN1
+busB[2] => andLoop[2].gateA.IN1
+busB[3] => andLoop[3].gateA.IN1
+busB[4] => andLoop[4].gateA.IN1
+busB[5] => andLoop[5].gateA.IN1
+busB[6] => andLoop[6].gateA.IN1
+busB[7] => andLoop[7].gateA.IN1
+busB[8] => andLoop[8].gateA.IN1
+busB[9] => andLoop[9].gateA.IN1
+busB[10] => andLoop[10].gateA.IN1
+busB[11] => andLoop[11].gateA.IN1
+busB[12] => andLoop[12].gateA.IN1
+busB[13] => andLoop[13].gateA.IN1
+busB[14] => andLoop[14].gateA.IN1
+busB[15] => andLoop[15].gateA.IN1
+busB[16] => andLoop[16].gateA.IN1
+busB[17] => andLoop[17].gateA.IN1
+busB[18] => andLoop[18].gateA.IN1
+busB[19] => andLoop[19].gateA.IN1
+busB[20] => andLoop[20].gateA.IN1
+busB[21] => andLoop[21].gateA.IN1
+busB[22] => andLoop[22].gateA.IN1
+busB[23] => andLoop[23].gateA.IN1
+busB[24] => andLoop[24].gateA.IN1
+busB[25] => andLoop[25].gateA.IN1
+busB[26] => andLoop[26].gateA.IN1
+busB[27] => andLoop[27].gateA.IN1
+busB[28] => andLoop[28].gateA.IN1
+busB[29] => andLoop[29].gateA.IN1
+busB[30] => andLoop[30].gateA.IN1
+busB[31] => andLoop[31].gateA.IN1
 
 
-|ALUnit|xorGate:xor1
-busXOR[0] <= <GND>
-busXOR[1] <= <GND>
-busXOR[2] <= <GND>
-busXOR[3] <= <GND>
-busXOR[4] <= <GND>
-busXOR[5] <= <GND>
-busXOR[6] <= <GND>
-busXOR[7] <= <GND>
-busXOR[8] <= <GND>
-busXOR[9] <= <GND>
-busXOR[10] <= <GND>
-busXOR[11] <= <GND>
-busXOR[12] <= <GND>
-busXOR[13] <= <GND>
-busXOR[14] <= <GND>
-busXOR[15] <= <GND>
-busXOR[16] <= <GND>
-busXOR[17] <= <GND>
-busXOR[18] <= <GND>
-busXOR[19] <= <GND>
-busXOR[20] <= <GND>
-busXOR[21] <= <GND>
-busXOR[22] <= <GND>
-busXOR[23] <= <GND>
-busXOR[24] <= <GND>
-busXOR[25] <= <GND>
-busXOR[26] <= <GND>
-busXOR[27] <= <GND>
-busXOR[28] <= <GND>
-busXOR[29] <= <GND>
-busXOR[30] <= <GND>
-busXOR[31] <= <GND>
-busA[0] => ~NO_FANOUT~
-busA[1] => ~NO_FANOUT~
-busA[2] => ~NO_FANOUT~
-busA[3] => ~NO_FANOUT~
-busA[4] => ~NO_FANOUT~
-busA[5] => ~NO_FANOUT~
-busA[6] => ~NO_FANOUT~
-busA[7] => ~NO_FANOUT~
-busA[8] => ~NO_FANOUT~
-busA[9] => ~NO_FANOUT~
-busA[10] => ~NO_FANOUT~
-busA[11] => ~NO_FANOUT~
-busA[12] => ~NO_FANOUT~
-busA[13] => ~NO_FANOUT~
-busA[14] => ~NO_FANOUT~
-busA[15] => ~NO_FANOUT~
-busA[16] => ~NO_FANOUT~
-busA[17] => ~NO_FANOUT~
-busA[18] => ~NO_FANOUT~
-busA[19] => ~NO_FANOUT~
-busA[20] => ~NO_FANOUT~
-busA[21] => ~NO_FANOUT~
-busA[22] => ~NO_FANOUT~
-busA[23] => ~NO_FANOUT~
-busA[24] => ~NO_FANOUT~
-busA[25] => ~NO_FANOUT~
-busA[26] => ~NO_FANOUT~
-busA[27] => ~NO_FANOUT~
-busA[28] => ~NO_FANOUT~
-busA[29] => ~NO_FANOUT~
-busA[30] => ~NO_FANOUT~
-busA[31] => ~NO_FANOUT~
-busB[0] => ~NO_FANOUT~
-busB[1] => ~NO_FANOUT~
-busB[2] => ~NO_FANOUT~
-busB[3] => ~NO_FANOUT~
-busB[4] => ~NO_FANOUT~
-busB[5] => ~NO_FANOUT~
-busB[6] => ~NO_FANOUT~
-busB[7] => ~NO_FANOUT~
-busB[8] => ~NO_FANOUT~
-busB[9] => ~NO_FANOUT~
-busB[10] => ~NO_FANOUT~
-busB[11] => ~NO_FANOUT~
-busB[12] => ~NO_FANOUT~
-busB[13] => ~NO_FANOUT~
-busB[14] => ~NO_FANOUT~
-busB[15] => ~NO_FANOUT~
-busB[16] => ~NO_FANOUT~
-busB[17] => ~NO_FANOUT~
-busB[18] => ~NO_FANOUT~
-busB[19] => ~NO_FANOUT~
-busB[20] => ~NO_FANOUT~
-busB[21] => ~NO_FANOUT~
-busB[22] => ~NO_FANOUT~
-busB[23] => ~NO_FANOUT~
-busB[24] => ~NO_FANOUT~
-busB[25] => ~NO_FANOUT~
-busB[26] => ~NO_FANOUT~
-busB[27] => ~NO_FANOUT~
-busB[28] => ~NO_FANOUT~
-busB[29] => ~NO_FANOUT~
-busB[30] => ~NO_FANOUT~
-busB[31] => ~NO_FANOUT~
+|DE1_SoCPhase1|ALUnit:alzheimers|orGate:or1
+busOR[0] <= orLoop[0].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[1] <= orLoop[1].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[2] <= orLoop[2].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[3] <= orLoop[3].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[4] <= orLoop[4].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[5] <= orLoop[5].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[6] <= orLoop[6].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[7] <= orLoop[7].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[8] <= orLoop[8].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[9] <= orLoop[9].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[10] <= orLoop[10].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[11] <= orLoop[11].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[12] <= orLoop[12].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[13] <= orLoop[13].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[14] <= orLoop[14].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[15] <= orLoop[15].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[16] <= orLoop[16].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[17] <= orLoop[17].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[18] <= orLoop[18].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[19] <= orLoop[19].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[20] <= orLoop[20].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[21] <= orLoop[21].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[22] <= orLoop[22].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[23] <= orLoop[23].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[24] <= orLoop[24].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[25] <= orLoop[25].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[26] <= orLoop[26].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[27] <= orLoop[27].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[28] <= orLoop[28].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[29] <= orLoop[29].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[30] <= orLoop[30].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busOR[31] <= orLoop[31].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busA[0] => orLoop[0].gateA.IN0
+busA[1] => orLoop[1].gateA.IN0
+busA[2] => orLoop[2].gateA.IN0
+busA[3] => orLoop[3].gateA.IN0
+busA[4] => orLoop[4].gateA.IN0
+busA[5] => orLoop[5].gateA.IN0
+busA[6] => orLoop[6].gateA.IN0
+busA[7] => orLoop[7].gateA.IN0
+busA[8] => orLoop[8].gateA.IN0
+busA[9] => orLoop[9].gateA.IN0
+busA[10] => orLoop[10].gateA.IN0
+busA[11] => orLoop[11].gateA.IN0
+busA[12] => orLoop[12].gateA.IN0
+busA[13] => orLoop[13].gateA.IN0
+busA[14] => orLoop[14].gateA.IN0
+busA[15] => orLoop[15].gateA.IN0
+busA[16] => orLoop[16].gateA.IN0
+busA[17] => orLoop[17].gateA.IN0
+busA[18] => orLoop[18].gateA.IN0
+busA[19] => orLoop[19].gateA.IN0
+busA[20] => orLoop[20].gateA.IN0
+busA[21] => orLoop[21].gateA.IN0
+busA[22] => orLoop[22].gateA.IN0
+busA[23] => orLoop[23].gateA.IN0
+busA[24] => orLoop[24].gateA.IN0
+busA[25] => orLoop[25].gateA.IN0
+busA[26] => orLoop[26].gateA.IN0
+busA[27] => orLoop[27].gateA.IN0
+busA[28] => orLoop[28].gateA.IN0
+busA[29] => orLoop[29].gateA.IN0
+busA[30] => orLoop[30].gateA.IN0
+busA[31] => orLoop[31].gateA.IN0
+busB[0] => orLoop[0].gateA.IN1
+busB[1] => orLoop[1].gateA.IN1
+busB[2] => orLoop[2].gateA.IN1
+busB[3] => orLoop[3].gateA.IN1
+busB[4] => orLoop[4].gateA.IN1
+busB[5] => orLoop[5].gateA.IN1
+busB[6] => orLoop[6].gateA.IN1
+busB[7] => orLoop[7].gateA.IN1
+busB[8] => orLoop[8].gateA.IN1
+busB[9] => orLoop[9].gateA.IN1
+busB[10] => orLoop[10].gateA.IN1
+busB[11] => orLoop[11].gateA.IN1
+busB[12] => orLoop[12].gateA.IN1
+busB[13] => orLoop[13].gateA.IN1
+busB[14] => orLoop[14].gateA.IN1
+busB[15] => orLoop[15].gateA.IN1
+busB[16] => orLoop[16].gateA.IN1
+busB[17] => orLoop[17].gateA.IN1
+busB[18] => orLoop[18].gateA.IN1
+busB[19] => orLoop[19].gateA.IN1
+busB[20] => orLoop[20].gateA.IN1
+busB[21] => orLoop[21].gateA.IN1
+busB[22] => orLoop[22].gateA.IN1
+busB[23] => orLoop[23].gateA.IN1
+busB[24] => orLoop[24].gateA.IN1
+busB[25] => orLoop[25].gateA.IN1
+busB[26] => orLoop[26].gateA.IN1
+busB[27] => orLoop[27].gateA.IN1
+busB[28] => orLoop[28].gateA.IN1
+busB[29] => orLoop[29].gateA.IN1
+busB[30] => orLoop[30].gateA.IN1
+busB[31] => orLoop[31].gateA.IN1
 
 
-|ALUnit|setLT:slt1
-busSLT[0] <= e2.DB_MAX_OUTPUT_PORT_TYPE
+|DE1_SoCPhase1|ALUnit:alzheimers|xorGate:xor1
+busXOR[0] <= xorLoop[0].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[1] <= xorLoop[1].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[2] <= xorLoop[2].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[3] <= xorLoop[3].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[4] <= xorLoop[4].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[5] <= xorLoop[5].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[6] <= xorLoop[6].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[7] <= xorLoop[7].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[8] <= xorLoop[8].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[9] <= xorLoop[9].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[10] <= xorLoop[10].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[11] <= xorLoop[11].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[12] <= xorLoop[12].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[13] <= xorLoop[13].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[14] <= xorLoop[14].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[15] <= xorLoop[15].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[16] <= xorLoop[16].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[17] <= xorLoop[17].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[18] <= xorLoop[18].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[19] <= xorLoop[19].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[20] <= xorLoop[20].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[21] <= xorLoop[21].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[22] <= xorLoop[22].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[23] <= xorLoop[23].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[24] <= xorLoop[24].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[25] <= xorLoop[25].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[26] <= xorLoop[26].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[27] <= xorLoop[27].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[28] <= xorLoop[28].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[29] <= xorLoop[29].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[30] <= xorLoop[30].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busXOR[31] <= xorLoop[31].gateA.DB_MAX_OUTPUT_PORT_TYPE
+busA[0] => xorLoop[0].gateA.IN0
+busA[1] => xorLoop[1].gateA.IN0
+busA[2] => xorLoop[2].gateA.IN0
+busA[3] => xorLoop[3].gateA.IN0
+busA[4] => xorLoop[4].gateA.IN0
+busA[5] => xorLoop[5].gateA.IN0
+busA[6] => xorLoop[6].gateA.IN0
+busA[7] => xorLoop[7].gateA.IN0
+busA[8] => xorLoop[8].gateA.IN0
+busA[9] => xorLoop[9].gateA.IN0
+busA[10] => xorLoop[10].gateA.IN0
+busA[11] => xorLoop[11].gateA.IN0
+busA[12] => xorLoop[12].gateA.IN0
+busA[13] => xorLoop[13].gateA.IN0
+busA[14] => xorLoop[14].gateA.IN0
+busA[15] => xorLoop[15].gateA.IN0
+busA[16] => xorLoop[16].gateA.IN0
+busA[17] => xorLoop[17].gateA.IN0
+busA[18] => xorLoop[18].gateA.IN0
+busA[19] => xorLoop[19].gateA.IN0
+busA[20] => xorLoop[20].gateA.IN0
+busA[21] => xorLoop[21].gateA.IN0
+busA[22] => xorLoop[22].gateA.IN0
+busA[23] => xorLoop[23].gateA.IN0
+busA[24] => xorLoop[24].gateA.IN0
+busA[25] => xorLoop[25].gateA.IN0
+busA[26] => xorLoop[26].gateA.IN0
+busA[27] => xorLoop[27].gateA.IN0
+busA[28] => xorLoop[28].gateA.IN0
+busA[29] => xorLoop[29].gateA.IN0
+busA[30] => xorLoop[30].gateA.IN0
+busA[31] => xorLoop[31].gateA.IN0
+busB[0] => xorLoop[0].gateA.IN1
+busB[1] => xorLoop[1].gateA.IN1
+busB[2] => xorLoop[2].gateA.IN1
+busB[3] => xorLoop[3].gateA.IN1
+busB[4] => xorLoop[4].gateA.IN1
+busB[5] => xorLoop[5].gateA.IN1
+busB[6] => xorLoop[6].gateA.IN1
+busB[7] => xorLoop[7].gateA.IN1
+busB[8] => xorLoop[8].gateA.IN1
+busB[9] => xorLoop[9].gateA.IN1
+busB[10] => xorLoop[10].gateA.IN1
+busB[11] => xorLoop[11].gateA.IN1
+busB[12] => xorLoop[12].gateA.IN1
+busB[13] => xorLoop[13].gateA.IN1
+busB[14] => xorLoop[14].gateA.IN1
+busB[15] => xorLoop[15].gateA.IN1
+busB[16] => xorLoop[16].gateA.IN1
+busB[17] => xorLoop[17].gateA.IN1
+busB[18] => xorLoop[18].gateA.IN1
+busB[19] => xorLoop[19].gateA.IN1
+busB[20] => xorLoop[20].gateA.IN1
+busB[21] => xorLoop[21].gateA.IN1
+busB[22] => xorLoop[22].gateA.IN1
+busB[23] => xorLoop[23].gateA.IN1
+busB[24] => xorLoop[24].gateA.IN1
+busB[25] => xorLoop[25].gateA.IN1
+busB[26] => xorLoop[26].gateA.IN1
+busB[27] => xorLoop[27].gateA.IN1
+busB[28] => xorLoop[28].gateA.IN1
+busB[29] => xorLoop[29].gateA.IN1
+busB[30] => xorLoop[30].gateA.IN1
+busB[31] => xorLoop[31].gateA.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1
+busSLT[0] <= subtract:sub1.port0
 busSLT[1] <= <GND>
 busSLT[2] <= <GND>
 busSLT[3] <= <GND>
@@ -2186,39 +3954,1489 @@ busB[30] => busB[30].IN1
 busB[31] => busB[31].IN1
 
 
-|ALUnit|setLT:slt1|subtract:sub1
-busSUB[0] <= <GND>
-busSUB[1] <= <GND>
-busSUB[2] <= <GND>
-busSUB[3] <= <GND>
-busSUB[4] <= <GND>
-busSUB[5] <= <GND>
-busSUB[6] <= <GND>
-busSUB[7] <= <GND>
-busSUB[8] <= <GND>
-busSUB[9] <= <GND>
-busSUB[10] <= <GND>
-busSUB[11] <= <GND>
-busSUB[12] <= <GND>
-busSUB[13] <= <GND>
-busSUB[14] <= <GND>
-busSUB[15] <= <GND>
-busSUB[16] <= <GND>
-busSUB[17] <= <GND>
-busSUB[18] <= <GND>
-busSUB[19] <= <GND>
-busSUB[20] <= <GND>
-busSUB[21] <= <GND>
-busSUB[22] <= <GND>
-busSUB[23] <= <GND>
-busSUB[24] <= <GND>
-busSUB[25] <= <GND>
-busSUB[26] <= <GND>
-busSUB[27] <= <GND>
-busSUB[28] <= <GND>
-busSUB[29] <= <GND>
-busSUB[30] <= <GND>
-busSUB[31] <= <GND>
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1
+busSUB[0] <= busSUB[0].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[1] <= busSUB[1].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[2] <= busSUB[2].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[3] <= busSUB[3].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[4] <= busSUB[4].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[5] <= busSUB[5].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[6] <= busSUB[6].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[7] <= busSUB[7].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[8] <= busSUB[8].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[9] <= busSUB[9].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[10] <= busSUB[10].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[11] <= busSUB[11].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[12] <= busSUB[12].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[13] <= busSUB[13].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[14] <= busSUB[14].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[15] <= busSUB[15].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[16] <= busSUB[16].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[17] <= busSUB[17].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[18] <= busSUB[18].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[19] <= busSUB[19].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[20] <= busSUB[20].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[21] <= busSUB[21].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[22] <= busSUB[22].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[23] <= busSUB[23].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[24] <= busSUB[24].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[25] <= busSUB[25].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[26] <= busSUB[26].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[27] <= busSUB[27].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[28] <= busSUB[28].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[29] <= busSUB[29].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[30] <= busSUB[30].DB_MAX_OUTPUT_PORT_TYPE
+busSUB[31] <= busSUB[31].DB_MAX_OUTPUT_PORT_TYPE
+busA[0] => busA[0].IN2
+busA[1] => busA[1].IN2
+busA[2] => busA[2].IN2
+busA[3] => busA[3].IN2
+busA[4] => busA[4].IN2
+busA[5] => busA[5].IN2
+busA[6] => busA[6].IN2
+busA[7] => busA[7].IN2
+busA[8] => busA[8].IN2
+busA[9] => busA[9].IN2
+busA[10] => busA[10].IN2
+busA[11] => busA[11].IN2
+busA[12] => busA[12].IN2
+busA[13] => busA[13].IN2
+busA[14] => busA[14].IN2
+busA[15] => busA[15].IN2
+busA[16] => busA[16].IN2
+busA[17] => busA[17].IN2
+busA[18] => busA[18].IN2
+busA[19] => busA[19].IN2
+busA[20] => busA[20].IN2
+busA[21] => busA[21].IN2
+busA[22] => busA[22].IN2
+busA[23] => busA[23].IN2
+busA[24] => busA[24].IN2
+busA[25] => busA[25].IN2
+busA[26] => busA[26].IN2
+busA[27] => busA[27].IN2
+busA[28] => busA[28].IN2
+busA[29] => busA[29].IN2
+busA[30] => busA[30].IN2
+busA[31] => busA[31].IN2
+busB[0] => busB[0].IN2
+busB[1] => busB[1].IN2
+busB[2] => busB[2].IN2
+busB[3] => busB[3].IN2
+busB[4] => busB[4].IN2
+busB[5] => busB[5].IN2
+busB[6] => busB[6].IN2
+busB[7] => busB[7].IN2
+busB[8] => busB[8].IN2
+busB[9] => busB[9].IN2
+busB[10] => busB[10].IN2
+busB[11] => busB[11].IN2
+busB[12] => busB[12].IN2
+busB[13] => busB[13].IN2
+busB[14] => busB[14].IN2
+busB[15] => busB[15].IN2
+busB[16] => busB[16].IN2
+busB[17] => busB[17].IN2
+busB[18] => busB[18].IN2
+busB[19] => busB[19].IN2
+busB[20] => busB[20].IN2
+busB[21] => busB[21].IN2
+busB[22] => busB[22].IN2
+busB[23] => busB[23].IN2
+busB[24] => busB[24].IN2
+busB[25] => busB[25].IN2
+busB[26] => busB[26].IN2
+busB[27] => busB[27].IN2
+busB[28] => busB[28].IN2
+busB[29] => busB[29].IN2
+busB[30] => busB[30].IN2
+busB[31] => busB[31].IN2
+zSUB <= flag:test.port4
+oSUB <= flag:test.port5
+cSUB <= flag:test.port6
+nSUB <= flag:test.port7
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1
+S[0] <= adder16b:a0.port5
+S[1] <= adder16b:a0.port5
+S[2] <= adder16b:a0.port5
+S[3] <= adder16b:a0.port5
+S[4] <= adder16b:a0.port5
+S[5] <= adder16b:a0.port5
+S[6] <= adder16b:a0.port5
+S[7] <= adder16b:a0.port5
+S[8] <= adder16b:a0.port5
+S[9] <= adder16b:a0.port5
+S[10] <= adder16b:a0.port5
+S[11] <= adder16b:a0.port5
+S[12] <= adder16b:a0.port5
+S[13] <= adder16b:a0.port5
+S[14] <= adder16b:a0.port5
+S[15] <= adder16b:a0.port5
+S[16] <= adder16b:a16.port5
+S[17] <= adder16b:a16.port5
+S[18] <= adder16b:a16.port5
+S[19] <= adder16b:a16.port5
+S[20] <= adder16b:a16.port5
+S[21] <= adder16b:a16.port5
+S[22] <= adder16b:a16.port5
+S[23] <= adder16b:a16.port5
+S[24] <= adder16b:a16.port5
+S[25] <= adder16b:a16.port5
+S[26] <= adder16b:a16.port5
+S[27] <= adder16b:a16.port5
+S[28] <= adder16b:a16.port5
+S[29] <= adder16b:a16.port5
+S[30] <= adder16b:a16.port5
+S[31] <= adder16b:a16.port5
+busA[0] => busA[0].IN1
+busA[1] => busA[1].IN1
+busA[2] => busA[2].IN1
+busA[3] => busA[3].IN1
+busA[4] => busA[4].IN1
+busA[5] => busA[5].IN1
+busA[6] => busA[6].IN1
+busA[7] => busA[7].IN1
+busA[8] => busA[8].IN1
+busA[9] => busA[9].IN1
+busA[10] => busA[10].IN1
+busA[11] => busA[11].IN1
+busA[12] => busA[12].IN1
+busA[13] => busA[13].IN1
+busA[14] => busA[14].IN1
+busA[15] => busA[15].IN1
+busA[16] => busA[16].IN1
+busA[17] => busA[17].IN1
+busA[18] => busA[18].IN1
+busA[19] => busA[19].IN1
+busA[20] => busA[20].IN1
+busA[21] => busA[21].IN1
+busA[22] => busA[22].IN1
+busA[23] => busA[23].IN1
+busA[24] => busA[24].IN1
+busA[25] => busA[25].IN1
+busA[26] => busA[26].IN1
+busA[27] => busA[27].IN1
+busA[28] => busA[28].IN1
+busA[29] => busA[29].IN1
+busA[30] => busA[30].IN1
+busA[31] => busA[31].IN1
+busB[0] => busB[0].IN1
+busB[1] => busB[1].IN1
+busB[2] => busB[2].IN1
+busB[3] => busB[3].IN1
+busB[4] => busB[4].IN1
+busB[5] => busB[5].IN1
+busB[6] => busB[6].IN1
+busB[7] => busB[7].IN1
+busB[8] => busB[8].IN1
+busB[9] => busB[9].IN1
+busB[10] => busB[10].IN1
+busB[11] => busB[11].IN1
+busB[12] => busB[12].IN1
+busB[13] => busB[13].IN1
+busB[14] => busB[14].IN1
+busB[15] => busB[15].IN1
+busB[16] => busB[16].IN1
+busB[17] => busB[17].IN1
+busB[18] => busB[18].IN1
+busB[19] => busB[19].IN1
+busB[20] => busB[20].IN1
+busB[21] => busB[21].IN1
+busB[22] => busB[22].IN1
+busB[23] => busB[23].IN1
+busB[24] => busB[24].IN1
+busB[25] => busB[25].IN1
+busB[26] => busB[26].IN1
+busB[27] => busB[27].IN1
+busB[28] => busB[28].IN1
+busB[29] => busB[29].IN1
+busB[30] => busB[30].IN1
+busB[31] => busB[31].IN1
+sel => sel.IN33
+carryOut <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[0].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[1].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[2].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[3].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[4].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[5].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[6].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[7].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[8].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[9].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[10].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[11].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[12].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[13].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[14].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[15].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[16].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[17].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[18].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[19].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[20].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[21].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[22].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[23].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[24].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[25].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[26].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[27].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[28].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[29].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[30].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|mux2_1:AddorSubtract[31].choose1
+out <= o.DB_MAX_OUTPUT_PORT_TYPE
+i0 => a2.IN0
+i1 => a1.IN0
+sel => a1.IN1
+sel => a2.IN1
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU16bit.port3
+P <= lookAhead4b:LCU16bit.port4
+S[0] <= adder4b:a0.port5
+S[1] <= adder4b:a0.port5
+S[2] <= adder4b:a0.port5
+S[3] <= adder4b:a0.port5
+S[4] <= adder4b:a4.port5
+S[5] <= adder4b:a4.port5
+S[6] <= adder4b:a4.port5
+S[7] <= adder4b:a4.port5
+S[8] <= adder4b:a8.port5
+S[9] <= adder4b:a8.port5
+S[10] <= adder4b:a8.port5
+S[11] <= adder4b:a8.port5
+S[12] <= adder4b:a12.port5
+S[13] <= adder4b:a12.port5
+S[14] <= adder4b:a12.port5
+S[15] <= adder4b:a12.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a0|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a4|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a8|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|adder4b:a12|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a0|lookAhead4b:LCU16bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU16bit.port3
+P <= lookAhead4b:LCU16bit.port4
+S[0] <= adder4b:a0.port5
+S[1] <= adder4b:a0.port5
+S[2] <= adder4b:a0.port5
+S[3] <= adder4b:a0.port5
+S[4] <= adder4b:a4.port5
+S[5] <= adder4b:a4.port5
+S[6] <= adder4b:a4.port5
+S[7] <= adder4b:a4.port5
+S[8] <= adder4b:a8.port5
+S[9] <= adder4b:a8.port5
+S[10] <= adder4b:a8.port5
+S[11] <= adder4b:a8.port5
+S[12] <= adder4b:a12.port5
+S[13] <= adder4b:a12.port5
+S[14] <= adder4b:a12.port5
+S[15] <= adder4b:a12.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a0|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a4|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a8|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+carryIn => carryIn.IN2
+G <= lookAhead4b:LCU4bit.port3
+P <= lookAhead4b:LCU4bit.port4
+S[0] <= fullAdder1b:a0.port5
+S[1] <= fullAdder1b:a1.port5
+S[2] <= fullAdder1b:a2.port5
+S[3] <= fullAdder1b:a3.port5
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a0
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a1
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a2
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|fullAdder1b:a3
+x => p.IN0
+x => g.IN0
+x => s.IN0
+y => p.IN1
+y => g.IN1
+y => s.IN1
+carryIn => s.IN2
+G <= g.DB_MAX_OUTPUT_PORT_TYPE
+P <= p.DB_MAX_OUTPUT_PORT_TYPE
+S <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|adder4b:a12|lookAhead4b:LCU4bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|adder_subtractor:a1|adder16b:a16|lookAhead4b:LCU16bit
+carryIn => a0.IN0
+g[0] => or0.IN1
+g[0] => a01.IN0
+g[1] => or1.IN1
+g[1] => a02.IN0
+g[2] => or2.IN1
+g[2] => a03.IN0
+g[3] => or3.IN1
+g[3] => or4.IN3
+p[0] => a0.IN1
+p[0] => a11.IN0
+p[1] => a1.IN1
+p[1] => a01.IN1
+p[1] => a11.IN1
+p[2] => a2.IN1
+p[2] => a01.IN2
+p[2] => a02.IN1
+p[2] => a11.IN2
+p[3] => a3.IN1
+p[3] => a01.IN3
+p[3] => a02.IN2
+p[3] => a03.IN1
+p[3] => a11.IN3
+GG <= or4.DB_MAX_OUTPUT_PORT_TYPE
+PG <= a11.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoCPhase1|ALUnit:alzheimers|setLT:slt1|subtract:sub1|flag:test
+busOut[0] => zeroLoop[0].zero0.IN0
+busOut[1] => zeroLoop[0].zero0.IN1
+busOut[2] => zeroLoop[0].zero0.IN2
+busOut[3] => zeroLoop[0].zero0.IN3
+busOut[4] => zeroLoop[1].zero0.IN0
+busOut[5] => zeroLoop[1].zero0.IN1
+busOut[6] => zeroLoop[1].zero0.IN2
+busOut[7] => zeroLoop[1].zero0.IN3
+busOut[8] => zeroLoop[2].zero0.IN0
+busOut[9] => zeroLoop[2].zero0.IN1
+busOut[10] => zeroLoop[2].zero0.IN2
+busOut[11] => zeroLoop[2].zero0.IN3
+busOut[12] => zeroLoop[3].zero0.IN0
+busOut[13] => zeroLoop[3].zero0.IN1
+busOut[14] => zeroLoop[3].zero0.IN2
+busOut[15] => zeroLoop[3].zero0.IN3
+busOut[16] => zeroLoop[4].zero0.IN0
+busOut[17] => zeroLoop[4].zero0.IN1
+busOut[18] => zeroLoop[4].zero0.IN2
+busOut[19] => zeroLoop[4].zero0.IN3
+busOut[20] => zeroLoop[5].zero0.IN0
+busOut[21] => zeroLoop[5].zero0.IN1
+busOut[22] => zeroLoop[5].zero0.IN2
+busOut[23] => zeroLoop[5].zero0.IN3
+busOut[24] => zeroLoop[6].zero0.IN0
+busOut[25] => zeroLoop[6].zero0.IN1
+busOut[26] => zeroLoop[6].zero0.IN2
+busOut[27] => zeroLoop[6].zero0.IN3
+busOut[28] => zeroLoop[7].zero0.IN0
+busOut[29] => zeroLoop[7].zero0.IN1
+busOut[30] => zeroLoop[7].zero0.IN2
+busOut[31] => zeroLoop[7].zero0.IN3
+busOut[31] => part2.IN0
+busOut[31] => e2.DATAIN
 busA[0] => ~NO_FANOUT~
 busA[1] => ~NO_FANOUT~
 busA[2] => ~NO_FANOUT~
@@ -2250,7 +5468,8 @@ busA[27] => ~NO_FANOUT~
 busA[28] => ~NO_FANOUT~
 busA[29] => ~NO_FANOUT~
 busA[30] => ~NO_FANOUT~
-busA[31] => ~NO_FANOUT~
+busA[31] => part1.IN0
+busA[31] => part2.IN1
 busB[0] => ~NO_FANOUT~
 busB[1] => ~NO_FANOUT~
 busB[2] => ~NO_FANOUT~
@@ -2282,14 +5501,15 @@ busB[27] => ~NO_FANOUT~
 busB[28] => ~NO_FANOUT~
 busB[29] => ~NO_FANOUT~
 busB[30] => ~NO_FANOUT~
-busB[31] => ~NO_FANOUT~
-zSUB <= <GND>
-oSUB <= <GND>
-cSUB <= <GND>
-nSUB <= <GND>
+busB[31] => part1.IN1
+carryOut => e1.DATAIN
+z <= zero8.DB_MAX_OUTPUT_PORT_TYPE
+o <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+c <= e1.DB_MAX_OUTPUT_PORT_TYPE
+n <= e2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUnit|shiftll:sll1
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1
 busSLL[0] <= mux2_1:m00.port0
 busSLL[1] <= mux2_1:Level0Loop[1].m0x.port0
 busSLL[2] <= mux2_1:Level0Loop[2].m0x.port0
@@ -2388,7 +5608,7 @@ sel[30] => ~NO_FANOUT~
 sel[31] => ~NO_FANOUT~
 
 
-|ALUnit|shiftll:sll1|mux2_1:m00
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:m00
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2396,7 +5616,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[1].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[1].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2404,7 +5624,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[2].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[2].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2412,7 +5632,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[3].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[3].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2420,7 +5640,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[4].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[4].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2428,7 +5648,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[5].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[5].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2436,7 +5656,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[6].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[6].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2444,7 +5664,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[7].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[7].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2452,7 +5672,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[8].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[8].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2460,7 +5680,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[9].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[9].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2468,7 +5688,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[10].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[10].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2476,7 +5696,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[11].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[11].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2484,7 +5704,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[12].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[12].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2492,7 +5712,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[13].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[13].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2500,7 +5720,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[14].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[14].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2508,7 +5728,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[15].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[15].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2516,7 +5736,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[16].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[16].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2524,7 +5744,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[17].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[17].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2532,7 +5752,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[18].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[18].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2540,7 +5760,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[19].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[19].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2548,7 +5768,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[20].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[20].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2556,7 +5776,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[21].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[21].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2564,7 +5784,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[22].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[22].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2572,7 +5792,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[23].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[23].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2580,7 +5800,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[24].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[24].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2588,7 +5808,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[25].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[25].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2596,7 +5816,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[26].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[26].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2604,7 +5824,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[27].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[27].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2612,7 +5832,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[28].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[28].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2620,7 +5840,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[29].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[29].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2628,7 +5848,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[30].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[30].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2636,7 +5856,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level0Loop[31].m0x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level0Loop[31].m0x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2644,7 +5864,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:m10
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:m10
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2652,7 +5872,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:m11
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:m11
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2660,7 +5880,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[2].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[2].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2668,7 +5888,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[3].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[3].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2676,7 +5896,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[4].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[4].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2684,7 +5904,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[5].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[5].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2692,7 +5912,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[6].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[6].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2700,7 +5920,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[7].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[7].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2708,7 +5928,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[8].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[8].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2716,7 +5936,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[9].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[9].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2724,7 +5944,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[10].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[10].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2732,7 +5952,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[11].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[11].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2740,7 +5960,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[12].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[12].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2748,7 +5968,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[13].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[13].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2756,7 +5976,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[14].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[14].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2764,7 +5984,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[15].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[15].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2772,7 +5992,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[16].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[16].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2780,7 +6000,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[17].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[17].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2788,7 +6008,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[18].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[18].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2796,7 +6016,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[19].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[19].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2804,7 +6024,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[20].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[20].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2812,7 +6032,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[21].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[21].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2820,7 +6040,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[22].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[22].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2828,7 +6048,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[23].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[23].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2836,7 +6056,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[24].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[24].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2844,7 +6064,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[25].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[25].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2852,7 +6072,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[26].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[26].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2860,7 +6080,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[27].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[27].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2868,7 +6088,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[28].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[28].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2876,7 +6096,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[29].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[29].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2884,7 +6104,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[30].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[30].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2892,7 +6112,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level1Loop[31].m1x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level1Loop[31].m1x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2900,7 +6120,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:m20
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:m20
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2908,7 +6128,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:m21
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:m21
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2916,7 +6136,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:m22
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:m22
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2924,7 +6144,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:m23
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:m23
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2932,7 +6152,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[4].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[4].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2940,7 +6160,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[5].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[5].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2948,7 +6168,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[6].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[6].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2956,7 +6176,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[7].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[7].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2964,7 +6184,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[8].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[8].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2972,7 +6192,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[9].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[9].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2980,7 +6200,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[10].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[10].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2988,7 +6208,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[11].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[11].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -2996,7 +6216,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[12].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[12].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3004,7 +6224,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[13].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[13].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3012,7 +6232,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[14].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[14].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3020,7 +6240,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[15].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[15].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3028,7 +6248,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[16].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[16].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3036,7 +6256,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[17].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[17].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3044,7 +6264,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[18].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[18].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3052,7 +6272,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[19].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[19].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3060,7 +6280,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[20].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[20].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3068,7 +6288,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[21].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[21].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3076,7 +6296,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[22].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[22].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3084,7 +6304,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[23].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[23].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3092,7 +6312,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[24].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[24].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3100,7 +6320,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[25].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[25].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3108,7 +6328,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[26].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[26].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3116,7 +6336,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[27].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[27].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3124,7 +6344,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[28].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[28].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3132,7 +6352,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[29].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[29].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3140,7 +6360,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[30].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[30].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0
@@ -3148,7 +6368,7 @@ sel => a1.IN1
 sel => a2.IN1
 
 
-|ALUnit|shiftll:sll1|mux2_1:Level2Loop[31].m2x
+|DE1_SoCPhase1|ALUnit:alzheimers|shiftll:sll1|mux2_1:Level2Loop[31].m2x
 out <= o.DB_MAX_OUTPUT_PORT_TYPE
 i0 => a2.IN0
 i1 => a1.IN0

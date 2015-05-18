@@ -1,18 +1,15 @@
-Warning (10273): Verilog HDL warning at SRAM2Kby16.v(12): extended using "x" or "z"
+Warning (10268): Verilog HDL information at DE1_SoCPhase1.v(92): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at DE1_SoCPhase1.v(37): object "HEX0" differs only in case from object "hex0" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoCPhase1.v(37): object "HEX1" differs only in case from object "hex1" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoCPhase1.v(37): object "HEX2" differs only in case from object "hex2" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoCPhase1.v(37): object "HEX3" differs only in case from object "hex3" in the same scope
+Warning (10273): Verilog HDL warning at SRAM2Kby16.v(15): extended using "x" or "z"
 Warning (10273): Verilog HDL warning at registerFile.sv(44): extended using "x" or "z"
 Info (10281): Verilog HDL Declaration information at fullAdder1b.v(3): object "P" differs only in case from object "p" in the same scope
 Info (10281): Verilog HDL Declaration information at fullAdder1b.v(3): object "G" differs only in case from object "g" in the same scope
 Info (10281): Verilog HDL Declaration information at fullAdder1b.v(3): object "S" differs only in case from object "s" in the same scope
-Warning (10273): Verilog HDL warning at DE1_SoC.v(28): extended using "x" or "z"
 Info (10281): Verilog HDL Declaration information at adder4b.v(5): object "G" differs only in case from object "g" in the same scope
 Info (10281): Verilog HDL Declaration information at adder4b.v(6): object "P" differs only in case from object "p" in the same scope
 Info (10281): Verilog HDL Declaration information at adder16b.v(5): object "G" differs only in case from object "g" in the same scope
 Info (10281): Verilog HDL Declaration information at adder16b.v(6): object "P" differs only in case from object "p" in the same scope
-Warning (10034): Output port "busSUB" at subtract.v(2) has no driver
-Warning (10034): Output port "zSUB" at subtract.v(4) has no driver
-Warning (10034): Output port "oSUB" at subtract.v(4) has no driver
-Warning (10034): Output port "cSUB" at subtract.v(4) has no driver
-Warning (10034): Output port "nSUB" at subtract.v(4) has no driver
-Warning (10034): Output port "busAND" at andGate.v(2) has no driver
-Warning (10034): Output port "busOR" at orGate.v(2) has no driver
-Warning (10034): Output port "busXOR" at xorGate.v(2) has no driver
+Warning (10034): Output port "LEDR[9..4]" at DE1_SoCPhase1.v(36) has no driver

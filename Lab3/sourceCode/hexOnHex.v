@@ -6,10 +6,10 @@ module hexOnHex (data, conv);
 		case (data)
 			0: conv = 7'b1000000;
 			1: conv = 7'b1111001;
- 		  2: conv = 7'b1011011;
-			3: conv = 7'b1001111;
-			4: conv = 7'b1100110;
-			5: conv = 7'b1101101;
+ 		   2: conv = ~7'b1011011;
+			3: conv = ~7'b1001111;
+			4: conv = ~7'b1100110;
+			5: conv = ~7'b1101101;
 			6: conv = 7'b0000010;
 			7: conv = 7'b1111000;
 			8: conv = 7'b0000000;
