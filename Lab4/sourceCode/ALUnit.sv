@@ -1,6 +1,6 @@
 // module itself module in dataflow level, submodule will module in behavioural level
 module ALUnit (
-	input clk,    // Clock
+	// input clk,    // Clock
 	input [2:0]  control,
 	input [31:0] busA, busB,
 	output reg [31:0] busOut,
@@ -17,14 +17,15 @@ module ALUnit (
 	wire zSLT, oSLT, cSLT, nSLT;
 	wire zSLL, oSLL, cSLL, nSLL;
 	// present state and next state for zero, overflow, carryout, and negative;
-	reg zps, zns, ops, ons, cps, cns, nps, nns;
+	// reg zps, zns, ops, ons, cps, cns, nps, nns;
+	reg zns, ons, cns, nns;
 	reg [31:0] outps, outns;
 
-	assign zero = zps;
-	assign overflow = ops;
-	assign carryout = cps;
-	assign negative = nps;
-	assign busOut = outps;
+	assign zero = zns;
+	assign overflow = ons;
+	assign carryout = cns;
+	assign negative = nns;
+	assign busOut = outns;
 
 	addition add1  (busADD, busA, busB, zADD, oADD, cADD, nADD);
 	subtract sub1  (busSUB, busA, busB, zSUB, oSUB, cSUB, nSUB);
@@ -92,13 +93,13 @@ module ALUnit (
 		end
 	end
 
-	always @(posedge clk) begin
-		zps <= zns;
-		ops <= ons;
-		cps <= cns;
-		nps <= nns;
-		outps <= outns;
-	end
+//	always @(posedge clk) begin
+	//	zps <= zns;
+	//	ops <= ons;
+	//	cps <= cns;
+	//	nps <= nns;
+	//	outps <= outns;
+	//end
 
 endmodule
 
