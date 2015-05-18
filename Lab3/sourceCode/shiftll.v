@@ -5,6 +5,9 @@
 module shiftll (busSLL, busA, sel);
 	output [31:0] busSLL;
 	input  [31:0] busA, sel;
+	// output zSLL, oSLL, cSLL, nSLL;
+
+	// wire carryOut;
 
 	wire [31:0] Level1, Level2;
 
@@ -40,5 +43,7 @@ module shiftll (busSLL, busA, sel);
 			mux2_1 m2x(Level2[k], busA[k], busA[k-4], sel[2]);
 		end
 	endgenerate	
+
+	// flag test(busSLL, busA, busB, carryOut, zSLL, oSLL, cSLL, nSLL);
 
 endmodule
