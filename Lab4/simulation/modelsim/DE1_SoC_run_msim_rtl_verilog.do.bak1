@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/flag.v}
+vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/addition.v}
+vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/ProgCountReg.v}
+

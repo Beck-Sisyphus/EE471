@@ -1,0 +1,450 @@
+m255
+K3
+13
+cModel Technology
+Z0 dU:\EE471\Lab4\simulation\modelsim
+vaddition
+Z1 IXP1ZMFimYKcOW_gHi0Zn@2
+Z2 VQ=Cn6o6SSbC0[e5OebViF3
+Z3 dU:\EE471\Lab4\simulation\modelsim
+Z4 w1432112972
+Z5 8U:/sourceCode/ALU operation/addition.v
+Z6 FU:/sourceCode/ALU operation/addition.v
+L0 4
+Z7 OV;L;10.1e;51
+r1
+31
+Z8 o-vlog01compat -work work -O0
+Z9 !s92 -vlog01compat -work work {+incdir+U:/sourceCode/ALU operation} -O0
+Z10 !s100 7<6JzbYn2Wb1:0S[W421f0
+Z11 !s108 1432114331.423000
+Z12 !s107 U:/sourceCode/ALU operation/addition.v|
+Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode/ALU operation|U:/sourceCode/ALU operation/addition.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALUcontrol
+Z14 InAWQ7OB36k_2?J?SoiR4X3
+Z15 V@ZFXzULb8BH8Sn^jCG7U?2
+R3
+R4
+Z16 8U:/sourceCode/ALUcontrol.v
+Z17 FU:/sourceCode/ALUcontrol.v
+L0 1
+R7
+r1
+31
+R8
+Z18 !s92 -vlog01compat -work work +incdir+U:/sourceCode -O0
+Z19 n@a@l@ucontrol
+Z20 !s100 YOcS<@9K>FDQY1E4D1aM>2
+Z21 !s108 1432114320.354000
+Z22 !s107 U:/sourceCode/ALUcontrol.v|
+Z23 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode|U:/sourceCode/ALUcontrol.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALUnit
+Z24 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z25 I`D:[;Hh^>`<zN1TJCiX8j3
+Z26 VnUeZz8Xjg9cT[iJLHZM@10
+Z27 !s105 ALUnit_sv_unit
+S1
+R3
+R4
+Z28 8U:/sourceCode/ALUnit.sv
+Z29 FU:/sourceCode/ALUnit.sv
+L0 2
+R7
+r1
+31
+Z30 !s108 1432114337.231000
+Z31 !s107 U:/sourceCode/ALUnit.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/sourceCode|U:/sourceCode/ALUnit.sv|
+Z33 o-sv -work work -O0
+Z34 !s92 -sv -work work +incdir+U:/sourceCode -O0
+Z35 n@a@l@unit
+Z36 !s100 nU`hjIMJSUGa1[k>gTiWP0
+!i10b 1
+!s85 0
+!s101 -O0
+vALUnit_Testbench
+R24
+Z37 IKF838dQojUWU<g9ZaR=1U1
+Z38 VAHjhi>Qjg<hN;D?<ISQ_>0
+R27
+S1
+R3
+R4
+R28
+R29
+Z39 L0 106
+R7
+r1
+31
+R30
+R31
+R32
+R33
+R34
+Z40 n@a@l@unit_@testbench
+Z41 !s100 N4mT8C7KfVIYS^o?7S:gS0
+!i10b 1
+!s85 0
+!s101 -O0
+vandGate
+Z42 I]IQ5ndF:=ML@;>Rb0dAVI1
+Z43 Vnc8G0Z6SGNnUFzQ8FCOU30
+R3
+R4
+Z44 8U:/sourceCode/ALU operation/andGate.v
+Z45 FU:/sourceCode/ALU operation/andGate.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z46 nand@gate
+Z47 !s100 bPE?hXIKLACGY67XnJ9h83
+Z48 !s108 1432114330.165000
+Z49 !s107 U:/sourceCode/ALU operation/andGate.v|
+Z50 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode/ALU operation|U:/sourceCode/ALU operation/andGate.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCPUcontrol
+Z51 ITLUM1P0d`9nfU6HWX3NEa3
+Z52 V9AZUB_7oVH:KO?lCfSI`L3
+R3
+Z53 w1432112976
+Z54 8U:/sourceCode/CPUcontrol.v
+Z55 FU:/sourceCode/CPUcontrol.v
+L0 1
+R7
+r1
+31
+Z56 !s108 1432114317.647000
+Z57 !s107 U:/sourceCode/CPUcontrol.v|
+Z58 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode|U:/sourceCode/CPUcontrol.v|
+R8
+R18
+Z59 n@c@p@ucontrol
+Z60 !s100 d1aJhB[J_0T_`CQQjUdWm1
+!i10b 1
+!s85 0
+!s101 -O0
+vCPUtester
+Z61 IbbjUL_<0lYz]n`L=M[<YD3
+Z62 VPiIJU3`DJh@<ci1]ikg_A2
+R3
+R53
+R54
+R55
+L0 31
+R7
+r1
+31
+R56
+R57
+R58
+R8
+R18
+Z63 n@c@p@utester
+Z64 !s100 oBihhNhCLfnJig;6BEYhQ0
+!i10b 1
+!s85 0
+!s101 -O0
+vflag
+Z65 IRB14GQ2USmD0IPSo6XS6P2
+Z66 V<40K1?0mP4gZaK<4zH6?Z3
+R3
+R4
+Z67 8U:/sourceCode/ALU operation/flag.v
+Z68 FU:/sourceCode/ALU operation/flag.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z69 !s100 ]X3UEG=2kHMkc:FLM0TU>1
+Z70 !s108 1432114328.734000
+Z71 !s107 U:/sourceCode/ALU operation/flag.v|
+Z72 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode/ALU operation|U:/sourceCode/ALU operation/flag.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIMtest
+!i10b 1
+Z73 !s100 7R>T>3@;k<`kmhSUkgUl92
+Z74 ITP29kMZWIIgC[2S?1P3kS3
+Z75 V2b65LcLiV;F1e5f1bQfZD0
+R3
+Z76 w1432115230
+Z77 8U:/sourceCode/InstruMemory.v
+Z78 FU:/sourceCode/InstruMemory.v
+L0 24
+R7
+r1
+!s85 0
+31
+Z79 !s108 1432115249.407000
+Z80 !s107 U:/sourceCode/InstruMemory.v|
+Z81 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode|-O0|U:/sourceCode/InstruMemory.v|
+!s101 -O0
+R8
+R18
+Z82 n@i@mtest
+vInstrucDecoder
+Z83 I:OWVUFO_EilRLj5ZG:b_S3
+Z84 VXSYm3WQHE<;W>LBl^MNU^0
+R3
+Z85 w1432114086
+Z86 8U:/sourceCode/InstrucDecoder.v
+Z87 FU:/sourceCode/InstrucDecoder.v
+L0 1
+R7
+r1
+31
+R8
+Z88 n@instruc@decoder
+Z89 !s100 nA<OaFd9PVS<QHo0OGJFf3
+Z90 !s108 1432114313.423000
+Z91 !s107 U:/sourceCode/InstrucDecoder.v|
+Z92 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode|U:/sourceCode/InstrucDecoder.v|
+R18
+!i10b 1
+!s85 0
+!s101 -O0
+vInstruMemory
+!i10b 1
+!s100 M1TAko`=]lJ6Yc[Th4j5S3
+IbGMZLEELQJP=>CilgoPR20
+Z93 VLU4HaTILN^E=:[j9GcQ^m2
+R3
+R76
+R77
+R78
+L0 3
+R7
+r1
+!s85 0
+31
+R79
+R80
+R81
+!s101 -O0
+R8
+R18
+Z94 n@instru@memory
+vmux2_1
+R24
+Z95 INU9;K>m;gzm@Kd<CYCh1k1
+Z96 VDaJbi4TKY[OoJJIdmR=?E3
+S1
+R3
+R53
+Z97 8U:/sourceCode/Implementation/mux2_1.sv
+Z98 FU:/sourceCode/Implementation/mux2_1.sv
+L0 2
+R7
+r1
+31
+R33
+Z99 !s100 WWzXj1[?]z0kjg0bHcz3;2
+Z100 !s105 mux2_1_sv_unit
+Z101 !s108 1432114339.830000
+Z102 !s107 U:/sourceCode/Implementation/mux2_1.sv|
+Z103 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/sourceCode/Implementation|U:/sourceCode/Implementation/mux2_1.sv|
+Z104 !s92 -sv -work work +incdir+U:/sourceCode/Implementation -O0
+!i10b 1
+!s85 0
+!s101 -O0
+vorGate
+Z105 Iogo[>VQ[oP]76<oJ;;m[<3
+Z106 VzUbA@_bnM4ZSOGG<T@6E`2
+R3
+R4
+Z107 8U:/sourceCode/ALU operation/orGate.v
+Z108 FU:/sourceCode/ALU operation/orGate.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z109 nor@gate
+Z110 !s100 8MZP743QRc:0>Z3o_fP9;1
+Z111 !s108 1432114327.445000
+Z112 !s107 U:/sourceCode/ALU operation/orGate.v|
+Z113 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode/ALU operation|U:/sourceCode/ALU operation/orGate.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPGRtest
+Z114 IMlW;`XYFdE2;]M3P4eXmS0
+Z115 V8:CeGNjdW<3oV`l0eAnGJ1
+R3
+R53
+Z116 8U:/sourceCode/ProgCountReg.v
+Z117 FU:/sourceCode/ProgCountReg.v
+L0 30
+R7
+r1
+31
+Z118 !s108 1432114332.691000
+Z119 !s107 U:/sourceCode/ProgCountReg.v|
+Z120 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode|U:/sourceCode/ProgCountReg.v|
+R8
+R18
+Z121 n@p@g@rtest
+Z122 !s100 Y`]R0mBkzO]V]_8:WekYI3
+!i10b 1
+!s85 0
+!s101 -O0
+vProgCountReg
+Z123 IWIlj;;BK9fzQI1jVR39cR3
+Z124 V0IN?P^i^`JN[UZSUUf5a73
+R3
+R53
+R116
+R117
+L0 1
+R7
+r1
+31
+R118
+R119
+R120
+R8
+R18
+Z125 n@prog@count@reg
+Z126 !s100 lSWf2e4QgfnYi6R>W`9f73
+!i10b 1
+!s85 0
+!s101 -O0
+vsetLT
+Z127 !s100 ?0:NM>H4z80IZCT^WTzmb1
+Z128 IE9<k_0ERZgfNGXcja_Af60
+Z129 Vff=20XPEQE:hT4>:?iPhL2
+R3
+R4
+Z130 8U:/sourceCode/ALU operation/setLT.v
+Z131 FU:/sourceCode/ALU operation/setLT.v
+L0 4
+R7
+r1
+31
+R8
+R9
+Z132 nset@l@t
+Z133 !s108 1432115156.954000
+Z134 !s107 U:/sourceCode/ALU operation/setLT.v|
+Z135 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode/ALU operation|-O0|U:/sourceCode/ALU operation/setLT.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vshiftll
+Z136 IV;z:7YLM]lKAG01SEQmOC3
+Z137 VhO8D:Romf]]700HnVXU5D3
+R3
+R4
+Z138 8U:/sourceCode/ALU operation/shiftll.v
+Z139 FU:/sourceCode/ALU operation/shiftll.v
+L0 5
+R7
+r1
+31
+R8
+R9
+Z140 !s100 eZIjESNHzZ=`@^UcURO0B0
+Z141 !s108 1432114324.629000
+Z142 !s107 U:/sourceCode/ALU operation/shiftll.v|
+Z143 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode/ALU operation|U:/sourceCode/ALU operation/shiftll.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsimpleCPU
+Z144 IUGKM8fzU>5e;UKmEO2Yz?2
+Z145 VBPG_VR:aQRUZXW=21F>Mj2
+R3
+Z146 w1432114090
+Z147 8U:/sourceCode/simpleCPU.v
+Z148 FU:/sourceCode/simpleCPU.v
+L0 1
+R7
+r1
+31
+R8
+R18
+Z149 nsimple@c@p@u
+Z150 !s100 V[O?`H>Dm4W;Y?55?NKzg3
+Z151 !s108 1432114316.216000
+Z152 !s107 U:/sourceCode/simpleCPU.v|
+Z153 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode|U:/sourceCode/simpleCPU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSRAM2Kby16
+Z154 IL4K9WeX=Se3OA]gJnZMD<1
+Z155 VEb_eliCM[gCkEmeiPdjN>1
+R3
+R53
+Z156 8U:/sourceCode/SRAM2Kby16.v
+Z157 FU:/sourceCode/SRAM2Kby16.v
+L0 5
+R7
+r1
+31
+R8
+R18
+Z158 n@s@r@a@m2@kby16
+Z159 !s100 FGXLfQ@I;n:ez;zUJP<Ud0
+Z160 !s108 1432114314.838000
+Z161 !s107 U:/sourceCode/SRAM2Kby16.v|
+Z162 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode|U:/sourceCode/SRAM2Kby16.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsubtract
+Z163 IMQ:8^nKK`kmG3B24>k5eS3
+Z164 VPIUI@]DWXPH<aOjHiD`a93
+R3
+R4
+Z165 8U:/sourceCode/ALU operation/subtract.v
+Z166 FU:/sourceCode/ALU operation/subtract.v
+L0 4
+R7
+r1
+31
+R8
+R9
+Z167 !s100 AE9TUTh9e5VjPH@j5o4ci0
+Z168 !s108 1432114323.211000
+Z169 !s107 U:/sourceCode/ALU operation/subtract.v|
+Z170 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode/ALU operation|U:/sourceCode/ALU operation/subtract.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vxorGate
+Z171 IPzXCS2c:eY?c>2<l8JM=`3
+Z172 VR3E6i72TjTG`f=h]^^4bO1
+R3
+R4
+Z173 8U:/sourceCode/ALU operation/xorGate.v
+Z174 FU:/sourceCode/ALU operation/xorGate.v
+L0 1
+R7
+r1
+31
+R8
+Z175 nxor@gate
+Z176 !s100 ;?KO]Zl==X2:=egKABlHg3
+Z177 !s108 1432114321.764000
+Z178 !s107 U:/sourceCode/ALU operation/xorGate.v|
+Z179 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/sourceCode/ALU operation|U:/sourceCode/ALU operation/xorGate.v|
+R9
+!i10b 1
+!s85 0
+!s101 -O0

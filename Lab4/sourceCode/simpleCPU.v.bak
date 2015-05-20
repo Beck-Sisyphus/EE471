@@ -1,0 +1,38 @@
+module simpleCPU (clk);
+	// ALU control input
+
+	input clk;  // connect to system 50 MHz clock
+	wire  MemWrEn, regWR;
+	reg  [10:0] adxData;
+	wire [15:0] data;
+
+	reg  [4:0] regAdx1, regAdx2, writeAdx;
+	reg  [31:0] writeData;
+	wire [31:0] readOutput1, readOutput2;
+	
+	wire  [2:0] control;
+	reg  [31:0] busA, busB;
+	wire [31:0] busOut;
+	wire zero, overflow, carryout, negative;
+
+	registerFile regs(clk, regAdx1, regAdx2, writeAdx, regWR, writeData, readOutput1, readOutput2);
+	ALUnit logicUnit(clk, control, busA, busB, busOut, zero, overflow, carryout, negative);
+	SRAM2Kby16 dataMemory(clk, adxData, MemWrEn, data);
+
+	CPUcontrol controlFlow(clk, zero, regAdx1, regAdx2, writeAdx, imd, regWR, Mem2Reg, ALUop, MemWrEn, ALUsrc);
+
+	assign busA = readOutput1;
+	mux2_1 busBinput(busB, readOutput2, imd, ALUSrc);
+
+
+	wire [31:0] readDataSE; // sign extended output from SRAM
+	assign readDataSE = {{16{data[15]}}, data};
+	mux2_1 Mem2Register(writeData, busOut, readDataSE, Mem2Reg);
+
+	// Store word operation
+	assign adxData = busOut[10:0]; // Only care the busOut at store word operation
+	assign data = MemWrEn ? 16'bZ : readOutput2[15:0]; // When store word, the data comes from the register file
+
+	ALUcontrol translate(ALUop, imd[5:0], control);
+	
+endmodule

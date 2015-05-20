@@ -5,12 +5,13 @@
 module SRAM2Kby16(clk, adx, WrEn, data);
 	parameter DATA_WIDTH = 16;
 	parameter DATA_LENGTH= 2048;
+	parameter ADX_LENGTH = 11;
 
-	input clk, WrEn;
-	input [10:0] adx;
-	inout [15:0] data;
+	input clk, WrEn;	// Active low write enable
+	input [ADX_LENGTH - 1:0] adx;
+	inout [DATA_WIDTH - 1:0] data;
 
-	reg [15:0]SRAM[2047:0]; // memory regs
+	reg [DATA_WIDTH - 1:0]SRAM[DATA_LENGTH - 1:0]; // memory regs
 	
 	assign data = (WrEn) ? SRAM[adx] : 16'bZ; // control the tri-state 
 	

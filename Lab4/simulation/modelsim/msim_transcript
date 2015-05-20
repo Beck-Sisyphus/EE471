@@ -1,0 +1,400 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE1_SoC_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/InstrucDecoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module InstrucDecoder
+# 
+# Top level modules:
+# 	InstrucDecoder
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/SRAM2Kby16.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM2Kby16
+# 
+# Top level modules:
+# 	SRAM2Kby16
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/simpleCPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module simpleCPU
+# 
+# Top level modules:
+# 	simpleCPU
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/CPUcontrol.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module CPUcontrol
+# -- Compiling module CPUtester
+# 
+# Top level modules:
+# 	CPUcontrol
+# 	CPUtester
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/ALUcontrol.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module ALUcontrol
+# 
+# Top level modules:
+# 	ALUcontrol
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/xorGate.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module xorGate
+# 
+# Top level modules:
+# 	xorGate
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/subtract.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module subtract
+# 
+# Top level modules:
+# 	subtract
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/shiftll.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module shiftll
+# 
+# Top level modules:
+# 	shiftll
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/setLT.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module setLT
+# 
+# Top level modules:
+# 	setLT
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/orGate.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module orGate
+# 
+# Top level modules:
+# 	orGate
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/flag.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module flag
+# 
+# Top level modules:
+# 	flag
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/andGate.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module andGate
+# 
+# Top level modules:
+# 	andGate
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/addition.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module addition
+# 
+# Top level modules:
+# 	addition
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/ProgCountReg.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module ProgCountReg
+# -- Compiling module PGRtest
+# 
+# Top level modules:
+# 	PGRtest
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/InstruMemory.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module InstruMemory
+# -- Compiling module IMtest
+# 
+# Top level modules:
+# 	IMtest
+# vlog -sv -work work +incdir+U:/sourceCode {U:/sourceCode/ALUnit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module ALUnit
+# -- Compiling module ALUnit_Testbench
+# 
+# Top level modules:
+# 	ALUnit_Testbench
+# vlog -sv -work work +incdir+U:/sourceCode/Implementation {U:/sourceCode/Implementation/mux2_1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module mux2_1
+# 
+# Top level modules:
+# 	mux2_1
+# 
+vsim work.IMtest
+# vsim work.IMtest 
+# Loading work.IMtest
+# Loading work.InstruMemory
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (7 or 7) does not match connection size (32) for port 'adx'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (32 or 32) does not match connection size (128) for port 'data'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+add wave -position end  sim:/IMtest/dut/SRAM
+add wave -position end  sim:/IMtest/dut/clk
+add wave -position end  sim:/IMtest/dut/WrEn
+add wave -position end  sim:/IMtest/dut/rst
+add wave -position end  sim:/IMtest/dut/adx
+add wave -position end  sim:/IMtest/dut/data
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "boobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 20 ps  Iteration: 1  Instance: /IMtest/dut
+# Break in Module IMtest at U:/sourceCode/InstruMemory.v line 43
+do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/InstrucDecoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module InstrucDecoder
+# 
+# Top level modules:
+# 	InstrucDecoder
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/SRAM2Kby16.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM2Kby16
+# 
+# Top level modules:
+# 	SRAM2Kby16
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/simpleCPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module simpleCPU
+# 
+# Top level modules:
+# 	simpleCPU
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/CPUcontrol.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module CPUcontrol
+# -- Compiling module CPUtester
+# 
+# Top level modules:
+# 	CPUcontrol
+# 	CPUtester
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/ALUcontrol.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module ALUcontrol
+# 
+# Top level modules:
+# 	ALUcontrol
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/xorGate.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module xorGate
+# 
+# Top level modules:
+# 	xorGate
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/subtract.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module subtract
+# 
+# Top level modules:
+# 	subtract
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/shiftll.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module shiftll
+# 
+# Top level modules:
+# 	shiftll
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/setLT.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module setLT
+# 
+# Top level modules:
+# 	setLT
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/orGate.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module orGate
+# 
+# Top level modules:
+# 	orGate
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/flag.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module flag
+# 
+# Top level modules:
+# 	flag
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/andGate.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module andGate
+# 
+# Top level modules:
+# 	andGate
+# vlog -vlog01compat -work work +incdir+U:/sourceCode/ALU\ operation {U:/sourceCode/ALU operation/addition.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module addition
+# 
+# Top level modules:
+# 	addition
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/ProgCountReg.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module ProgCountReg
+# -- Compiling module PGRtest
+# 
+# Top level modules:
+# 	PGRtest
+# vlog -vlog01compat -work work +incdir+U:/sourceCode {U:/sourceCode/InstruMemory.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module InstruMemory
+# -- Compiling module IMtest
+# 
+# Top level modules:
+# 	IMtest
+# vlog -sv -work work +incdir+U:/sourceCode {U:/sourceCode/ALUnit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module ALUnit
+# -- Compiling module ALUnit_Testbench
+# 
+# Top level modules:
+# 	ALUnit_Testbench
+# vlog -sv -work work +incdir+U:/sourceCode/Implementation {U:/sourceCode/Implementation/mux2_1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module mux2_1
+# 
+# Top level modules:
+# 	mux2_1
+# 
+vsim work.IMtest
+# vsim work.IMtest 
+# Loading work.IMtest
+# Loading work.InstruMemory
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (7 or 7) does not match connection size (32) for port 'adx'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (32 or 32) does not match connection size (128) for port 'data'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+add wave -position end  sim:/IMtest/dut/clk
+add wave -position end  sim:/IMtest/dut/WrEn
+add wave -position end  sim:/IMtest/dut/rst
+add wave -position end  sim:/IMtest/dut/adx
+add wave -position end  sim:/IMtest/dut/data
+add wave -position end  sim:/IMtest/dut/SRAM
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "boobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 30 ps  Iteration: 1  Instance: /IMtest/dut
+# Break in Module IMtest at U:/sourceCode/InstruMemory.v line 43
+# WARNING: No extended dataflow license exists
+vsim rtl_work.IMtest
+# vsim rtl_work.IMtest 
+# Loading rtl_work.IMtest
+# Loading rtl_work.InstruMemory
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (7 or 7) does not match connection size (32) for port 'adx'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (32 or 32) does not match connection size (128) for port 'data'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+add wave -position end  sim:/IMtest/dut/clk
+add wave -position end  sim:/IMtest/dut/WrEn
+add wave -position end  sim:/IMtest/dut/rst
+add wave -position end  sim:/IMtest/dut/adx
+add wave -position end  sim:/IMtest/dut/data
+add wave -position end  sim:/IMtest/dut/SRAM
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "boobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 30 ps  Iteration: 1  Instance: /IMtest/dut
+# Break in Module IMtest at U:/sourceCode/InstruMemory.v line 43
+# A time value could not be extracted from the current line
+vlog -vlog01compat -work work {+incdir+U:/sourceCode/ALU operation} -O0 {U:/sourceCode/ALU operation/setLT.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module setLT
+# 
+# Top level modules:
+# 	setLT
+vlog -vlog01compat -work work +incdir+U:/sourceCode -O0 U:/sourceCode/InstruMemory.v
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module InstruMemory
+# -- Compiling module IMtest
+# 
+# Top level modules:
+# 	IMtest
+vsim work.IMtest
+# vsim work.IMtest 
+# Loading work.IMtest
+# Loading work.InstruMemory
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (7 or 7) does not match connection size (32) for port 'adx'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (32 or 32) does not match connection size (128) for port 'data'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+add wave -position end  sim:/IMtest/dut/clk
+add wave -position end  sim:/IMtest/dut/WrEn
+add wave -position end  sim:/IMtest/dut/rst
+add wave -position end  sim:/IMtest/dut/adx
+add wave -position end  sim:/IMtest/dut/data
+add wave -position end  sim:/IMtest/dut/SRAM
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 30 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 50 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 70 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 90 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 110 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 130 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 150 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 170 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 190 ps  Iteration: 1  Instance: /IMtest/dut
+# ** Warning: (vsim-7) Failed to open readmem file "U:sourceCodeboobs.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : U:/sourceCode/InstruMemory.v(17)
+#    Time: 210 ps  Iteration: 1  Instance: /IMtest/dut
+# Break in Module IMtest at U:/sourceCode/InstruMemory.v line 44
+vlog -vlog01compat -work work +incdir+U:/sourceCode -O0 U:/sourceCode/InstruMemory.v
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module InstruMemory
+# -- Compiling module IMtest
+# 
+# Top level modules:
+# 	IMtest
+vsim work.IMtest
+# vsim work.IMtest 
+# Loading work.IMtest
+# Loading work.InstruMemory
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (7 or 7) does not match connection size (32) for port 'adx'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+# ** Warning: (vsim-3015) U:/sourceCode/InstruMemory.v(31): [PCDPC] - Port size (32 or 32) does not match connection size (128) for port 'data'. The port definition is at: U:/sourceCode/InstruMemory.v(3).
+# 
+#         Region: /IMtest/dut
+add wave -position end  sim:/IMtest/dut/clk
+add wave -position end  sim:/IMtest/dut/WrEn
+add wave -position end  sim:/IMtest/dut/rst
+add wave -position end  sim:/IMtest/dut/adx
+add wave -position end  sim:/IMtest/dut/data
+add wave -position end  sim:/IMtest/dut/SRAM
+run -all
+# Break in Module IMtest at U:/sourceCode/InstruMemory.v line 44
